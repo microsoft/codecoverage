@@ -1,6 +1,11 @@
 # Microsoft code coverage tools
 
-Microsoft code coverage functionality is closed source. This repository contains documentation and samples. You can also use it to report any issues related to Microsoft.CodeCoverage nuget package, dotnet-coverage nuget package or Visual Studio code coverage functionality.
+Microsoft code coverage functionality is closed source. This repository contains documentation and samples. You can also use it to report any issues related to `Microsoft.CodeCoverage` NuGet package, `dotnet-coverage` NuGet package or Visual Studio code coverage functionality.
+
+## Documentation 
+
+* Documentation for `dotnet-coverage` tool is available at https://aka.ms/dotnet-coverage.
+* Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis.
 
 ## Contributing
 
