@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Platform Condition="$(Platform) == ''">x64</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>CppTest</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>CppTest</TargetName>
+  </PropertyGroup>
+  <Import Project="$(MSBuildThisFileDirectory)\CppTest.vcxproj" />
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{23629799-0788-46B2-8309-5449E5950061}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CppTestX46</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectSubType>NativeUnitTestProject</ProjectSubType>
+    <ProjectName>CppTest.X64</ProjectName>
+  </PropertyGroup>
+</Project>
