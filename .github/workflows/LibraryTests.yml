@@ -6,7 +6,7 @@ name: LibraryTests
 on:
   push:
     branches: [ "main" ]
-    paths: [ 'docs/examples/LibraryTests/**' ]
+    paths: [ 'docs/examples/LibraryTests/**', '.github/workflows/LibraryTests.yml' ]
 
 jobs:
   build:
@@ -27,3 +27,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --collect "Code Coverage;Format=cobertura" --no-build --verbosity normal
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: library.tests/TestResults/**/*.cobertura.xml
