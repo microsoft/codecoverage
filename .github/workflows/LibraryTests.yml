@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: library.tests/TestResults/**/*.cobertura.xml
+        path: ./library.tests/TestResults/**/*.cobertura.xml
