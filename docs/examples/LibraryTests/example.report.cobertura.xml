@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage line-rate="0.6666666666666666" branch-rate="1" complexity="3" version="1.9" timestamp="1692622242" lines-covered="6" lines-valid="9">
+  <packages>
+    <package line-rate="0.5" branch-rate="1" complexity="2" name="library">
+      <classes>
+        <class line-rate="0.5" branch-rate="1" complexity="2" name="library.Class1" filename="/home/runner/work/codecoverage/codecoverage/docs/examples/LibraryTests/library/Class1.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="Add" signature="(int, int)">
+              <lines>
+                <line number="6" hits="1" branch="False" />
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="0" branch-rate="1" complexity="1" name="Multiple" signature="(int, int)">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package line-rate="1" branch-rate="1" complexity="1" name="library.tests">
+      <classes>
+        <class line-rate="1" branch-rate="1" complexity="1" name="library.tests.UnitTest1" filename="/home/runner/work/codecoverage/codecoverage/docs/examples/LibraryTests/library.tests/UnitTest1.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="Test1" signature="()">
+              <lines>
+                <line number="10" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
