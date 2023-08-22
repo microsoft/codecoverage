@@ -1,7 +1,6 @@
-using Xunit.Sdk;
-
 namespace Calculator.Server.IntegrationTests;
 
+[TestClass]
 public class IntegrationTests
 {
     private readonly HttpClient _client;
@@ -14,11 +13,11 @@ public class IntegrationTests
         };
     }
 
-    [Theory]
-    [InlineData("/add/3/5", "8")]
-    [InlineData("/multiply/3/5", "15")]
-    [InlineData("/substract/3/5", "-2")]
-    [InlineData("/devide/35/5", "7")]
+    [TestMethod]
+    [DataRow("/add/3/5", "8")]
+    [DataRow("/multiply/3/5", "15")]
+    [DataRow("/substract/3/5", "-2")]
+    [DataRow("/devide/35/5", "7")]
     public async Task TestOperations(string input, string output)
     {
         try 
@@ -28,11 +27,11 @@ public class IntegrationTests
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
-            Assert.Equal(output, await response.Content.ReadAsStringAsync());
+            Assert.AreEqual(output, await response.Content.ReadAsStringAsync());
         }
         catch (HttpRequestException e)
         {
-            throw new SkipException();
+            Assert.Inconclusive(e.Message);
         }
     }
 }
