@@ -9,3 +9,4 @@ app.MapGet("/substract/{a}/{b}/", (double a , double b) => OperationCalculator.C
 app.MapGet("/devide/{a}/{b}/", (double a , double b) => OperationCalculator.CalculateDevide(a, b).ToString());
 
 app.Run();
+public partial class Program { }
