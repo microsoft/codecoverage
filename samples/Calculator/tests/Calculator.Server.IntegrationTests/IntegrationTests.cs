@@ -1,6 +1,6 @@
 namespace Calculator.Server.IntegrationTests;
 
-[TestClass]
+[TestFixture]
 public class IntegrationTests
 {
     private readonly HttpClient _client;
@@ -13,11 +13,12 @@ public class IntegrationTests
         };
     }
 
-    [TestMethod]
-    [DataRow("/add/3/5", "8")]
-    [DataRow("/multiply/3/5", "15")]
-    [DataRow("/substract/3/5", "-2")]
-    [DataRow("/devide/35/5", "7")]
+    [Test]
+    [TestCase("/add/3/5", "8")]
+    [TestCase("/multiply/3/5", "15")]
+    [TestCase("/substract/3/5", "-2")]
+    [TestCase("/devide/35/5", "7")]
+    [Parallelizable(ParallelScope.All)]
     public async Task TestOperations(string input, string output)
     {
         try 
@@ -27,11 +28,11 @@ public class IntegrationTests
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
-            Assert.AreEqual(output, await response.Content.ReadAsStringAsync());
+            Assert.Equals(output, await response.Content.ReadAsStringAsync());
         }
         catch (HttpRequestException e)
         {
-            Assert.Inconclusive(e.Message);
+            Assert.Ignore(e.Message);
         }
     }
 }
