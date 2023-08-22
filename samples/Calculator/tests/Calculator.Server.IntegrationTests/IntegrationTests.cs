@@ -28,7 +28,7 @@ public class IntegrationTests
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
-            Assert.Equals(output, await response.Content.ReadAsStringAsync());
+            Assert.That(await response.Content.ReadAsStringAsync(), Is.EqualTo(output));
         }
         catch (HttpRequestException e)
         {
