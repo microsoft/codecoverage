@@ -2,10 +2,10 @@
 
 public static class OperationCalculator
 {
-    private const string Add = "add";
-    private const string Multiply = "multiply";
-    private const string Substract = "substract";
-    private const string Devide = "devide";
+    public const string Add = "add";
+    public const string Multiply = "multiply";
+    public const string Substract = "substract";
+    public const string Devide = "devide";
 
     public static double Calculate(string operation, double a, double b)
     {
