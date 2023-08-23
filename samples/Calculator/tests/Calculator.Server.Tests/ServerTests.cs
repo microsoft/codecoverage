@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.Testing;
+using Xunit;
 
 namespace Calculator.Server.Tests;
 
