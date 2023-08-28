@@ -33,10 +33,11 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ./**/*.coverage
 ```
 
-[Full example](../../../../.github/workflows/Calculator_Scenario01.yml)
+[Source example](../../../../.github/workflows/Calculator_Scenario01.yml)
+[Run example](../../../../actions/workflows/Calculator_Scenario01.yml)
 
 **Report example**
 
 ![alt text](example.report.jpg "Example report")
 
-[Full report](example.report.coverage)
+[Link](example.report.coverage)
