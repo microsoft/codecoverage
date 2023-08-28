@@ -1,8 +1,15 @@
+**Scenario Description**
+
+Collect code coverage using default settings. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+
 **Collect code coverage using command line**
 
 ```shell
-dotnet test --collect "Code Coverage;Format=cobertura"
+cd tests/Calculator.Core.Tests/
+dotnet test --collect "Code Coverage"
 ```
+
+You can also use [run.ps1](run.ps1) to collect code coverage.
 
 **Collect code coverage inside github workflow**
 
@@ -25,3 +32,11 @@ dotnet test --collect "Code Coverage;Format=cobertura"
         name: code-coverage-report
         path: ./**/*.coverage
 ```
+
+[Full example](https://github.com/microsoft/codecoverage/blob/main/.github/workflows/Calculator_Scenario01.yml)
+
+**Report example**
+
+![alt text](example.report.jpg "Example report")
+
+[Full report](example.report.coverage)
