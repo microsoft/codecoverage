@@ -34,7 +34,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 ```
 
 [Source example](../../../../.github/workflows/Calculator_Scenario01.yml)
-[Run example](../../../../actions/workflows/Calculator_Scenario01.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario01.yml)
 
 **Report example**
 
