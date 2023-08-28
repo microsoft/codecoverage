@@ -6,7 +6,7 @@ name: "Calculator Scenario 03"
 on:
   push:
     branches: [ "main" ]
-    paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario03.yml' ]
+    paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario03.yml', 'samples/Calculator/scenarios/scenario03/coverage.runsettings' ]
 
 jobs:
   build:
