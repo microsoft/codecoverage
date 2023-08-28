@@ -30,7 +30,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: ./**/*.coverage
+        path: ./**/TestResults/**/*.coverage
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario01.yml)
