@@ -17,13 +17,13 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    arguments: '--configuration $(buildConfiguration)'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet build'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--configuration $(buildConfiguration) --collect "Code Coverage"'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage"'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
