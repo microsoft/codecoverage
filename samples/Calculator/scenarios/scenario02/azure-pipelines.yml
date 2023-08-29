@@ -30,4 +30,4 @@ steps:
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: $(System.DefaultWorkingDirectory)/**/TestResults/**/*.cobertura.xml 
+    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
