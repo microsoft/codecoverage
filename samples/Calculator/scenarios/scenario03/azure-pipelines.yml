@@ -33,6 +33,7 @@ steps:
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
 
 - task: PublishCodeCoverageResults@2
   inputs:
