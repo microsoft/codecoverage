@@ -38,6 +38,39 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario02.yml)
 
+# Collect code coverage inside Azure DevOps Pipelines
+
+```shell
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage;Format=cobertura"'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet test'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
+```
+
+[Full source example](azure-pipelines.yml)
+
+![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
+
 # Report example
 
 ![alt text](example.report.jpg "Example report")

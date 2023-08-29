@@ -1,7 +1,7 @@
 name: "Calculator Scenario 02"
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Debug'
