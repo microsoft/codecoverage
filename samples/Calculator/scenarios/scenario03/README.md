@@ -1,8 +1,8 @@
-**Scenario Description**
+# Scenario Description
 
 Collect code coverage using cobertura report format by specifying configuration. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
-**Collect code coverage using command line**
+# Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -14,7 +14,7 @@ dotnet test --settings ../../scenarios/scenario03/coverage.runsettings
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-**Collect code coverage inside github workflow**
+# Collect code coverage inside github workflow
 
 ```shell
     steps:
@@ -40,7 +40,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario03.yml)
 
-**Report example**
+# Report example
 
 ![alt text](example.report.jpg "Example report")
 
