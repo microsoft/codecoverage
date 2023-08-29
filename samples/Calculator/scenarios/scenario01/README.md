@@ -5,7 +5,8 @@ Collect code coverage using default settings. Default format is binary (`.covera
 **Collect code coverage using command line**
 
 ```shell
-cd tests/Calculator.Core.Tests/
+git clone https://github.com/microsoft/codecoverage.git
+cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
 dotnet test --collect "Code Coverage"
 ```
 

@@ -5,7 +5,8 @@ Collect code coverage using cobertura report format by specifying configuration.
 **Collect code coverage using command line**
 
 ```shell
-cd tests/Calculator.Core.Tests/
+git clone https://github.com/microsoft/codecoverage.git
+cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
 dotnet test --settings ../../scenarios/scenario03/coverage.runsettings
 ```
 
