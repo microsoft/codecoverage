@@ -16,7 +16,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 # Collect code coverage inside github workflow
 
-```shell
+```yml
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -50,7 +50,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 # Collect code coverage inside Azure DevOps Pipelines
 
-```shell
+```yml
 steps:
 - task: DotNetCoreCLI@2
   inputs:

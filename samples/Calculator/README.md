@@ -15,3 +15,4 @@ Solution contains seven projects:
 2. [***Scenario 02*** Cobertura format by command line](scenarios/scenario02/README.md)
 3. [***Scenario 03*** Cobertura format by configuration](scenarios/scenario03/README.md)
 4. [***Scenario 04*** XML format by command line](scenarios/scenario04/README.md)
+5. [***Scenario 05*** Exclude project, method and source file](scenarios/scenario05/README.md)

@@ -1,106 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage line-rate="0.6666666666666666" branch-rate="1" complexity="9" version="1.9" timestamp="1693234277" lines-covered="16" lines-valid="24">
+<coverage line-rate="0.2727272727272727" branch-rate="1" complexity="4" version="1.9" timestamp="1693491569" lines-covered="3" lines-valid="11">
   <packages>
-    <package line-rate="1" branch-rate="1" complexity="4" name="Calculator.Core.Tests">
+    <package line-rate="0.2727272727272727" branch-rate="1" complexity="4" name="Calculator.Core">
       <classes>
-        <class line-rate="1" branch-rate="1" complexity="4" name="Calculator.Core.Tests.CalculatorUnitTests" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Core.Tests/CalculatorUnitTests.cs">
-          <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestAdd" signature="()">
-              <lines>
-                <line number="10" hits="1" branch="False" />
-                <line number="11" hits="1" branch="False" />
-                <line number="12" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestMultiply" signature="()">
-              <lines>
-                <line number="16" hits="1" branch="False" />
-                <line number="17" hits="1" branch="False" />
-                <line number="18" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestSubtract" signature="()">
-              <lines>
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestDivide" signature="()">
-              <lines>
-                <line number="29" hits="1" branch="False" />
-                <line number="30" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="10" hits="1" branch="False" />
-            <line number="11" hits="1" branch="False" />
-            <line number="12" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="18" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
-          </lines>
-        </class>
-      </classes>
-    </package>
-    <package line-rate="0.3333333333333333" branch-rate="1" complexity="5" name="Calculator.Core">
-      <classes>
-        <class line-rate="0.3333333333333333" branch-rate="1" complexity="5" name="Calculator.Core.OperationCalculator" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Core/OperationCalculator.cs">
+        <class line-rate="0.2727272727272727" branch-rate="1" complexity="4" name="Calculator.Core.OperationCalculator" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Core/OperationCalculator.cs">
           <methods>
             <method line-rate="0" branch-rate="1" complexity="1" name="Calculate" signature="(string, double, double)">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="6" hits="0" branch="False" />
+                <line number="7" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
                 <line number="12" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="17" hits="0" branch="False" />
-                <line number="19" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="CalculateAdd" signature="(double, double)">
               <lines>
-                <line number="27" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="CalculateMultiply" signature="(double, double)">
               <lines>
-                <line number="28" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
               </lines>
             </method>
             <method line-rate="1" branch-rate="1" complexity="1" name="CalculateSubtract" signature="(double, double)">
               <lines>
-                <line number="29" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="CalculateDivide" signature="(double, double)">
-              <lines>
-                <line number="30" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="0" branch="False" />
+            <line number="6" hits="0" branch="False" />
+            <line number="7" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
             <line number="12" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="17" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="21" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
           </lines>
         </class>
       </classes>

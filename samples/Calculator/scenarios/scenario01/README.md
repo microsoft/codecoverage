@@ -16,7 +16,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
 
-```shell
+```yml
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -54,7 +54,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
 
 # Collect code coverage inside Azure DevOps Pipelines
 
-```shell
+```yml
 steps:
 - task: DotNetCoreCLI@2
   inputs:
