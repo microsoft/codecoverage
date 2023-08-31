@@ -35,9 +35,6 @@ jobs:
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
       run: |
-        ls -al $GITHUB_WORKSPACE
-        ls -al .
-        ls -al coveragereport/
         cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Upload raw coverage report artifact
       uses: actions/upload-artifact@v3
