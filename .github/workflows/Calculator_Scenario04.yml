@@ -37,6 +37,7 @@ jobs:
       with:
         reports: './**/TestResults/**/*.xml'
         targetdir: 'coveragereport'
+        reporttypes: 'HtmlInline_AzurePipelines'
     - name: Upload coverage report artifact
       uses: actions/upload-artifact@v3
       with:
