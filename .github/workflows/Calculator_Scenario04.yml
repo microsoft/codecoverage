@@ -36,10 +36,10 @@ jobs:
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
         reports: './**/TestResults/**/*.xml'
-        targetdir: './coveragereport'
+        targetdir: 'coveragereport'
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
       run: |
         ls -al .
-        ls -al ./coveragereport/
-        cat ./coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
+        ls -al coveragereport/
+        cat coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
