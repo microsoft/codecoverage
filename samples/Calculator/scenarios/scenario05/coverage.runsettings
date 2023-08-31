@@ -13,7 +13,7 @@
             </ModulePaths>
             <Functions>
               <Exclude>
-                <Function>.*OperationCalculator\.Divide.*</Function>
+                <Function>.*OperationCalculator\.CalculateDivide.*</Function>
               </Exclude>
             </Functions>
             <Sources>

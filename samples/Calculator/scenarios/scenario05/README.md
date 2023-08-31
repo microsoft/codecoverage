@@ -1,6 +1,6 @@
 # Scenario Description
 
-Exclude tests project from report, `Divide*` methods and `OperationConsts.cs` file from report. In this scenario we are also using cobertura report format by specifying configuration. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
+Exclude tests project from report, `CalculateDivide` methods and `OperationConsts.cs` file from report. In this scenario we are also using cobertura report format by specifying configuration. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
 # Collect code coverage using command line
 
