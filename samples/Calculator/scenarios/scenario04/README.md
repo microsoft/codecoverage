@@ -66,12 +66,23 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage"'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage;Format=xml" --logger trx --results-directory $(Agent.TempDirectory)/TestResults'
+    publishTestResults: false
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/TestResults/**/*.trx'
+    publishRunAttachments: false
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/TestResults/**/*.xml
 ```
 
-> **_NOTE:_** Azure DevOps pipelines automatically recognize binary coverage report format. Code coverage results are automatically processed and published to Azure DevOps. No additional steps needed.
+> **_NOTE:_** To make sure that Code Coverage tab will be visible in Azure DevOps you need to make sure that previous steps will not publish test attachments (`publishRunAttachments: false` and `publishTestResults: false`).
 
 [Full source example](azure-pipelines.yml)
 
@@ -81,4 +92,4 @@ steps:
 
 ![alt text](example.report.jpg "Example report")
 
-[Link](example.report.coverage)
+[Link](example.report.xml)
