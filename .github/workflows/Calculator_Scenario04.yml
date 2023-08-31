@@ -1,12 +1,12 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: "Calculator Scenario 02"
+name: "Calculator Scenario 04"
 
 on:
   push:
     branches: [ "main" ]
-    paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario02.yml' ]
+    paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario04.yml' ]
 
 jobs:
   build:
@@ -26,17 +26,17 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --collect "Code Coverage;Format=cobertura" --no-build --verbosity normal
+      run: dotnet test --collect "Code Coverage;Format=xml" --no-build --verbosity normal
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
-        reports: './**/TestResults/**/*.cobertura.xml'
+        reports: './**/TestResults/**/*.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
-    - name: Archive code coverage results
+    - name: Upload raw coverage report artifact
       uses: actions/upload-artifact@v3
       with:
-        name: code-coverage-report
-        path: ./**/TestResults/**/*.cobertura.xml
+        name: RawCoverageReport
+        path: ./**/TestResults/**/*.xml

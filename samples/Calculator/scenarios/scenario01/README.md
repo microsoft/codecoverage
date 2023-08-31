@@ -14,6 +14,8 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 # Collect code coverage inside github workflow
 
+To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
+
 ```shell
     steps:
     - uses: actions/checkout@v3
@@ -27,6 +29,18 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --collect "Code Coverage" --no-build --verbosity normal
+    - name: Install dotnet-coverage
+      run: dotnet tool install -g dotnet-coverage
+    - name: Convert .coverage report to cobertura
+      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      with:
+        reports: '${{ github.workspace }}/report.cobertura.xml'
+        targetdir: '${{ github.workspace }}/coveragereport'
+        reporttypes: 'MarkdownSummaryGithub'
+    - name: Upload coverage into summary
+      run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
       uses: actions/upload-artifact@v3
       with:
