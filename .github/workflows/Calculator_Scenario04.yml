@@ -40,4 +40,6 @@ jobs:
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
       run: |
+        ls -al .
+        ls -al ./coveragereport/
         cat ./coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
