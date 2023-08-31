@@ -37,12 +37,7 @@ jobs:
       with:
         reports: './**/TestResults/**/*.xml'
         targetdir: 'coveragereport'
-        reporttypes: 'HtmlInline_AzurePipelines'
-    - name: Upload coverage report artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: CoverageReport
-        path: coveragereport
+        reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
       run: |
-        cat ./coveragereport/index.html >> $GITHUB_STEP_SUMMARY
+        cat coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
