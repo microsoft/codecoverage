@@ -25,15 +25,15 @@ public class ConsoleTests
     }
 
     [Fact]
-    public void SubstractTest()
+    public void SubtractTest()
     {
-        Assert.Equal(1, Execute("substract 5 4"));
+        Assert.Equal(1, Execute("subtract 5 4"));
     }
 
     [Fact]
-    public void DevideTest()
+    public void DivideTest()
     {
-        Assert.Equal(4, Execute("devide 12 3"));
+        Assert.Equal(4, Execute("divide 12 3"));
     }
 
     private double Execute(string arguments)

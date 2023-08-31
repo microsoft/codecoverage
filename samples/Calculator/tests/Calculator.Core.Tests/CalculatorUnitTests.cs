@@ -18,15 +18,15 @@ public class CalculatorUnitTests
     }
 
     [Fact]
-    public void TestSubstract()
+    public void TestSubtract()
     {
-        Assert.Equal(-7, OperationCalculator.CalculateSubstract(2, 9));
+        Assert.Equal(-7, OperationCalculator.CalculateSubtract(2, 9));
     }
 
 
     [Fact]
-    public void TestDevide()
+    public void TestDivide()
     {
-        Assert.Equal(9.0, OperationCalculator.CalculateDevide(18.0, 2.0));
+        Assert.Equal(9.0, OperationCalculator.CalculateDivide(18.0, 2.0));
     }
 }

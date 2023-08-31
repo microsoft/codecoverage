@@ -12,8 +12,8 @@ public class ServerTests : IClassFixture<WebApplicationFactory<Program>>
     [Theory]
     [InlineData("/add/3/5", "8")]
     [InlineData("/multiply/3/5", "15")]
-    [InlineData("/substract/3/5", "-2")]
-    [InlineData("/devide/35/5", "7")]
+    [InlineData("/subtract/3/5", "-2")]
+    [InlineData("/divide/35/5", "7")]
     public async Task TestAdd(string input, string output)
     {
         // Arrange

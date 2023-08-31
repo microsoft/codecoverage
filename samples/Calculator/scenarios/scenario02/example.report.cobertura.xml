@@ -19,14 +19,14 @@
                 <line number="18" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestSubstract" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="TestSubtract" signature="()">
               <lines>
                 <line number="22" hits="1" branch="False" />
                 <line number="23" hits="1" branch="False" />
                 <line number="24" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TestDevide" signature="()">
+            <method line-rate="1" branch-rate="1" complexity="1" name="TestDivide" signature="()">
               <lines>
                 <line number="29" hits="1" branch="False" />
                 <line number="30" hits="1" branch="False" />
@@ -77,12 +77,12 @@
                 <line number="28" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="CalculateSubstract" signature="(double, double)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="CalculateSubtract" signature="(double, double)">
               <lines>
                 <line number="29" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="CalculateDevide" signature="(double, double)">
+            <method line-rate="1" branch-rate="1" complexity="1" name="CalculateDivide" signature="(double, double)">
               <lines>
                 <line number="30" hits="1" branch="False" />
               </lines>
