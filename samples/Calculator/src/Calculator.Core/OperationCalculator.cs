@@ -2,22 +2,17 @@
 
 public static class OperationCalculator
 {
-    public const string Add = "add";
-    public const string Multiply = "multiply";
-    public const string Subtract = "subtract";
-    public const string Divide = "divide";
-
     public static double Calculate(string operation, double a, double b)
     {
         switch (operation)
         {
-            case Add:
+            case OperationConsts.Add:
                 return CalculateAdd(a, b);
-            case Multiply:
+            case OperationConsts.Multiply:
                 return CalculateMultiply(a, b);
-            case Subtract:
+            case OperationConsts.Subtract:
                 return CalculateSubtract(a, b);
-            case Divide:
+            case OperationConsts.Divide:
                 return CalculateDivide(a, b);
             default:
                 throw new InvalidOperationException("Invalid operation name");
