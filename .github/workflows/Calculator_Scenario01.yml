@@ -27,6 +27,18 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --collect "Code Coverage" --no-build --verbosity normal
+    - name: Install dotnet-coverage
+      run: dotnet tool install -g dotnet-coverage
+    - name: Convert .coverage report to cobertura
+      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      with:
+        reports: '${{ github.workspace }}/report.cobertura.xml'
+        targetdir: '${{ github.workspace }}/coveragereport'
+        reporttypes: 'MarkdownSummaryGithub'
+    - name: Upload coverage into summary
+      run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
       uses: actions/upload-artifact@v3
       with:
