@@ -27,11 +27,19 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --collect "Code Coverage;Format=xml" --no-build --verbosity normal
-    - name: Archive code coverage results
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      with:
+        reports: './**/TestResults/**/*.xml'
+        targetdir: '${{ github.workspace }}/coveragereport'
+        reporttypes: 'MarkdownSummaryGithub'
+    - name: Upload coverage into summary
+      run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
+    - name: Upload raw coverage report artifact
       uses: actions/upload-artifact@v3
       with:
-        name: code-coverage-report
-        path: ./**/TestResults/**/*.coverage
+        name: RawCoverageReport
+        path: ./**/TestResults/**/*.xml
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario04.yml)

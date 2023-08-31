@@ -29,6 +29,14 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --settings ../../scenarios/scenario03/coverage.runsettings --no-build --verbosity normal
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      with:
+        reports: './**/TestResults/**/*.cobertura.xml'
+        targetdir: '${{ github.workspace }}/coveragereport'
+        reporttypes: 'MarkdownSummaryGithub'
+    - name: Upload coverage into summary
+      run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
       uses: actions/upload-artifact@v3
       with:
