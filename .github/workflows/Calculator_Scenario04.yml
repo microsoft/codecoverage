@@ -43,3 +43,6 @@ jobs:
       with:
         name: CoverageReport
         path: coveragereport
+    - name: Upload coverage into summary
+      run: |
+        cat ./coveragereport/index.html >> $GITHUB_STEP_SUMMARY
