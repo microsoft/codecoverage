@@ -43,7 +43,7 @@ In this example we want to show you how to exclude from code coverage report who
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
-dotnet test --settings ../../scenarios/scenario05/coverage.runsettings
+dotnet test --settings ../../scenarios/scenario06/coverage.runsettings
 ```
 
 > **_NOTE:_** You don't have to use `--collect "Code Coverage"` when you specify runsettings with code coverage configuration.
@@ -80,9 +80,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ./**/TestResults/**/*.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario05.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario06.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario05.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario06.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -104,7 +104,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario05/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory)'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario06/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory)'
     publishTestResults: false
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
