@@ -17,14 +17,14 @@
             <range start_line="18" start_column="5" end_line="18" end_column="6" covered="yes" source_id="0" />
           </ranges>
         </function>
-        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0" id="8391" token="0x6000007" name="TestSubstract()" namespace="Calculator.Core.Tests" type_name="CalculatorUnitTests">
+        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0" id="8391" token="0x6000007" name="TestSubtract()" namespace="Calculator.Core.Tests" type_name="CalculatorUnitTests">
           <ranges>
             <range start_line="22" start_column="5" end_line="22" end_column="6" covered="yes" source_id="0" />
             <range start_line="23" start_column="9" end_line="23" end_column="72" covered="yes" source_id="0" />
             <range start_line="24" start_column="5" end_line="24" end_column="6" covered="yes" source_id="0" />
           </ranges>
         </function>
-        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0" id="8432" token="0x6000008" name="TestDevide()" namespace="Calculator.Core.Tests" type_name="CalculatorUnitTests">
+        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="3" blocks_not_covered="0" lines_covered="3" lines_partially_covered="0" lines_not_covered="0" id="8432" token="0x6000008" name="TestDivide()" namespace="Calculator.Core.Tests" type_name="CalculatorUnitTests">
           <ranges>
             <range start_line="29" start_column="5" end_line="29" end_column="6" covered="yes" source_id="0" />
             <range start_line="30" start_column="9" end_line="30" end_column="75" covered="yes" source_id="0" />
@@ -63,12 +63,12 @@
             <range start_line="28" start_column="67" end_line="28" end_column="72" covered="yes" source_id="0" />
           </ranges>
         </function>
-        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0" id="8490" token="0x6000009" name="CalculateSubstract(double, double)" namespace="Calculator.Core" type_name="OperationCalculator">
+        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0" id="8490" token="0x6000009" name="CalculateSubtract(double, double)" namespace="Calculator.Core" type_name="OperationCalculator">
           <ranges>
             <range start_line="29" start_column="68" end_line="29" end_column="73" covered="yes" source_id="0" />
           </ranges>
         </function>
-        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0" id="8495" token="0x600000a" name="CalculateDevide(double, double)" namespace="Calculator.Core" type_name="OperationCalculator">
+        <function block_coverage="100.00" line_coverage="100.00" blocks_covered="1" blocks_not_covered="0" lines_covered="1" lines_partially_covered="0" lines_not_covered="0" id="8495" token="0x600000a" name="CalculateDivide(double, double)" namespace="Calculator.Core" type_name="OperationCalculator">
           <ranges>
             <range start_line="30" start_column="65" end_line="30" end_column="70" covered="yes" source_id="0" />
           </ranges>

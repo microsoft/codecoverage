@@ -18,8 +18,8 @@ public class IntegrationTests
     [Test]
     [TestCase("/add/3/5", "8")]
     [TestCase("/multiply/3/5", "15")]
-    [TestCase("/substract/3/5", "-2")]
-    [TestCase("/devide/35/5", "7")]
+    [TestCase("/subtract/3/5", "-2")]
+    [TestCase("/divide/35/5", "7")]
     [Parallelizable(ParallelScope.All)]
     public async Task TestOperations(string input, string output)
     {
