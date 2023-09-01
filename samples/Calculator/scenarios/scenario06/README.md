@@ -1,6 +1,6 @@
 # Scenario Description
 
-In this example we want to show you how to exclude from code coverage report whole project (tests project), method (`CalculateDivide`) and source file (`OperationConsts.cs`). We are also using cobertura report format by specifying configuration. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
+In this example we want to show you how to exclude from code coverage tests projects and any other libraries (moq, xunit). Regex `.*calculator[^/\\]*\.dll$` makes sure that only libraries containing `calculator` in file name are matched. If path is matched by one of the `<Include>` regexes and one of the `<Exclude>` regexes then finally path is excluded. Checking that after `calculator` string there is no `\` or '/' makes sure that path `D:\calculator\moq.dll` is not matched. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
 # Configuration
 
@@ -11,29 +11,22 @@ In this example we want to show you how to exclude from code coverage report who
     <DataCollectors>
       <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
         <Configuration>
-          <Format>cobertura</Format>
           <CodeCoverage>
             <ModulePaths>
+              <Include>
+                <ModulePath>.*calculator[^/\\]*\.dll$</ModulePath>
+              </Include>
               <Exclude>
                 <ModulePath>.*tests.dll$</ModulePath>
               </Exclude>
             </ModulePaths>
-            <Functions>
-              <Exclude>
-                <Function>.*OperationCalculator\.CalculateDivide.*</Function>
-              </Exclude>
-            </Functions>
-            <Sources>
-              <Exclude>
-                <Source>.*OperationConsts\.cs$</Source>
-              </Exclude>
-            </Sources>
           </CodeCoverage>
         </Configuration>
       </DataCollector>
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
+
 ```
 
 > **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
@@ -64,11 +57,15 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --settings ../../scenarios/scenario05/coverage.runsettings --no-build --verbosity normal
+      run: dotnet test --settings ../../scenarios/scenario06/coverage.runsettings --no-build --verbosity normal
+    - name: Install dotnet-coverage
+      run: dotnet tool install -g dotnet-coverage
+    - name: Convert .coverage report to cobertura
+      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
-        reports: './**/TestResults/**/*.cobertura.xml'
+        reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
@@ -77,7 +74,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: ./**/TestResults/**/*.cobertura.xml
+        path: ./**/TestResults/**/*.coverage
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario06.yml)
@@ -104,23 +101,12 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario06/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory)'
-    publishTestResults: false
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario06/coverage.runsettings'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
-    publishRunAttachments: false
-
-- task: PublishCodeCoverageResults@2
-  inputs:
-    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
 ```
 
-> **_NOTE:_** To make sure that Code Coverage tab will be visible in Azure DevOps you need to make sure that previous steps will not publish test attachments (`publishRunAttachments: false` and `publishTestResults: false`).
+> **_NOTE:_** Azure DevOps pipelines automatically recognize binary coverage report format. Code coverage results are automatically processed and published to Azure DevOps. No additional steps needed.
 
 [Full source example](azure-pipelines.yml)
 
