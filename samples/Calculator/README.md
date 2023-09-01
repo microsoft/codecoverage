@@ -16,3 +16,4 @@ Solution contains seven projects:
 3. [***Scenario 03*** Cobertura format by configuration](scenarios/scenario03/README.md)
 4. [***Scenario 04*** XML format by command line](scenarios/scenario04/README.md)
 5. [***Scenario 05*** Exclude project, method and source file](scenarios/scenario05/README.md)
+6. [***Scenario 06*** Exclude tests projects and other libraries (xunit, moq)](scenarios/scenario06/README.md)
