@@ -34,7 +34,7 @@ jobs:
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
-        reports: './**/TestResults/**/*.cobertura.xml'
+        reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
