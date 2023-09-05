@@ -17,3 +17,6 @@ Solution contains seven projects:
 4. [***Scenario 04*** XML format by command line](scenarios/scenario04/README.md)
 5. [***Scenario 05*** Exclude project, method and source file](scenarios/scenario05/README.md)
 6. [***Scenario 06*** Exclude tests projects and other libraries (xunit, moq)](scenarios/scenario06/README.md)
+7. [***Scenario 07*** Static instrumentation](scenarios/scenario07/README.md)
+8. [***Scenario 08*** Code coverage for console application](scenarios/scenario08/README.md)
+9. [***Scenario 09*** Code coverage for console application - static instrumentation](scenarios/scenario09/README.md)

@@ -1,0 +1,39 @@
+name: "Calculator Scenario 09"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  projectPath: './samples/Calculator/src/Calculator.Console/Calculator.Console.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect -s $(Build.SourcesDirectory)/samples/Calculator/scenarios/scenario09/coverage.runsettings --include-files "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/**/*.dll" -f cobertura -o report.cobertura.xml "dotnet run --project $(projectPath) --no-build add 10 24"'
+  displayName: 'dotnet run'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: '$(Build.SourcesDirectory)/report.cobertura.xml'
