@@ -41,4 +41,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: ./**/TestResults/**/*.coverage
+        path: '${{ github.workspace }}/report.cobertura.xml'
