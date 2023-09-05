@@ -20,10 +20,7 @@ In this example we want to show you how to collect code coverage using [static i
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
-
 ```
-
-> **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
 
 # Collect code coverage using command line
 

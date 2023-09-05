@@ -1,41 +1,18 @@
 # Scenario Description
 
-In this example we want to show you how to collect code coverage using [static instrumentation](../../../../docs/instrumentation.md). This instrumentation is available on all operating systems ([more info](../../../../docs/supported-os.md)). Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
-
-# Configuration
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RunSettings>
-  <DataCollectionRunSettings>
-    <DataCollectors>
-      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-        <Configuration>
-          <CodeCoverage>
-            <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
-            <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
-          </CodeCoverage>
-        </Configuration>
-      </DataCollector>
-    </DataCollectors>
-  </DataCollectionRunSettings>
-</RunSettings>
-
-```
-
-> **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
+This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage) can be used to collect code coverage for console application. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
 # Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
-cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
-dotnet test --settings ../../scenarios/scenario07/coverage.runsettings
+cd codecoverage/samples/Calculator/src/Calculator.Console/
+dotnet build
+dotnet tool install -g dotnet-coverage
+dotnet-coverage collect -f cobertura "dotnet run --no-build add 10 24"
 ```
 
-> **_NOTE:_** You don't have to use `--collect "Code Coverage"` when you specify runsettings with code coverage configuration.
-
-You can also use [run.ps1](run.ps1) to collect code coverage.
+You can also use [run.ps1](run.ps1) to execute this scenario.
 
 # Collect code coverage inside github workflow
 
