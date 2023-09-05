@@ -28,7 +28,7 @@ jobs:
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Run
-      run: dotnet-coverage collect -s ../../scenarios/scenario09/coverage.runsettings --include-files ./bin/Debug/net7.0/*.dll -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "dotnet run --no-build add 10 24"
+      run: dotnet-coverage collect -s ../../scenarios/scenario09/coverage.runsettings --include-files ./bin/Debug/net7.0/*Console.dll -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "dotnet run --no-build add 10 24"
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
