@@ -1,4 +1,4 @@
-name: "Calculator Scenario 08"
+name: "Calculator Scenario 09"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -31,7 +31,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect -f cobertura -o report.cobertura.xml "dotnet run --project $(projectPath) --no-build add 10 24"'
+    script: 'dotnet-coverage collect -s $(Build.SourcesDirectory)/samples/Calculator/scenarios/scenario09/coverage.runsettings --include-files "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/**/*.dll" -f cobertura -o report.cobertura.xml "dotnet run --project $(projectPath) --no-build add 10 24"'
   displayName: 'dotnet run'
 
 - task: PublishCodeCoverageResults@2
