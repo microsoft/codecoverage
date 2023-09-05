@@ -23,8 +23,12 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Restore dependencies (Console project)
+      run: dotnet restore ../../src/Calculator.Console/Calculator.Console.csproj
     - name: Build
       run: dotnet build --no-restore
+    - name: Build  (Console project)
+      run: dotnet build --no-restore ../../src/Calculator.Console/Calculator.Console.csproj
     - name: Test
       run: dotnet test --settings ../../scenarios/scenario11/coverage.runsettings --no-build --verbosity normal
     - name: Install dotnet-coverage
