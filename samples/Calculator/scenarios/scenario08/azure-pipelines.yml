@@ -31,9 +31,9 @@ steps:
 - task: Bash@3
   inputs:
     script: 'dotnet-coverage collect -f cobertura -o report.cobertura.xml "dotnet run --no-build add 10 24"'
-    workingDirectory: '$(Agent.BuildDirectory)/samples/Calculator/src/Calculator.Console/' 
-  displayName: 'install dotnet-coverage'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/' 
+  displayName: 'dotnet run'
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: '$(Agent.BuildDirectory)/samples/Calculator/src/Calculator.Console/report.cobertura.xml'
+    summaryFileLocation: '$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/report.cobertura.xml'
