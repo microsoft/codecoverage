@@ -1,4 +1,4 @@
-name: "Calculator Scenario 07"
+name: "Calculator Scenario 08"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -31,9 +31,9 @@ steps:
 - task: Bash@3
   inputs:
     script: 'dotnet-coverage collect -f cobertura -o report.cobertura.xml "dotnet run --no-build add 10 24"'
-    workingDirectory: './samples/Calculator/src/Calculator.Console/' 
+    workingDirectory: '$(Agent.BuildDirectory)/samples/Calculator/src/Calculator.Console/' 
   displayName: 'install dotnet-coverage'
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: ./samples/Calculator/src/Calculator.Console/report.cobertura.xml
+    summaryFileLocation: '$(Agent.BuildDirectory)/samples/Calculator/src/Calculator.Console/report.cobertura.xml'
