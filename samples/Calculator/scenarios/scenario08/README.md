@@ -27,12 +27,10 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --settings ../../scenarios/scenario07/coverage.runsettings --no-build --verbosity normal
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
-    - name: Convert .coverage report to cobertura
-      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+    - name: Run
+      run: dotnet-coverage collect -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "dotnet run --no-build add 10 24"
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
@@ -45,12 +43,12 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: ./**/TestResults/**/*.coverage
+        path: '${{ github.workspace }}/report.cobertura.xml'
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario07.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario08.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario07.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario08.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -71,13 +69,21 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario07/coverage.runsettings'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet test'
-```
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
 
-> **_NOTE:_** Azure DevOps pipelines automatically recognize binary coverage report format. Code coverage results are automatically processed and published to Azure DevOps. No additional steps needed.
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect -f cobertura -o report.cobertura.xml "dotnet run --project $(projectPath) --no-build add 10 24"'
+  displayName: 'dotnet run'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: '$(Build.SourcesDirectory)/report.cobertura.xml'
+```
 
 [Full source example](azure-pipelines.yml)
 

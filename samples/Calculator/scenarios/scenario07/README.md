@@ -107,4 +107,4 @@ steps:
 
 ![alt text](example.report.jpg "Example report")
 
-[Link](example.report.cobertura.xml)
+[Link](example.report.coverage)
