@@ -33,8 +33,10 @@ jobs:
       run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Console.dll"
     - name: Start code coverage collection session
       run: dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
-    - name: Run
+    - name: Run (add)
       run: dotnet run --no-build add 10 24
+    - name: Run (multiply)
+      run: dotnet run --no-build multiply 10 24
     - name: Stop code coverage collection session
       run: dotnet-coverage shutdown TagScenario10
     - name: ReportGenerator
