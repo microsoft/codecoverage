@@ -1,6 +1,6 @@
 # Scenario Description
 
-This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage) can be used to collect code coverage for console application using [static instrumentation](../../../../docs/instrumentation.md). It is important to remember that files to be instrumented need to be specified using `--include-files`. When executing tests this is not needed as our tooling automatically detects directory with libraries and instrument it. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
+This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage) can be used to collect code coverage for console application using [static instrumentation](../../../../docs/instrumentation.md). `dotnet-coverage` `instrument` command is used to instrument files and code coverage session is started in background. Similar sequence can be used for more advanced scenarios - for example IIS. When executing tests this is not needed as our tooling automatically detects directory with libraries and instrument it. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
 # Collect code coverage using command line
 
@@ -34,8 +34,18 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
       run: dotnet build --no-restore
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
-    - name: Run
-      run: dotnet-coverage collect -s ../../scenarios/scenario09/coverage.runsettings --include-files "./bin/Debug/**/*.dll" -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "dotnet run --no-build add 10 24"
+    - name: Instrument Calculator.Core.dll
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Core.dll"
+    - name: Instrument Calculator.Console.dll
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Console.dll"
+    - name: Start code coverage collection session
+      run: dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+    - name: Run (add)
+      run: dotnet run --no-build add 10 24
+    - name: Run (multiply)
+      run: dotnet run --no-build multiply 10 24
+    - name: Stop code coverage collection session
+      run: dotnet-coverage shutdown TagScenario10
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
@@ -94,7 +104,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o report.cobertura.xml"'
+    script: 'dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o report.cobertura.xml'
   displayName: 'Start code coverage collection session'
 
 - task: DotNetCoreCLI@2
