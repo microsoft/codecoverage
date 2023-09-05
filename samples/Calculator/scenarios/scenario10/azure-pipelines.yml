@@ -1,4 +1,4 @@
-name: "Calculator Scenario 09"
+name: "Calculator Scenario 10"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -43,7 +43,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o report.cobertura.xml"'
+    script: 'dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o report.cobertura.xml'
   displayName: 'Start code coverage collection session'
 
 - task: DotNetCoreCLI@2
