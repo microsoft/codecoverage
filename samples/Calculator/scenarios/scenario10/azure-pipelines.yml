@@ -1,0 +1,71 @@
+name: "Calculator Scenario 09"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  projectPath: './samples/Calculator/src/Calculator.Console/Calculator.Console.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net7.0/Calculator.Core.dll"'
+  displayName: 'Instrument Calculator.Core.dll'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net7.0/Calculator.Console.dll"'
+  displayName: 'Instrument Calculator.Console.dll'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o report.cobertura.xml"'
+  displayName: 'Start code coverage collection session'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'run'
+    arguments: '--no-build --configuration $(buildConfiguration) add 10 24'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet run (add)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'run'
+    arguments: '--no-build --configuration $(buildConfiguration) multiply 10 24'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet run (multiply)'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage shutdown TagScenario10'
+  displayName: 'Stop code coverage collection session'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: '$(Build.SourcesDirectory)/report.cobertura.xml'
