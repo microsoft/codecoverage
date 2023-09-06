@@ -1,6 +1,6 @@
 # Scenario Description
 
-In this example we want to show you how to collect code coverage using [static instrumentation](../../../../docs/instrumentation.md). This instrumentation is available on all operating systems ([more info](../../../../docs/supported-os.md)). Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+This example shows that dynamic code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
 # Configuration
 
@@ -12,22 +12,24 @@ In this example we want to show you how to collect code coverage using [static i
       <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
         <Configuration>
           <CodeCoverage>
-            <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
-            <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
           </CodeCoverage>
         </Configuration>
       </DataCollector>
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
+
 ```
 
 # Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
-cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
-dotnet test --settings ../../scenarios/scenario07/coverage.runsettings
+cd codecoverage/samples/Calculator/src/Calculator.Console/
+dotnet build
+cd codecoverage/samples/Calculator/tests/Calculator.Console.Tests/
+dotnet test --settings ../../scenarios/scenario11/coverage.runsettings
 ```
 
 > **_NOTE:_** You don't have to use `--collect "Code Coverage"` when you specify runsettings with code coverage configuration.
@@ -45,14 +47,18 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Restore dependencies (Console project)
+      run: dotnet restore ../../src/Calculator.Console/Calculator.Console.csproj
     - name: Build
       run: dotnet build --no-restore
+    - name: Build  (Console project)
+      run: dotnet build --no-restore ../../src/Calculator.Console/Calculator.Console.csproj
     - name: Test
-      run: dotnet test --settings ../../scenarios/scenario07/coverage.runsettings --no-build --verbosity normal
+      run: dotnet test --settings ../../scenarios/scenario11/coverage.runsettings --no-build --verbosity normal
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Convert .coverage report to cobertura
-      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Console.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
@@ -68,9 +74,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ./**/TestResults/**/*.coverage
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario07.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario11.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario07.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario11.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -84,6 +90,12 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'restore'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'build'
     arguments: '--no-restore --configuration $(buildConfiguration)'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
@@ -91,9 +103,16 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario07/coverage.runsettings'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario11/coverage.runsettings'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
 ```
 
