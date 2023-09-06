@@ -20,3 +20,6 @@ Solution contains seven projects:
 7. [***Scenario 07*** Static instrumentation](scenarios/scenario07/README.md)
 8. [***Scenario 08*** Code coverage for console application](scenarios/scenario08/README.md)
 9. [***Scenario 09*** Code coverage for console application - static instrumentation](scenarios/scenario09/README.md)
+10. [***Scenario 10*** Code coverage for console application - static instrumentation with instrument command](scenarios/scenario10/README.md)
+11. [***Scenario 11*** Code coverage for child processes enabled](scenarios/scenario11/README.md)
+12. [***Scenario 12*** Code coverage for child processes disabled](scenarios/scenario12/README.md)

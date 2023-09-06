@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.InteropServices;
 using Xunit;
 
 namespace Calculator.Console.Tests;
@@ -38,10 +39,12 @@ public class ConsoleTests
 
     private double Execute(string arguments)
     {
+        string fileName = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "Calculator.Console.exe" : "Calculator.Console";
+
         Process process = new Process();
         process.StartInfo = new ProcessStartInfo()
         {
-            FileName = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "..", "src", "Calculator.Console", "bin", Configuration, "net7.0", "Calculator.Console.exe"),
+            FileName = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "..", "src", "Calculator.Console", "bin", Configuration, "net7.0", fileName),
             Arguments = arguments,
             UseShellExecute = false,
             CreateNoWindow = true,
