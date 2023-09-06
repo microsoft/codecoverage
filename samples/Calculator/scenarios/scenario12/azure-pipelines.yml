@@ -1,0 +1,43 @@
+name: "Calculator Scenario 12"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  testProjectPath: './samples/Calculator/tests/Calculator.Console.Tests/Calculator.Console.Tests.csproj' # this is specific to example - in most cases not needed
+  projectPath: './samples/Calculator/src/Calculator.Console/Calculator.Console.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario12/coverage.runsettings'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet test'
