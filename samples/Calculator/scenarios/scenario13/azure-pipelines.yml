@@ -1,4 +1,4 @@
-name: "Calculator Scenario 01"
+name: "Calculator Scenario 13"
 
 pool:
   vmImage: 'ubuntu-latest'
