@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Runtime.InteropServices;
 
 namespace Calculator.Server.IntegrationTests;
 
@@ -9,9 +10,11 @@ public class IntegrationTests
 
     public IntegrationTests()
     {
+        int port = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? 5291 : 5000;
+
         _client = new HttpClient()
         {
-            BaseAddress = new Uri(" http://localhost:5291"),
+            BaseAddress = new Uri($"http://localhost:{port}"),
         };
     }
 
