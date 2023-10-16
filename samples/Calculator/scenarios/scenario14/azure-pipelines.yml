@@ -77,4 +77,4 @@ steps:
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: merged.cobertura.xml
+    summaryFileLocation: $(Agent.TempDirectory)/merged.cobertura.xml
