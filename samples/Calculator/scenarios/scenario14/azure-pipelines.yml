@@ -62,18 +62,18 @@ steps:
     script: 'dotnet-coverage shutdown TagScenario14'
   displayName: 'stop server'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
-    publishRunAttachments: false
-
 - task: Bash@3
   inputs:
     targetType: 'inline'
     script: 'dotnet-coverage merge -f cobertura -o $(Build.SourcesDirectory)/merged.cobertura.xml -r *.coverage'
     workingDirectory: '$(Agent.TempDirectory)'
   displayName: 'merge coverage results'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
 
 - task: PublishCodeCoverageResults@2
   inputs:
