@@ -5,7 +5,7 @@ pool:
 
 variables:
   buildConfiguration: 'Debug'
-  testProjectPath: './samples/Calculator/tests/Calculator.Server.Tests/Calculator.Server.IntegrationTests.csproj' # this is specific to example - in most cases not needed
+  testProjectPath: './samples/Calculator/tests/Calculator.Server.IntegrationTests/Calculator.Server.IntegrationTests.csproj' # this is specific to example - in most cases not needed
   projectPath: './samples/Calculator/src/Calculator.Server/Calculator.Server.csproj' # this is specific to example - in most cases not needed
 
 steps:
