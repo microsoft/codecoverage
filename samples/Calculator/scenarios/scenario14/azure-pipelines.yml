@@ -45,22 +45,16 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output server.coverage --session-id TagScenario14 "dotnet run --project $(projectPath) --no-build" &'
+    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario14 "dotnet run --project $(projectPath) --no-build" &'
   displayName: 'start server under coverage'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage;CoverageFileName=tests.coverage" --logger trx --results-directory $(Build.SourcesDirectory)'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage;CoverageFileName=tests.coverage" --logger trx --results-directory $(Agent.TempDirectory)'
     publishTestResults: false
     projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
   displayName: 'execute integration tests'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'find . -name "*.coverage"'
-  displayName: 'search'
 
 - task: Bash@3
   inputs:
@@ -71,20 +65,9 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'find . -name "*.coverage"'
-  displayName: 'search'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive *.coverage'
+    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    working-directory: "$(Agent.TempDirectory)"
   displayName: 'merge coverage results'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'find . -name "*.coverage"'
-  displayName: 'search'
 
 - task: PublishTestResults@2
   inputs:
