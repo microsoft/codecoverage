@@ -71,7 +71,8 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml -r $(Agent.TempDirectory)/*.coverage'
+    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml -r *.coverage'
+    workingDirectory: '$(Agent.TempDirectory)'
   displayName: 'merge coverage results'
 
 - task: PublishCodeCoverageResults@2
