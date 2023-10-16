@@ -5,7 +5,7 @@ pool:
 
 variables:
   buildConfiguration: 'Debug'
-  testProjectPath: './samples/Calculator/tests/Calculator.Server.Tests/Calculator.Server.Tests.csproj' # this is specific to example - in most cases not needed
+  testProjectPath: './samples/Calculator/tests/Calculator.Server.Tests/Calculator.Server.IntegrationTests.csproj' # this is specific to example - in most cases not needed
   projectPath: './samples/Calculator/src/Calculator.Server/Calculator.Server.csproj' # this is specific to example - in most cases not needed
 
 steps:
@@ -18,7 +18,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore (tests)'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet restore'
 
 - task: DotNetCoreCLI@2
@@ -32,12 +32,48 @@ steps:
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration $(buildConfiguration)'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet build (tests)'
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/report.coverage --session-id TagScenario14 "dotnet run --project $(projectPath) --no-build" &'
+  displayName: 'start server under coverage'
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage"'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet test'
+    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage" --logger trx --results-directory $(Agent.TempDirectory)'
+    publishTestResults: false
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'execute integration tests'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage shutdown TagScenario14'
+  displayName: 'stop server'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml -r $(Agent.TempDirectory)/*.coverage'
+  displayName: 'merge coverage results'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: merged.cobertura.xml
