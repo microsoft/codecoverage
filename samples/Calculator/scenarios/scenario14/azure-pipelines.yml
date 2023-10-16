@@ -59,14 +59,32 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
+    script: 'find . -name "*.coverage"'
+  displayName: 'search'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
     script: 'dotnet-coverage shutdown TagScenario14'
   displayName: 'stop server'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
+    script: 'find . -name "*.coverage"'
+  displayName: 'search'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
     script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive *.coverage'
   displayName: 'merge coverage results'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'find . -name "*.coverage"'
+  displayName: 'search'
 
 - task: PublishTestResults@2
   inputs:
