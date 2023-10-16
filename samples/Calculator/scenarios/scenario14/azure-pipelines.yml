@@ -17,9 +17,9 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'restore (tests)'
+    command: 'restore'
     projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet restore'
+  displayName: 'dotnet restore (tests)'
 
 - task: DotNetCoreCLI@2
   inputs:
