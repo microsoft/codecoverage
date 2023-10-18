@@ -34,7 +34,7 @@ jobs:
       run: dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run tests
-      run: dotnet-coverage connect --background TagScenario15 "dotnet test --no-build"
+      run: dotnet-coverage connect TagScenario15 "dotnet test --no-build"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario15
