@@ -106,29 +106,28 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario14 "dotnet run --project $(projectPath) --no-build" &'
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml --session-id TagScenario15 --background --server-mode'
+  displayName: 'start code coverage collection'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Server/'
   displayName: 'start server under coverage'
 
-- task: DotNetCoreCLI@2
+- task: Bash@3
   inputs:
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage;CoverageFileName=tests.coverage" --logger trx --results-directory $(Agent.TempDirectory)'
-    publishTestResults: false
-    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+    targetType: 'inline'
+    script: 'dotnet-coverage connect TagScenario15 "dotnet test --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute integration tests'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage shutdown TagScenario14'
-  displayName: 'stop server'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
-    workingDirectory: "$(Agent.TempDirectory)"
-  displayName: 'merge coverage results'
+    script: 'dotnet-coverage shutdown TagScenario15'
+  displayName: 'stop code coverage collection'
 
 - task: PublishTestResults@2
   inputs:
@@ -138,10 +137,8 @@ steps:
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: $(Agent.TempDirectory)/merged.cobertura.xml
+    summaryFileLocation: $(Agent.TempDirectory)/report.cobertura.xml
 ```
-
-> **_NOTE:_** To make sure that Code Coverage tab will be visible in Azure DevOps you need to make sure that previous steps will not publish test attachments (`publishRunAttachments: false` and `publishTestResults: false`).
 
 [Full source example](azure-pipelines.yml)
 
