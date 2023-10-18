@@ -45,7 +45,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml --session-id TagScenario15 --background --server-mode
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml --session-id TagScenario15 --background --server-mode'
   displayName: 'start code coverage collection'
 
 - task: Bash@3
