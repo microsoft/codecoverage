@@ -1,4 +1,4 @@
-name: "Calculator Scenario 14"
+name: "Calculator Scenario 15"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -51,14 +51,15 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect --background TagScenario15 "dotnet run --project $(projectPath) --no-build"'
+    script: 'dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Server/'
   displayName: 'start server under coverage'
-
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect TagScenario15 "dotnet test --project $(testProjectPath) --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage connect TagScenario15 "dotnet test --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute integration tests'
 
 - task: Bash@3
