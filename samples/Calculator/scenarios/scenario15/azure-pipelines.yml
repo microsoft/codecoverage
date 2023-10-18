@@ -1,0 +1,78 @@
+name: "Calculator Scenario 14"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  testProjectPath: './samples/Calculator/tests/Calculator.Server.IntegrationTests/Calculator.Server.IntegrationTests.csproj' # this is specific to example - in most cases not needed
+  projectPath: './samples/Calculator/src/Calculator.Server/Calculator.Server.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build (tests)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml --session-id TagScenario15 --background --server-mode
+  displayName: 'start code coverage collection'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage connect --background TagScenario15 "dotnet run --project $(projectPath) --no-build"'
+  displayName: 'start server under coverage'
+
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage connect TagScenario15 "dotnet test --project $(testProjectPath) --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+  displayName: 'execute integration tests'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage shutdown TagScenario15'
+  displayName: 'stop code coverage collection'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/report.cobertura.xml

@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage for ASP.NET Core integration tests. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool is used to collect code coverage for server. At the end code coverage results for server and tests are merged. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise. In pipelines during merging final coverage report is converted into cobertura format and published.
+Collect code coverage for ASP.NET Core integration tests. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool in server mode is used to collect code coverage for server and tests. `connect`  command is used to attach server and tests processes into coverage collection.
 
 # Collect code coverage using command line
 
@@ -9,12 +9,12 @@ git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator
 dotnet build
 dotnet tool install -g dotnet-coverage
+otnet-coverage collect --output-format cobertura --output report.cobertura.xml --session-id TagScenario15 --background --server-mode
 cd src/Calculator.Server
-dotnet-coverage collect --output report.coverage --session-id TagScenario14 "dotnet run --no-build" &
+dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"
 cd ../../tests/Calculator.Server.IntegrationTests
-dotnet test --collect "Code Coverage"
-dotnet-coverage shutdown TagScenario14
-dotnet-coverage merge -r --output merged.coverage *.coverage ../../src/Calculator.Server/report.coverage
+dotnet-coverage connect TagScenario15 "dotnet test --no-build"
+dotnet-coverage shutdown TagScenario15
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -36,17 +36,17 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
       run: dotnet build --no-restore
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
+    - name: Start code coverage collection
+      run: dotnet-coverage collect --output-format cobertura --output $GITHUB_WORKSPACE/report.cobertura.xml --session-id TagScenario15 --background --server-mode
+      working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Start server
-      run: dotnet-coverage collect --output report.coverage --session-id TagScenario14 "dotnet run --no-build" &
+      run: dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run tests
-      run: dotnet test --collect "Code Coverage" --no-build --verbosity normal
+      run: dotnet-coverage connect TagScenario15 "dotnet test --no-build"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Stop server
-      run: dotnet-coverage shutdown TagScenario14
-    - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml *.coverage ../../src/Calculator.Server/report.coverage
-      working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
+      run: dotnet-coverage shutdown TagScenario15
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
       with:
@@ -62,9 +62,9 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
         path: '${{ github.workspace }}/report.cobertura.xml'
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario14.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario15.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario14.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario15.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
