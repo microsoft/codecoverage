@@ -28,7 +28,7 @@ jobs:
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Start server
-      run: dotnet-coverage collect --output-format cobertura --output $GITHUB_WORKSPACE/coverage/final.cobertura.xml --session-id TagScenario16 "dotnet run --no-build"
+      run: dotnet-coverage collect --output-format cobertura --output $GITHUB_WORKSPACE/coverage/final.cobertura.xml --session-id TagScenario16 "dotnet run --no-build" &
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run test "add"
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter add"
