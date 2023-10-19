@@ -122,3 +122,6 @@ steps:
 - task: PublishCodeCoverageResults@2
   inputs:
     summaryFileLocation: $(Agent.TempDirectory)/reports/report.cobertura.xml
+
+- publish: $(Agent.TempDirectory)/reports
+  artifact: reports
