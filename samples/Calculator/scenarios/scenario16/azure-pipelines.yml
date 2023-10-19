@@ -106,6 +106,13 @@ steps:
     script: 'dotnet-coverage shutdown TagScenario16'
   displayName: 'stop code coverage collection'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage merge --output-format cobertura --output report.cobertura.xml *.cobertura.xml'
+    workingDirectory: '$(Agent.TempDirectory)/reports/'
+  displayName: 'merge coverage results'
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'VSTest'
@@ -114,4 +121,4 @@ steps:
 
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: $(Agent.TempDirectory)/report.cobertura.xml
+    summaryFileLocation: $(Agent.TempDirectory)/reports/report.cobertura.xml
