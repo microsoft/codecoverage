@@ -37,22 +37,22 @@ jobs:
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter add"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Take snapshot 1
-      run: dotnet-coverage snapshot --reset --output-format cobertura --output $GITHUB_WORKSPACE/coverage/snapshot1.cobertura.xml TagScenario16
+      run: dotnet-coverage snapshot --reset --output $GITHUB_WORKSPACE/coverage/snapshot1.cobertura.xml TagScenario16
     - name: Run test "multiply"
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter multiply"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Take snapshot 2
-      run: dotnet-coverage snapshot --reset --output-format cobertura --output $GITHUB_WORKSPACE/coverage/snapshot2.cobertura.xml TagScenario16
+      run: dotnet-coverage snapshot --reset --output $GITHUB_WORKSPACE/coverage/snapshot2.cobertura.xml TagScenario16
     - name: Run test "subtract"
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter subtract"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Take snapshot 3
-      run: dotnet-coverage snapshot --reset --output-format cobertura --output $GITHUB_WORKSPACE/coverage/snapshot3.cobertura.xml TagScenario16
+      run: dotnet-coverage snapshot --reset --output $GITHUB_WORKSPACE/coverage/snapshot3.cobertura.xml TagScenario16
     - name: Run test "divide"
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter divide"
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: Take snapshot 4
-      run: dotnet-coverage snapshot --reset --output-format cobertura --output $GITHUB_WORKSPACE/coverage/snapshot4.cobertura.xml TagScenario16
+      run: dotnet-coverage snapshot --reset --output $GITHUB_WORKSPACE/coverage/snapshot4.cobertura.xml TagScenario16
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario16
     - name: Merge coverage reports
