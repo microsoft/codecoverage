@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage for ASP.NET Core integration tests and take snapshots after each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. After each test we take snapshot of code coverage using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation does not reset all coverage data. This is probably not real example but we just want to show you snapshot operation without reseting counters.
+Collect code coverage for ASP.NET Core integration tests and take snapshots after each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. After each test we take snapshot of code coverage using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation does not reset all coverage data. This is probably not real example but we just want to show you snapshot operation without reseting counters. Note that with each snapshot taken code coverage should be increasing.
 
 # Collect code coverage using command line
 
@@ -127,73 +127,66 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/reports/final.cobertura.xml --session-id TagScenario16 "dotnet run --project $(projectPath) --no-build" &'
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/reports/report.cobertura.xml --session-id TagScenario17 "dotnet run --project $(projectPath) --no-build" &'
   displayName: 'start server under coverage'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect TagScenario16 "dotnet test --configuration $(buildConfiguration) --filter add --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage connect TagScenario17 "dotnet test --configuration $(buildConfiguration) --filter add --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
     workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute add integration tests'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage snapshot --reset --output $(Agent.TempDirectory)/reports/snapshot1.cobertura.xml TagScenario16'
+    script: 'dotnet-coverage snapshot --output $(Agent.TempDirectory)/reports/snapshot1.cobertura.xml TagScenario17'
   displayName: 'take snapshot 1'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect TagScenario16 "dotnet test --configuration $(buildConfiguration) --filter multiply --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage connect TagScenario17 "dotnet test --configuration $(buildConfiguration) --filter multiply --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
     workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute multiply integration tests'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage snapshot --reset --output $(Agent.TempDirectory)/reports/snapshot2.cobertura.xml TagScenario16'
+    script: 'dotnet-coverage snapshot --output $(Agent.TempDirectory)/reports/snapshot2.cobertura.xml TagScenario17'
   displayName: 'take snapshot 2'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect TagScenario16 "dotnet test --configuration $(buildConfiguration) --filter subtract --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage connect TagScenario17 "dotnet test --configuration $(buildConfiguration) --filter subtract --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
     workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute subtract integration tests'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage snapshot --reset --output $(Agent.TempDirectory)/reports/snapshot3.cobertura.xml TagScenario16'
+    script: 'dotnet-coverage snapshot --output $(Agent.TempDirectory)/reports/snapshot3.cobertura.xml TagScenario17'
   displayName: 'take snapshot 3'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage connect TagScenario16 "dotnet test --configuration $(buildConfiguration) --filter divide --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage connect TagScenario17 "dotnet test --configuration $(buildConfiguration) --filter divide --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
     workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/tests/Calculator.Server.IntegrationTests/'
   displayName: 'execute divide integration tests'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage snapshot --reset --output $(Agent.TempDirectory)/reports/snapshot4.cobertura.xml TagScenario16'
+    script: 'dotnet-coverage snapshot --output $(Agent.TempDirectory)/reports/snapshot4.cobertura.xml TagScenario17'
   displayName: 'take snapshot 4'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage shutdown TagScenario16'
+    script: 'dotnet-coverage shutdown TagScenario17'
   displayName: 'stop code coverage collection'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'dotnet-coverage merge --output-format cobertura --output report.cobertura.xml *.cobertura.xml'
-    workingDirectory: '$(Agent.TempDirectory)/reports/'
-  displayName: 'merge coverage results'
 
 - task: PublishTestResults@2
   inputs:
