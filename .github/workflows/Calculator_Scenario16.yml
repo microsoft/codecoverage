@@ -27,11 +27,8 @@ jobs:
       run: dotnet build --no-restore
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
-    - name: Start code coverage collection
-      run: dotnet-coverage collect --output-format cobertura --output $GITHUB_WORKSPACE/coverage/final.cobertura.xml --session-id TagScenario16 --background --server-mode
-      working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Start server
-      run: dotnet-coverage connect --background TagScenario16 "dotnet run --no-build"
+      run: dotnet-coverage collect --output-format cobertura --output $GITHUB_WORKSPACE/coverage/final.cobertura.xml --session-id TagScenario16 "dotnet run --no-build"
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run test "add"
       run: dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter add"
@@ -59,7 +56,7 @@ jobs:
       run: dotnet-coverage merge -r -f cobertura -o report.cobertura.xml snapshot*.cobertura.xml
       working-directory: '${{ github.workspace }}/coverage'
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
       with:
         reports: '${{ github.workspace }}/coverage/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
