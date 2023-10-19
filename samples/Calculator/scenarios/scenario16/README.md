@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage for ASP.NET Core integration tests. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool in server mode is used to collect code coverage for server and tests. `connect`  command is used to attach server and tests processes into coverage collection.
+Collect code coverage for ASP.NET Core integration tests and take snapshots for each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. We generate code coverage report for each test separately using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation resets all coverage data. At the end all snapshots are merged into final coverage report.
 
 # Collect code coverage using command line
 
@@ -9,19 +9,27 @@ git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator
 dotnet build
 dotnet tool install -g dotnet-coverage
-otnet-coverage collect --output-format cobertura --output report.cobertura.xml --session-id TagScenario15 --background --server-mode
 cd src/Calculator.Server
-dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"
+dotnet-coverage collect --output-format cobertura --output ../../final.cobertura.xml --session-id TagScenario16 "dotnet run --no-build" &
 cd ../../tests/Calculator.Server.IntegrationTests
-dotnet-coverage connect TagScenario15 "dotnet test --no-build"
-dotnet-coverage shutdown TagScenario15
+dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter add"
+dotnet-coverage snapshot --reset --output ../../snapshot1.cobertura.xml TagScenario16
+dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter multiply"
+dotnet-coverage snapshot --reset --output ../../snapshot2.cobertura.xml TagScenario16
+dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter subtract"
+dotnet-coverage snapshot --reset --output ../../snapshot3.cobertura.xml TagScenario16
+dotnet-coverage connect TagScenario16 "dotnet test --no-build --filter divide"
+dotnet-coverage snapshot --reset --output ../../snapshot4.cobertura.xml TagScenario16
+dotnet-coverage shutdown TagScenario16
+cd ../../
+dotnet-coverage merge --output-format cobertura --output report.cobertura.xml *.cobertura.xml
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
 # Collect code coverage inside github workflow
 
-To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
+`reportgenerator` can be used to generate final github summary markdown.
 
 ```yml
     steps:
@@ -144,8 +152,12 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+# Report examples
 
 ![alt text](example.report.jpg "Example report")
 
-[Link](example.report.cobertura.xml)
+[report](example.report.cobertura.xml)
+[snapshot1](example.snapshot1.cobertura.xml)
+[snapshot2](example.snapshot2.cobertura.xml)
+[snapshot3](example.snapshot3.cobertura.xml)
+[snapshot4](example.snapshot4.cobertura.xml)
