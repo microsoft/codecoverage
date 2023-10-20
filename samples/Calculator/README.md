@@ -24,3 +24,8 @@ Solution contains seven projects:
 11. [***Scenario 11*** Code coverage for child processes enabled](scenarios/scenario11/README.md)
 12. [***Scenario 12*** Code coverage for child processes disabled](scenarios/scenario12/README.md)
 13. [***Scenario 13*** Code coverage for ASP.NET Core tests](scenarios/scenario13/README.md)
+14. [***Scenario 14*** Code coverage for ASP.NET Core integration tests](scenarios/scenario14/README.md)
+15. [***Scenario 15*** Code coverage for ASP.NET Core integration tests - coverage collection in server mode](scenarios/scenario15/README.md)
+16. [***Scenario 16*** Code coverage for ASP.NET Core integration tests - code coverage report per test](scenarios/scenario16/README.md)
+17. [***Scenario 17*** Code coverage for ASP.NET Core integration tests - snapshots without resetting counters](scenarios/scenario17/README.md)
+18. [***Scenario 18*** Code coverage for whole solution](scenarios/scenario18/README.md)
