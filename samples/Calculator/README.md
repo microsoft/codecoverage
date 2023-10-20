@@ -28,3 +28,4 @@ Solution contains seven projects:
 15. [***Scenario 15*** Code coverage for ASP.NET Core integration tests - coverage collection in server mode](scenarios/scenario15/README.md)
 16. [***Scenario 16*** Code coverage for ASP.NET Core integration tests - code coverage report per test](scenarios/scenario16/README.md)
 17. [***Scenario 17*** Code coverage for ASP.NET Core integration tests - snapshots without resetting counters](scenarios/scenario17/README.md)
+18. [***Scenario 18*** Code coverage for whole solution](scenarios/scenario18/README.md)
