@@ -1,4 +1,4 @@
-name: "Calculator Scenario 19"
+name: "Calculator Scenario 20"
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -38,7 +38,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --settings samples/Calculator/scenarios/scenario19/coverage.runsettings -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario19 "dotnet run --project $(projectPath) --no-build" &'
+    script: 'dotnet-coverage collect --settings samples/Calculator/scenarios/scenario20/coverage.runsettings -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario20 "dotnet run --project $(projectPath) --no-build" &'
   displayName: 'start server under coverage'
   env:
     LOGS_DIR: '$(Agent.TempDirectory)/logs/'
@@ -46,7 +46,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario19/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory) --diag $(Agent.TempDirectory)/logs/log.txt'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario20/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory) --diag $(Agent.TempDirectory)/logs/log.txt'
     publishTestResults: false
     projects: '$(solutionPath)' # this is specific to example - in most cases not needed
   displayName: 'execute tests'
@@ -56,7 +56,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage shutdown -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose TagScenario19'
+    script: 'dotnet-coverage shutdown -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose TagScenario20'
   displayName: 'stop server'
 
 - task: Bash@3
