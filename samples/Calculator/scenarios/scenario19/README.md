@@ -1,6 +1,35 @@
 # Scenario Description
 
-Collect code coverage for whole solution. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool is used to collect code coverage for server. At the end code coverage results for server and tests are merged. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise. In pipelines during merging final coverage report is converted into cobertura format and published.
+Collect code coverage for whole solution. Runsettings are configured to exclude tests projects from coverage report. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool is used to collect code coverage for server. At the end code coverage results for server and tests are merged. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise. In pipelines during merging final coverage report is converted into cobertura format and published.
+
+# Configuration
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Include>
+                <ModulePath>.*calculator\.[^/\\]+\.(dll|exe)$</ModulePath>
+              </Include>
+              <Exclude>
+                <ModulePath>.*tests.dll$</ModulePath>
+              </Exclude>
+            </ModulePaths>
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
+
+```
+
+> **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
 
 # Collect code coverage using command line
 
@@ -10,10 +39,10 @@ cd codecoverage/samples/Calculator
 dotnet build
 dotnet tool install -g dotnet-coverage
 cd src/Calculator.Server
-dotnet-coverage collect --output report.coverage --session-id TagScenario18 "dotnet run --no-build" &
+dotnet-coverage collect --output report.coverage --session-id TagScenario19 "dotnet run --no-build" &
 cd ../../
-dotnet test --no-build --collect "Code Coverage" --results-directory "./TestResults/"
-dotnet-coverage shutdown TagScenario18
+dotnet test --no-build --settings ./scenarios/scenario19/coverage.runsettings "Code Coverage" --results-directory "./TestResults/"
+dotnet-coverage shutdown TagScenario19
 dotnet-coverage merge -r --output merged.coverage "./TestResults/*.coverage" ./src/Calculator.Server/report.coverage
 ```
 
@@ -37,13 +66,13 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Start server
-      run: dotnet-coverage collect --output report.coverage --session-id TagScenario18 "dotnet run --no-build" &
+      run: dotnet-coverage collect --output report.coverage --session-id TagScenario19 "dotnet run --no-build" &
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run tests
-      run: dotnet test --collect "Code Coverage" --no-build --verbosity normal --results-directory ./TestResults/
+      run: dotnet test --settings ./scenarios/scenario19/coverage.runsettings --no-build --verbosity normal --results-directory ./TestResults/
       working-directory: ./samples/Calculator
     - name: Stop server
-      run: dotnet-coverage shutdown TagScenario18
+      run: dotnet-coverage shutdown TagScenario19
     - name: Merge coverage reports
       run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator
@@ -62,9 +91,9 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
         path: '${{ github.workspace }}/report.cobertura.xml'
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario18.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario19.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario18.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario19.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -93,13 +122,13 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario18 "dotnet run --project $(projectPath) --no-build" &'
+    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario19 "dotnet run --project $(projectPath) --no-build" &'
   displayName: 'start server under coverage'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage" --logger trx --results-directory $(Agent.TempDirectory)'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario19/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory)'
     publishTestResults: false
     projects: '$(solutionPath)' # this is specific to example - in most cases not needed
   displayName: 'execute tests'
@@ -107,7 +136,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage shutdown TagScenario18'
+    script: 'dotnet-coverage shutdown TagScenario19'
   displayName: 'stop server'
 
 - task: Bash@3
