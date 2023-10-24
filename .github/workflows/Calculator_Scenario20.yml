@@ -32,15 +32,15 @@ jobs:
     - name: Generate logs directory
       run: mkdir $LOGS_DIR
     - name: Start server
-      run: dotnet-coverage collect --settings ./scenarios/scenario20/coverage.runsettings -l $LOGS_DIR/collect.log --ll Verbose --output report.coverage --session-id TagScenario20 "dotnet run --no-build" &
+      run: dotnet-coverage collect --settings ./scenarios/scenario20/coverage.runsettings -l $LOGS_DIR/collect.log -ll Verbose --output report.coverage --session-id TagScenario20 "dotnet run --no-build" &
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run tests
       run: dotnet test --settings ./scenarios/scenario20/coverage.runsettings --no-build --verbosity normal --results-directory ./TestResults/
       working-directory: ./samples/Calculator
     - name: Stop server
-      run: dotnet-coverage shutdown -l $LOGS_DIR/shutdown.log --ll Verbose TagScenario20
+      run: dotnet-coverage shutdown -l $LOGS_DIR/shutdown.log -ll Verbose TagScenario20
     - name: Merge coverage reports
-      run: dotnet-coverage merge -l $LOGS_DIR/merge.log --ll Verbose -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
+      run: dotnet-coverage merge -l $LOGS_DIR/merge.log -ll Verbose -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
