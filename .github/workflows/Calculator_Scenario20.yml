@@ -35,7 +35,7 @@ jobs:
       run: dotnet-coverage collect --settings ./scenarios/scenario20/coverage.runsettings -l $LOGS_DIR/collect.log -ll Verbose --output report.coverage --session-id TagScenario20 "dotnet run --no-build" &
       working-directory: ./samples/Calculator/src/Calculator.Server
     - name: Run tests
-      run: dotnet test --settings ./scenarios/scenario20/coverage.runsettings --no-build --verbosity normal --results-directory ./TestResults/
+      run: dotnet test --settings ./scenarios/scenario20/coverage.runsettings --no-build --verbosity normal --results-directory ./TestResults/ --diag $LOGS_DIR/log.txt
       working-directory: ./samples/Calculator
     - name: Stop server
       run: dotnet-coverage shutdown -l $LOGS_DIR/shutdown.log -ll Verbose TagScenario20
