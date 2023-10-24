@@ -32,27 +32,37 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario19 "dotnet run --project $(projectPath) --no-build" &'
-  displayName: 'start server under coverage'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario19/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory)'
-    publishTestResults: false
-    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
-  displayName: 'execute tests'
+    script: 'mkdir $(Agent.TempDirectory)/logs'
+  displayName: 'create logs directory'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage shutdown TagScenario19'
+    script: 'dotnet-coverage collect --settings samples/Calculator/scenarios/scenario19/coverage.runsettings -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario19 "dotnet run --project $(projectPath) --no-build" &'
+  displayName: 'start server under coverage'
+  env:
+    LOGS_DIR: '$(Agent.TempDirectory)/logs/'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario19/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory) --diag $(Agent.TempDirectory)/logs/log.txt'
+    publishTestResults: false
+    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+  displayName: 'execute tests'
+  env:
+    LOGS_DIR: '$(Agent.TempDirectory)/logs/'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage shutdown -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose TagScenario19'
   displayName: 'stop server'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    script: 'dotnet-coverage merge -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
     workingDirectory: "$(Agent.TempDirectory)"
   displayName: 'merge coverage results'
 
@@ -65,3 +75,6 @@ steps:
 - task: PublishCodeCoverageResults@2
   inputs:
     summaryFileLocation: $(Agent.TempDirectory)/merged.cobertura.xml
+
+- publish: $(Agent.TempDirectory)/logs
+  artifact: logs
