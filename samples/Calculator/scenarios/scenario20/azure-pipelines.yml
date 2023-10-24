@@ -1,0 +1,80 @@
+name: "Calculator Scenario 20"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  projectPath: './samples/Calculator/src/Calculator.Server/Calculator.Server.csproj' # this is specific to example - in most cases not needed
+  solutionPath: './samples/Calculator/Calculator.sln' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration)'
+    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+  displayName: 'dotnet build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'mkdir $(Agent.TempDirectory)/logs'
+  displayName: 'create logs directory'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --settings samples/Calculator/scenarios/scenario20/coverage.runsettings -l $(Agent.TempDirectory)/logs/collect.log -ll Verbose --output $(Agent.TempDirectory)/server.coverage --session-id TagScenario20 "dotnet run --project $(projectPath) --no-build" &'
+  displayName: 'start server under coverage'
+  env:
+    LOGS_DIR: '$(Agent.TempDirectory)/logs/'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario20/coverage.runsettings --logger trx --results-directory $(Agent.TempDirectory) --diag $(Agent.TempDirectory)/logs/log.txt'
+    publishTestResults: false
+    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+  displayName: 'execute tests'
+  env:
+    LOGS_DIR: '$(Agent.TempDirectory)/logs/'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage shutdown -l $(Agent.TempDirectory)/logs/shutdown.log -ll Verbose TagScenario20'
+  displayName: 'stop server'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage merge -l $(Agent.TempDirectory)/logs/merge.log -ll Verbose -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    workingDirectory: "$(Agent.TempDirectory)"
+  displayName: 'merge coverage results'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/merged.cobertura.xml
+
+- publish: $(Agent.TempDirectory)/logs
+  artifact: logs
