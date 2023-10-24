@@ -31,3 +31,4 @@ Solution contains seven projects:
 18. [***Scenario 18*** Code coverage for whole solution](scenarios/scenario18/README.md)
 19. [***Scenario 19*** Code coverage for whole solution with test projects excluded](scenarios/scenario19/README.md)
 20. [***Scenario 20*** Code coverage for whole solution with logs](scenarios/scenario20/README.md)
+21. [***Scenario 21*** Code coverage for whole solution with script to run tests](scenarios/scenario21/README.md)
