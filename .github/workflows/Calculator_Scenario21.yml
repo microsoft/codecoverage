@@ -41,8 +41,3 @@ jobs:
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
-    - name: Archive code coverage logs
-      uses: actions/upload-artifact@v3
-      with:
-        name: code-coverage-logs
-        path: '${{ github.workspace }}/logs/*'
