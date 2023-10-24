@@ -9,7 +9,7 @@ on:
     paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario20.yml', 'samples/Calculator/scenarios/scenario20/coverage.runsettings' ]
 
 env:
-  LOGS_DIR: "${{ github.workspace }}/logs"
+  LOGS_DIR: "${{ github.workspace }}/logs/"
 
 jobs:
   build:
@@ -55,3 +55,8 @@ jobs:
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
+    - name: Archive code coverage logs
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: '${{ github.workspace }}/logs/'
