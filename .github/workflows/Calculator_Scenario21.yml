@@ -27,7 +27,7 @@ jobs:
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Run tests
-      run: dotnet-coverage collect --output report.coverage --output-format $GITHUB_WORKSPACE/report.cobertura.xml "./scenarios/scenario21/tests.sh" &
+      run: dotnet-coverage collect --output report.coverage --output-format $GITHUB_WORKSPACE/report.cobertura.xml "scenarios/scenario21/tests.sh" &
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
       with:
