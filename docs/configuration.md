@@ -73,8 +73,24 @@
           <CLRIEX64InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>
           <VanguardInstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>
           <PerTestCodeCoverage>True</PerTestCodeCoverage>
+          <IncludeTestAssembly>True</IncludeTestAssembly>
 
           <CodeCoverage>
+            <CommunicationTimeout>90000</CommunicationTimeout>
+            <PipeClientsCount>2540</PipeClientsCount>
+            <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <SymbolsRestrictOriginalPathAccess>True</SymbolsRestrictOriginalPathAccess>
+            <SymbolsRestrictReferencePathAccess>True</SymbolsRestrictReferencePathAccess>
+            <SymbolsRestrictDBGAccess>True</SymbolsRestrictDBGAccess>
+            <SymbolsRestrictSystemRootAccess>True</SymbolsRestrictSystemRootAccess>
+            <EnableDynamicNativeInstrumentation>True</EnableDynamicNativeInstrumentation>
+            <EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>
+            <EnableStaticNativeInstrumentationRestore>True</EnableStaticNativeInstrumentationRestore>
+            <EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>
+            <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
+            <EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>
             <SymbolSearchPaths>
                    <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>
                    <Path>\\mybuildshare\builds\ProjectX</Path>
@@ -131,16 +147,6 @@
                 <PublicKeyToken>^E361AF139669C375$</PublicKeyToken>
               </Exclude>
             </PublicKeyTokens>        
-            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
-            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
-            <CollectFromChildProcesses>True</CollectFromChildProcesses>
-            <CollectAspDotNet>False</CollectAspDotNet>
-            <SymbolsRestrictOriginalPathAccess>False</SymbolsRestrictOriginalPathAccess>
-            <SymbolsRestrictReferencePathAccess>False</SymbolsRestrictReferencePathAccess>
-            <SymbolsRestrictDBGAccess>False</SymbolsRestrictDBGAccess>
-            <SymbolsRestrictSystemRootAccess>False</SymbolsRestrictSystemRootAccess>
-            <EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>
-            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
             <DumpStaticNativeDisassembly>False</DumpStaticNativeDisassembly>
             <FileLogPath>C:\logs\</FileLogPath>
             <LogLevel>All</LogLevel>
@@ -158,7 +164,6 @@ To enable all available logs
     <DataCollectors>
       <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector">
         <Configuration>
-          <!- Logs start ->
           <CoverageLogLevel>Dumps</CoverageLogLevel>
           <InstrumentationLogLevel>Dumps</InstrumentationLogLevel>
           <ManagedVanguardLogLevel>Verbose</ManagedVanguardLogLevel>
@@ -168,68 +173,7 @@ To enable all available logs
             <FileLogPath>C:\LogFolder\</FileLogPath>
             <LogLevel>All</LogLevel>
             <DumpStaticNativeDisassembly>true</DumpStaticNativeDisassembly>
-            <!- Logs end ->
-            <ModulePaths>
-              <Exclude>
-                <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
-              </Exclude>
-              <Include />
-            </ModulePaths>
-            <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
-            <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
-            <CollectFromChildProcesses>True</CollectFromChildProcesses>
-            <CollectAspDotNet>False</CollectAspDotNet>
-            <SymbolSearchPaths />
-            <Functions>
-              <Exclude>
-                <Function>^std::.*</Function>
-                <Function>^ATL::.*</Function>
-                <Function>.*::__GetTestMethodInfo.*</Function>
-                <Function>.*__CxxPureMSILEntry.*</Function>
-                <Function>^Microsoft::VisualStudio::CppCodeCoverageFramework::.*</Function>
-                <Function>^Microsoft::VisualStudio::CppUnitTestFramework::.*</Function>
-              </Exclude>
-            </Functions>
-            <Attributes>
-              <Exclude>
-                <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
-                <Attribute>^Microsoft\.VisualStudio\.TestPlatform\.TestSDKAutoGeneratedCode$</Attribute>
-              </Exclude>
-            </Attributes>
-            <Sources>
-              <Exclude>
-                <Source>.*\\atlmfc\\.*</Source>
-                <Source>.*\\vctools\\.*</Source>
-                <Source>.*\\public\\sdk\\.*</Source>
-                <Source>.*\\externalapis\\.*</Source>
-                <Source>.*\\microsoft sdks\\.*</Source>
-                <Source>.*\\vc\\include\\.*</Source>
-                <Source>.*\\msclr\\.*</Source>
-                <Source>.*\\ucrt\\.*</Source>
-              </Exclude>
-            </Sources>
-            <CompanyNames>
-              <Exclude>
-                <CompanyName>.*microsoft.*</CompanyName>
-              </Exclude>
-            </CompanyNames>
-            <PublicKeyTokens>
-              <Exclude>
-                <PublicKeyToken>^B77A5C561934E089$</PublicKeyToken>
-                <PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>
-                <PublicKeyToken>^31BF3856AD364E35$</PublicKeyToken>
-                <PublicKeyToken>^89845DCD8080CC91$</PublicKeyToken>
-                <PublicKeyToken>^71E9BCE111E9429C$</PublicKeyToken>
-                <PublicKeyToken>^8F50407C4E9E73B6$</PublicKeyToken>
-                <PublicKeyToken>^E361AF139669C375$</PublicKeyToken>
-              </Exclude>
-            </PublicKeyTokens>
-            <EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>
-            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
-          <TelemetryEnabled>true</TelemetryEnabled>
         </Configuration>
       </DataCollector>
     </DataCollectors>
