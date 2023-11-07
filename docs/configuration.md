@@ -15,7 +15,6 @@
 | CoverageFileLogPath  | File or directory path | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` |
 | CoverageFileName | File path | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` |
 | Format | `coverage`, `cobertura`, `xml` | `coverage` | Output report format. | `<Format>coverage</Format>` |
-| SplitCoverage | `True`, `False` | `False` | Indicates if report should be splitted into `*.covx` and `*.covb` files | `<SplitCoverage>True</SplitCoverage>` |
 | VanguardInstallDir | Directory path | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` |
 | CLRIEX86InstallDir | Directory path | | Path to directory with custom CLR IE x86 binary | `<CLRIEX86InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>` |
 | CLRIEX64InstallDir | Directory path | | Path to directory with custom CLR IE x64 binary | `<CLRIEX64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>` |
@@ -68,7 +67,6 @@
           <CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>
           <CoverageFileName>D:\examples\report.coverage</CoverageFileName>
           <Format>coverage</Format>
-          <SplitCoverage>True</SplitCoverage>
           <CLRIEX86InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>
           <CLRIEX64InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>
           <VanguardInstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>
