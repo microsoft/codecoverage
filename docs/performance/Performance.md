@@ -1,4 +1,4 @@
-Project name | Framework | Configuration | Time | 16.5 | 17.0 | 17.5 | 17.9
+Project name | Framework | Configuration | No code coverage | Code coverage 16.5 | Code coverage 17.0 | Code coverage 17.5 | Code coverage 17.9
 -------------|-----------|---------------|----------|----------|----------|----------|---------
 InteractiveHost UnitTests | net8.0 | Debug | 129.82s | 361.82s (+178.70%) | 278.19s (+114.28%) | 266.49s (+105.27%) | 188.61s (+45.28%)
 InteractiveHost UnitTests | net8.0 | Release | 144.16s | 346.71s (+140.51%) | 269.69s (+87.08%) | 266.63s (+84.96%) | 186.63s (+29.46%)
