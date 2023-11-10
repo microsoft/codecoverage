@@ -101,3 +101,11 @@ VBCSCompiler UnitTests | net472 Release | 52.65s | 82.66s (+56.99%) | 71.18s (+3
 VBCSCompiler UnitTests | net8.0 Debug | 30.34s | 52.15s (+71.85%) | 47.68s (+57.12%) | 42.01s (+38.44%) | 39.00s (+28.52%)
 VBCSCompiler UnitTests | net8.0 Release | 29.26s | 48.75s (+66.62%) | 45.37s (+55.06%) | 39.92s (+36.45%) | 36.80s (+25.78%)
 **Total** | | **11520.27s** | **25493.41s (+121.29%)** | **20270.25s (+75.95%)** | **16792.62s (+45.77%)** | **14520.69s (+26.04%)** 
+
+
+Package | Time | Ratio
+--------|------|------
+Microsoft.CodeCoverage 16.5 | 03:52:53.1414398 | 1.00
+Microsoft.CodeCoverage 17.0 | 02:25:49.9754361 | 0.63
+Microsoft.CodeCoverage 17.5 | 01:27:52.3487497 | 0.38
+Microsoft.CodeCoverage 17.9 | 00:50:00.4157074 | 0.21
