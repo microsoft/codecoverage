@@ -6,7 +6,7 @@
         <Configuration>
           <CodeCoverage>
             <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
-            <EnableStaticManagedInstrumentation>False</EnableStaticManagedInstrumentation>
+            <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
             <ModulePaths>
               <IncludeDirectories>
                 <Directory Recursive="true">%STATIC_INSTRUMENTATION_DIR%</Directory>
