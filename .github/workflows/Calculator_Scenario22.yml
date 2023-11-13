@@ -9,7 +9,7 @@ on:
     paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario22.yml', 'samples/Calculator/scenarios/scenario22/coverage.runsettings' ]
 
 env:
-  STATIC_INSTRUMENTATION_DIR: "${{ github.workspace }}/samples/Calculator/Calculator.Console"
+  STATIC_INSTRUMENTATION_DIR: "${{ github.workspace }}/samples/Calculator/src/Calculator.Console"
 
 jobs:
   build:
