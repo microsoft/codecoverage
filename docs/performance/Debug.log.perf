@@ -1,0 +1,1130 @@
+RunTest Microsoft.CodeAnalysis.EditorFeatures.UnitTests net472 1c81fc44-d82f-4c22-a7a4-6376b89dbb9e D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.EditorFeatures.UnitTests net472 f2a936f9-91d7-4070-bc63-c6369c806de4 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.EditorFeatures.UnitTests net472 afc6360a-0441-4b3b-b3bb-8e8852f300dc D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.EditorFeatures.UnitTests net472 919cbba1-6267-4a2e-a302-46490964b0db D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.EditorFeatures.UnitTests net472 563f7050-5366-43b6-8ea2-7493fc2dc0b4 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\no_cc.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\16_5.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\no_cc.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_0.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\no_cc.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_5.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\no_cc.trx 2476/2476
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_9.trx 2476/2476
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\16_5.coverage m:34 467303/1587419 29.44%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_0.coverage m:50 505305/1731668 29.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\16_5.coverage m:34 467303/1587419 29.44%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_5.coverage m:50 504385/1731668 29.13%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\16_5.coverage m:34 467303/1587419 29.44%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.EditorFeatures.UnitTests\net472\17_9.coverage m:49 505386/1730963 29.2%
+
+Current: no_cc: 00:01:55.1435050, 16_5: 00:03:04.3068664 [+60.07%], 17_0: 00:03:01.1975420 [+57.37%], 17_5: 00:02:40.7662190 [+39.62%], 17_9: 00:02:29.5331166 [+29.87%]
+========================================================================
+RunTest InteractiveHost.UnitTests net8.0 eaf0a0e7-4a0a-4f36-a5d6-69db391300e9 D:\github\roslyn1\artifacts\bin\InteractiveHost.UnitTests\Debug\net8.0
+RunTest InteractiveHost.UnitTests net8.0 d91c09d3-5e39-4815-9b20-15a56b0ddd08 D:\github\roslyn2\artifacts\bin\InteractiveHost.UnitTests\Debug\net8.0
+RunTest InteractiveHost.UnitTests net8.0 11ec7f95-ec24-4806-9c30-5d23b7c53ff5 D:\github\roslyn3\artifacts\bin\InteractiveHost.UnitTests\Debug\net8.0
+RunTest InteractiveHost.UnitTests net8.0 ad856f2d-2193-4d5c-9044-1af74150a53c D:\github\roslyn4\artifacts\bin\InteractiveHost.UnitTests\Debug\net8.0
+RunTest InteractiveHost.UnitTests net8.0 d24debb6-5f8d-4e78-85ee-a96649f72acd D:\github\roslyn5\artifacts\bin\InteractiveHost.UnitTests\Debug\net8.0
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\no_cc.trx 40/40
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\16_5.trx 28/28
+MISMATCH: executed 40 28
+MISMATCH: passed 40 28
+
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\no_cc.trx 40/40
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_0.trx 40/40
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\no_cc.trx 40/40
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_5.trx 40/40
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\no_cc.trx 40/40
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_9.trx 40/40
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\16_5.coverage m:18 144582/1405248 10.29%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_0.coverage m:26 230270/2046634 11.25%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\16_5.coverage m:18 144582/1405248 10.29%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_5.coverage m:26 230261/2046634 11.25%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\16_5.coverage m:18 144582/1405248 10.29%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\InteractiveHost.UnitTests\net8.0\17_9.coverage m:26 230261/2046621 11.25%
+
+Current: no_cc: 00:02:09.8219250, 16_5: 00:06:01.8184398 [+178.70%], 17_0: 00:04:38.1880899 [+114.28%], 17_5: 00:04:26.4913303 [+105.27%], 17_9: 00:03:08.6087647 [+45.28%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net472 6f26bde6-fc54-4ec0-9c78-8302fc0f6e89 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net472 6d73832b-e2ae-4439-a733-c04da767e924 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net472 4aff4c40-bcfb-4cf3-8213-873834312227 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net472 9c3efad0-f6a6-443e-a96c-5e7f0316af09 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net472 635f8361-398f-48a8-9f46-a4c24d31de09 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\16_5.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_0.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_5.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_9.trx 45/45
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\16_5.coverage m:11 4507/873407 0.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_0.coverage m:17 4510/996186 0.45%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\16_5.coverage m:11 4507/873407 0.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_5.coverage m:17 4510/996186 0.45%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\16_5.coverage m:11 4507/873407 0.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net472\17_9.coverage m:16 4507/995481 0.45%
+
+Current: no_cc: 00:00:04.7897364, 16_5: 00:00:31.9074352 [+566.16%], 17_0: 00:00:20.4866737 [+327.72%], 17_5: 00:00:15.4344736 [+222.24%], 17_9: 00:00:10.4479932 [+118.13%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net8.0 8fc7850d-4eaf-4bd1-aafb-bf337c425719 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net8.0 c6259f65-a121-4650-93e3-1ce2486cd5f7 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net8.0 7dfca90d-b0d6-40f0-847a-4a31283d5454 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net8.0 7fe29a96-22ed-45ab-992f-483d751619e9 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Scripting.UnitTests net8.0 34c9d47a-287e-41f9-8c91-f437724b556b D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Scripting.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\16_5.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_0.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_5.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\no_cc.trx 45/45
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_9.trx 45/45
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\16_5.coverage m:11 4458/874095 0.51%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_0.coverage m:16 4458/996182 0.45%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\16_5.coverage m:11 4458/874095 0.51%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_5.coverage m:16 4458/996182 0.45%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\16_5.coverage m:11 4458/874095 0.51%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.UnitTests\net8.0\17_9.coverage m:16 4458/996169 0.45%
+
+Current: no_cc: 00:00:03.7863923, 16_5: 00:00:23.7288109 [+526.69%], 17_0: 00:00:17.8273128 [+370.83%], 17_5: 00:00:12.7255617 [+236.09%], 17_9: 00:00:09.7570660 [+157.69%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests net472 5018d326-da3d-4932-ac25-e319a514a3b1 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests net472 e2152e35-9eed-40a0-a468-554e1386643e D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests net472 b825b6e2-4857-43a9-bf08-2836ef6f1cf4 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests net472 99d63390-40ba-42de-b089-bdce57e8f76c D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests net472 6591326e-d74c-4813-acdd-b1fb3d36a2f8 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\no_cc.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\16_5.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\no_cc.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_0.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\no_cc.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_5.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\no_cc.trx 12/12
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_9.trx 12/12
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\16_5.coverage m:9 2424/872453 0.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_0.coverage m:14 2427/994543 0.24%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\16_5.coverage m:9 2424/872453 0.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_5.coverage m:14 2427/994543 0.24%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\16_5.coverage m:9 2424/872453 0.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Scripting.Desktop.UnitTests\net472\17_9.coverage m:13 2424/993838 0.24%
+
+Current: no_cc: 00:00:05.2872755, 16_5: 00:00:26.9368666 [+409.47%], 17_0: 00:00:19.6309838 [+271.29%], 17_5: 00:00:14.5852184 [+175.86%], 17_9: 00:00:10.7298581 [+102.94%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net472 53a39de7-6694-43d0-a5f3-f90062750154 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net472 83b8818e-eba0-4889-be55-662d2eecca47 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net472 636344f4-f363-4af7-9c99-b40d4bd2678b D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net472 20b0d766-f4d4-452e-b1d6-4caffec4c042 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net472 c685f3f8-3558-43fd-81d1-433499268ff2 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\no_cc.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\16_5.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\no_cc.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_0.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\no_cc.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_5.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\no_cc.trx 276/276
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_9.trx 276/276
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\16_5.coverage m:11 144156/878385 16.41%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_0.coverage m:17 148543/1001164 14.84%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\16_5.coverage m:11 144156/878385 16.41%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_5.coverage m:17 148542/1001164 14.84%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\16_5.coverage m:11 144156/878385 16.41%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net472\17_9.coverage m:16 148534/1000459 14.85%
+
+Current: no_cc: 00:00:33.5858629, 16_5: 00:01:10.4769530 [+109.84%], 17_0: 00:00:56.3229975 [+67.70%], 17_5: 00:00:49.9645953 [+48.77%], 17_9: 00:00:44.0478928 [+31.15%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net8.0 69093a41-154b-4ecf-a65d-e777f7a6beba D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net8.0 0b39f4cf-db91-4d8c-a2bb-62dfe74c248b D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net8.0 ac423e56-81a9-4643-a695-b3511ffbb51f D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net8.0 a5701639-72ab-4b9d-9d78-bf736321be14 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests net8.0 e5536671-3576-44c5-97a5-b0006a4b7e02 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\no_cc.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\16_5.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\no_cc.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_0.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\no_cc.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_5.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\no_cc.trx 265/265
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_9.trx 265/265
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\16_5.coverage m:11 143012/879239 16.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_0.coverage m:16 147392/1001326 14.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\16_5.coverage m:11 143012/879239 16.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_5.coverage m:16 147391/1001326 14.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\16_5.coverage m:11 143012/879239 16.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.UnitTests\net8.0\17_9.coverage m:16 147392/1001313 14.72%
+
+Current: no_cc: 00:00:25.7457642, 16_5: 00:00:54.1098169 [+110.17%], 17_0: 00:00:45.1620383 [+75.42%], 17_5: 00:00:37.8854945 [+47.15%], 17_9: 00:00:35.0195264 [+36.02%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests net472 e37b9bcd-677d-4b0a-9bb7-7a1a13726807 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests net472 2e141173-ee0f-4d9c-a035-ae71bb6f8825 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests net472 0b1efba0-0896-4040-afbc-3193473bd84b D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests net472 c043ff82-cdb0-44ed-8c0b-0ec85f8fec7f D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests net472 b592612e-a486-4262-97ef-b819d3395e99 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\no_cc.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\16_5.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\no_cc.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_0.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\no_cc.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_5.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\no_cc.trx 40/42
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_9.trx 40/42
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\16_5.coverage m:12 130884/874586 14.97%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_0.coverage m:18 130888/997365 13.12%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\16_5.coverage m:12 130884/874586 14.97%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_5.coverage m:18 130877/997365 13.12%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\16_5.coverage m:12 130884/874586 14.97%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Scripting.Desktop.UnitTests\net472\17_9.coverage m:17 130884/996660 13.13%
+
+Current: no_cc: 00:00:24.5231002, 16_5: 00:01:42.0698722 [+316.22%], 17_0: 00:01:02.3038489 [+154.06%], 17_5: 00:00:56.8632049 [+131.88%], 17_9: 00:00:40.0867506 [+63.47%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net472 64884eaf-9d67-44a2-81b6-3300c6695fc9 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net472 fc8030cf-d36e-4dae-a015-3690fa78b4bb D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net472 eb901268-830a-4532-bc5e-d9f1d59a2585 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net472 fc188725-48d0-4947-ab00-8c24f40f748f D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net472 1a1c86cc-2cd6-42f2-84d9-8adb6eac4b5c D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\no_cc.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\16_5.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\no_cc.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_0.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\no_cc.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_5.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\no_cc.trx 1593/1593
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_9.trx 1593/1593
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\16_5.coverage m:24 298055/1472659 20.24%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_0.coverage m:39 302775/1615108 18.75%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\16_5.coverage m:24 298055/1472659 20.24%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_5.coverage m:39 302770/1615108 18.75%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\16_5.coverage m:24 298055/1472659 20.24%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net472\17_9.coverage m:38 302767/1614403 18.75%
+
+Current: no_cc: 00:01:18.4033313, 16_5: 00:02:26.3775750 [+86.70%], 17_0: 00:02:17.2774327 [+75.09%], 17_5: 00:02:09.1692554 [+64.75%], 17_9: 00:01:50.8684474 [+41.41%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net6.0-windows fb9c86ed-daf7-4519-8d92-559de20a3535 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net6.0-windows 73958680-adf3-4da7-9924-3b1a0b94cf5f D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net6.0-windows 7daef61a-e327-4e88-b241-17f0d0b2bc44 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net6.0-windows 4330c37a-f004-4813-98d4-5ce8cfa6a3fb D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Workspaces.UnitTests net6.0-windows 629be338-a750-435d-854d-b4041cab2fd0 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.UnitTests\Debug\net6.0-windows
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\16_5.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_0.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_5.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1805/1805
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_9.trx 1805/1805
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:24 297329/1474376 20.17%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_0.coverage m:38 301975/1618567 18.66%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:24 297329/1474376 20.17%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_5.coverage m:38 301959/1618567 18.66%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:24 297329/1474376 20.17%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.UnitTests\net6.0-windows\17_9.coverage m:38 301922/1618554 18.65%
+
+Current: no_cc: 00:00:38.4695437, 16_5: 00:01:28.0378227 [+128.85%], 17_0: 00:01:20.4461710 [+109.12%], 17_5: 00:00:59.1173882 [+53.67%], 17_9: 00:00:54.6116498 [+41.96%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net472 0c9f9132-2807-4bd4-8a17-e2635470c69f D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net472 ed68ca22-57a5-45f0-b826-328863f3a5fa D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net472 ed821fdb-8881-49e8-a7b3-6b5acf53f60e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net472 7cc2ad7a-7440-4fb3-ad5f-10877e66643d D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net472 011985bc-9647-4b95-bd0f-ae14625ee9cd D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\16_5.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_0.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_5.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_9.trx 1115/1115
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\16_5.coverage m:26 185516/1503536 12.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_0.coverage m:41 185524/1645985 11.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\16_5.coverage m:26 185516/1503536 12.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_5.coverage m:41 185540/1645985 11.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\16_5.coverage m:26 185516/1503536 12.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net472\17_9.coverage m:40 185513/1645280 11.28%
+
+Current: no_cc: 00:00:17.0423513, 16_5: 00:01:05.9365011 [+286.90%], 17_0: 00:00:54.3140817 [+218.70%], 17_5: 00:00:39.4946191 [+131.74%], 17_9: 00:00:29.8022938 [+74.87%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net6.0-windows fbc73b22-b5ba-4206-b9f4-332bdf10f9fd D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net6.0-windows 1a3499b3-395f-498e-9eda-133d768c1f94 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net6.0-windows ba371d9b-cb3d-477e-bf15-630044399c5e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net6.0-windows 9d184037-cc90-4a1d-b95f-8af4fd5c447a D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests net6.0-windows 1784108e-9163-4fbf-9d2e-0b891d20198f D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\Debug\net6.0-windows
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\16_5.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_0.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_5.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\no_cc.trx 1115/1115
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_9.trx 1115/1115
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:26 184750/1505120 12.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_0.coverage m:40 184742/1649311 11.2%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:26 184750/1505120 12.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_5.coverage m:40 184750/1649311 11.2%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\16_5.coverage m:26 184750/1505120 12.27%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Workspaces.UnitTests\net6.0-windows\17_9.coverage m:40 184748/1649298 11.2%
+
+Current: no_cc: 00:00:12.6820915, 16_5: 00:00:48.1224814 [+279.45%], 17_0: 00:00:45.1966557 [+256.38%], 17_5: 00:00:29.6264164 [+133.61%], 17_9: 00:00:24.5865339 [+93.87%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests net472 f96f7324-6263-42c5-8ed8-d416fb3c93b6 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests net472 949ca195-c89d-43ad-880e-c00cf38a426f D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests net472 36e38599-743e-4537-930e-f0f634917d23 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests net472 5d31cfc7-078f-401a-b569-fcdcb18c1693 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests net472 f9b44706-0a24-4022-a515-885fa8e08eb2 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\no_cc.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\16_5.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\no_cc.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_0.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\no_cc.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_5.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\no_cc.trx 191/191
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_9.trx 191/191
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\16_5.coverage m:26 136535/1493216 9.14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_0.coverage m:41 136523/1635665 8.35%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\16_5.coverage m:26 136535/1493216 9.14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_5.coverage m:41 136491/1635665 8.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\16_5.coverage m:26 136535/1493216 9.14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Workspaces.MSBuild.UnitTests\net472\17_9.coverage m:40 136495/1634960 8.35%
+
+Current: no_cc: 00:01:37.2036667, 16_5: 00:02:57.6244322 [+82.73%], 17_0: 00:02:46.3526987 [+71.14%], 17_5: 00:02:21.6225110 [+45.70%], 17_9: 00:02:08.4277516 [+32.12%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests net472 1abf410d-7586-47b2-8c68-9e120fa2c4b7 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests net472 13eef642-4947-4fb5-a9a0-10eb6eae6c89 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests net472 ccd3a73e-bc0f-4127-bdf8-11fc006a4a91 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests net472 9c2819ff-3a54-4d10-af8e-a1e7126d8fa8 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests net472 3fd37fc3-6666-47e8-bbab-55a963745e27 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\no_cc.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\16_5.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\no_cc.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_0.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\no_cc.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_5.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\no_cc.trx 7542/7542
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_9.trx 7542/7542
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\16_5.coverage m:38 522898/1803618 28.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_0.coverage m:53 529064/1946067 27.19%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\16_5.coverage m:38 522898/1803618 28.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_5.coverage m:53 529120/1946067 27.19%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\16_5.coverage m:38 522898/1803618 28.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CodeStyle.UnitTests\net472\17_9.coverage m:52 529081/1945362 27.2%
+
+Current: no_cc: 00:08:56.9177096, 16_5: 00:12:57.6352548 [+44.83%], 17_0: 00:12:58.5346411 [+45.00%], 17_5: 00:12:00.9805027 [+34.28%], 17_9: 00:11:46.8981368 [+31.66%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.UnitTests net472 79974938-a692-4e0b-8528-0b43cfa34e5e D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.UnitTests net472 3879c28d-829d-4506-85f2-3059140e033e D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.UnitTests net472 a1383929-4754-4c40-be84-44d935cb355e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.UnitTests net472 f564df87-cd7c-4ac8-a452-05b08ff2a02d D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.UnitTests net472 efaeeea2-e4b1-4a4c-8ba2-b37ffbcad872 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\no_cc.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\16_5.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\no_cc.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_0.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\no_cc.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_5.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\no_cc.trx 21416/21416
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_9.trx 21416/21416
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\16_5.coverage m:10 207667/914206 22.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_0.coverage m:15 211631/1036296 20.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\16_5.coverage m:10 207667/914206 22.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_5.coverage m:15 211635/1036296 20.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\16_5.coverage m:10 207667/914206 22.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net472\17_9.coverage m:14 211623/1035591 20.43%
+
+Current: no_cc: 00:03:30.4767448, 16_5: 00:05:50.6833991 [+66.61%], 17_0: 00:03:52.4314778 [+10.43%], 17_5: 00:04:31.9042569 [+29.18%], 17_9: 00:03:36.2137700 [+2.73%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.UnitTests net7.0 30083593-05d2-4bd8-a4da-55cc89ad6ecd D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.UnitTests net7.0 3183ed89-3b2a-406f-8d24-d7ae3d13e827 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.UnitTests net7.0 3032828e-8482-4dc8-b90a-85aef93f6852 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.UnitTests net7.0 ec187c21-2205-46b1-8226-7fc8a4eddec9 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.UnitTests net7.0 7c668422-29b7-4c2f-b5bf-1e103cb20b93 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net7.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\16_5.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_0.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_5.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_9.trx 21429/21429
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\16_5.coverage m:10 205157/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_0.coverage m:14 209109/1036419 20.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\16_5.coverage m:10 205157/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_5.coverage m:14 209102/1036419 20.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\16_5.coverage m:10 205157/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net7.0\17_9.coverage m:14 209104/1036406 20.18%
+
+Current: no_cc: 00:00:44.3137120, 16_5: 00:01:22.2122938 [+85.52%], 17_0: 00:01:10.0765196 [+58.14%], 17_5: 00:01:00.2012418 [+35.85%], 17_9: 00:00:57.7023000 [+30.21%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.UnitTests net8.0 6539a09c-1ff6-4cfe-a8ef-7582a3ce8f7a D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.UnitTests net8.0 e43a3036-9506-4726-b638-9fe6d0113154 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.UnitTests net8.0 c156971c-a484-40bc-94c2-ce82bd903a43 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.UnitTests net8.0 0fc609e8-46a4-4b2c-84fd-a0456eff69b9 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.UnitTests net8.0 7412fe9c-db64-46d3-80fa-68887775199e D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\16_5.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_0.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_5.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\no_cc.trx 21429/21429
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_9.trx 21429/21429
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:10 205154/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_0.coverage m:14 209108/1036419 20.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:10 205154/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_5.coverage m:14 209105/1036419 20.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:10 205154/915021 22.42%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.UnitTests\net8.0\17_9.coverage m:14 209125/1036406 20.18%
+
+Current: no_cc: 00:00:41.3347268, 16_5: 00:01:23.6466770 [+102.36%], 17_0: 00:01:12.2453945 [+74.78%], 17_5: 00:00:57.9364497 [+40.16%], 17_9: 00:00:53.3587518 [+29.09%]
+========================================================================
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net472 58f0a146-d43b-4bb5-8802-e621c48b221d D:\github\roslyn1\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net472 1bb59df6-985d-486b-8139-b9156a5b0725 D:\github\roslyn2\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net472 8a0cbf4e-0f9c-4ff5-a9be-9965e0c2aa85 D:\github\roslyn3\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net472 90ebcd71-d04f-4e89-8523-9581453b74b0 D:\github\roslyn4\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net472
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net472 2a4b7335-0110-479b-96ad-bc5004280e96 D:\github\roslyn5\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\16_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_0.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_9.trx 338/338
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\16_5.coverage m:8 4756/874721 0.54%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_0.coverage m:13 4759/996811 0.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\16_5.coverage m:8 4756/874721 0.54%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_5.coverage m:13 4759/996811 0.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\16_5.coverage m:8 4756/874721 0.54%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net472\17_9.coverage m:12 4756/996106 0.48%
+
+Current: no_cc: 00:00:07.4543122, 16_5: 00:00:34.4768772 [+362.51%], 17_0: 00:00:23.0155575 [+208.75%], 17_5: 00:00:18.2430292 [+144.73%], 17_9: 00:00:13.1097106 [+75.87%]
+========================================================================
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net8.0 a746bab6-7bb8-483f-983d-ab25203076c4 D:\github\roslyn1\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net8.0 9212fab5-db33-4cb7-8d43-698597fe42f6 D:\github\roslyn2\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net8.0 5734f6cc-3328-4a99-b116-6f1fbd5e5572 D:\github\roslyn3\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net8.0 8b46d216-42c4-4ac6-8044-5d5e2cb2780f D:\github\roslyn4\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net8.0
+RunTest Microsoft.Build.Tasks.CodeAnalysis.UnitTests net8.0 275aede6-4bed-4fa9-93f6-b872f723da1c D:\github\roslyn5\artifacts\bin\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\16_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_0.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_9.trx 338/338
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:8 4983/875736 0.57%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_0.coverage m:12 4983/997134 0.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:8 4983/875736 0.57%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_5.coverage m:12 4983/997134 0.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\16_5.coverage m:8 4983/875736 0.57%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.Build.Tasks.CodeAnalysis.UnitTests\net8.0\17_9.coverage m:12 4983/997121 0.5%
+
+Current: no_cc: 00:00:05.2860685, 16_5: 00:00:25.7934732 [+387.95%], 17_0: 00:00:19.4201308 [+267.38%], 17_5: 00:00:14.5435700 [+175.13%], 17_9: 00:00:11.2825844 [+113.44%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net472 0e63ed01-d577-4e8c-9db9-68dec51b9bdb D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net472 a3eb009f-d56c-47a3-824c-f2083d9c6cfb D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net472 95303a87-8ff5-4b81-8b66-872eb975abaa D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net472 4680da3e-e6ab-45bd-863a-ec0f0e442d16 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net472 8cd9ccc9-f02a-4eab-bec9-90d4421169aa D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\16_5.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_0.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_5.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_9.trx 607/607
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\16_5.coverage m:10 122008/878613 13.89%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_0.coverage m:15 125141/1000703 12.51%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\16_5.coverage m:10 122008/878613 13.89%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_5.coverage m:15 125143/1000703 12.51%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\16_5.coverage m:10 122008/878613 13.89%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net472\17_9.coverage m:14 125171/999998 12.52%
+
+Current: no_cc: 00:01:15.9789689, 16_5: 00:02:27.7439982 [+94.45%], 17_0: 00:02:14.0176750 [+76.39%], 17_5: 00:01:56.6552429 [+53.54%], 17_9: 00:01:50.1810615 [+45.02%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net8.0 bb01786f-204f-49c1-ad29-d08e96156b9c D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net8.0 b629a273-efe8-4870-aae4-da8554113d28 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net8.0 54a5bd29-26ee-48cc-9593-d21b28b34993 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net8.0 e349b88f-f73f-4ba7-a96f-08652a2815bd D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.Rebuild.UnitTests net8.0 d7b9ef52-6da8-418d-9fd0-47dbcad977ab D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Rebuild.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\16_5.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_0.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_5.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\no_cc.trx 607/607
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_9.trx 607/607
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\16_5.coverage m:10 121606/879484 13.83%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_0.coverage m:14 125592/1000882 12.55%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\16_5.coverage m:10 121606/879484 13.83%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_5.coverage m:14 125566/1000882 12.55%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\16_5.coverage m:10 121606/879484 13.83%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Rebuild.UnitTests\net8.0\17_9.coverage m:14 125567/1000869 12.55%
+
+Current: no_cc: 00:00:57.1962639, 16_5: 00:02:06.6638878 [+121.45%], 17_0: 00:01:35.6264541 [+67.19%], 17_5: 00:01:16.0412419 [+32.95%], 17_9: 00:01:11.8049788 [+25.54%]
+========================================================================
+RunTest VBCSCompiler.UnitTests net472 b0b7a94c-3106-4367-9bcd-882e60b54003 D:\github\roslyn1\artifacts\bin\VBCSCompiler.UnitTests\Debug\net472
+RunTest VBCSCompiler.UnitTests net472 da906fb7-60c7-4896-9582-13b67ea4c3d0 D:\github\roslyn2\artifacts\bin\VBCSCompiler.UnitTests\Debug\net472
+RunTest VBCSCompiler.UnitTests net472 a268c1f1-790c-40d7-871d-aa3ffd67ab2e D:\github\roslyn3\artifacts\bin\VBCSCompiler.UnitTests\Debug\net472
+RunTest VBCSCompiler.UnitTests net472 4b709507-a4f1-42ea-a440-d5a2d3aa2776 D:\github\roslyn4\artifacts\bin\VBCSCompiler.UnitTests\Debug\net472
+RunTest VBCSCompiler.UnitTests net472 333829bb-4d48-4e54-9ef2-b21ef15151bd D:\github\roslyn5\artifacts\bin\VBCSCompiler.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\no_cc.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\16_5.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\no_cc.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_0.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\no_cc.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_5.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\no_cc.trx 133/133
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_9.trx 133/133
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\16_5.coverage m:12 152977/883055 17.32%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_0.coverage m:17 153778/1005145 15.3%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\16_5.coverage m:12 152977/883055 17.32%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_5.coverage m:17 153786/1005145 15.3%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\16_5.coverage m:12 152977/883055 17.32%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net472\17_9.coverage m:16 153784/1004440 15.31%
+
+Current: no_cc: 00:00:58.4671435, 16_5: 00:01:26.9975125 [+48.80%], 17_0: 00:01:15.9846313 [+29.96%], 17_5: 00:01:09.9831038 [+19.70%], 17_9: 00:01:04.6386838 [+10.56%]
+========================================================================
+RunTest VBCSCompiler.UnitTests net8.0 03f2994a-0521-4e40-b8ed-5b09b70f654e D:\github\roslyn1\artifacts\bin\VBCSCompiler.UnitTests\Debug\net8.0
+RunTest VBCSCompiler.UnitTests net8.0 aa299b68-dc45-42af-b862-807ed670246c D:\github\roslyn2\artifacts\bin\VBCSCompiler.UnitTests\Debug\net8.0
+RunTest VBCSCompiler.UnitTests net8.0 bf2fd45b-72dc-4b43-8adc-33b168fab246 D:\github\roslyn3\artifacts\bin\VBCSCompiler.UnitTests\Debug\net8.0
+RunTest VBCSCompiler.UnitTests net8.0 1b3029ac-e9a0-4267-9a91-eab332a77c34 D:\github\roslyn4\artifacts\bin\VBCSCompiler.UnitTests\Debug\net8.0
+RunTest VBCSCompiler.UnitTests net8.0 49a5866a-3d3f-442f-9f74-21884654b029 D:\github\roslyn5\artifacts\bin\VBCSCompiler.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\no_cc.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\16_5.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\no_cc.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_0.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\no_cc.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_5.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\no_cc.trx 120/120
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_9.trx 120/120
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\16_5.coverage m:12 141416/884285 15.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_0.coverage m:16 142243/1005683 14.14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\16_5.coverage m:12 141416/884285 15.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_5.coverage m:16 142198/1005683 14.14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\16_5.coverage m:12 141416/884285 15.99%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\VBCSCompiler.UnitTests\net8.0\17_9.coverage m:16 142233/1005670 14.14%
+
+Current: no_cc: 00:00:30.3439969, 16_5: 00:00:52.1473078 [+71.85%], 17_0: 00:00:47.6754275 [+57.12%], 17_5: 00:00:42.0079250 [+38.44%], 17_9: 00:00:38.9992147 [+28.52%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.LanguageServer.UnitTests net7.0 4d9eeb11-26d2-4470-a797-d43597c4754a D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.LanguageServer.UnitTests net7.0 57bf218f-d331-4815-b3b0-809b1ed0c778 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.LanguageServer.UnitTests net7.0 fece7f31-9056-4881-852c-0c6d77b3b5a7 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.LanguageServer.UnitTests net7.0 68ba2338-86aa-4812-b9f1-efc27264ac85 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.UnitTests\Debug\net7.0
+RunTest Microsoft.CodeAnalysis.LanguageServer.UnitTests net7.0 6a605c47-f4fa-4d69-8900-bc31fcc92bc1 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.UnitTests\Debug\net7.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\no_cc.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\16_5.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\no_cc.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_0.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\no_cc.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_5.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\no_cc.trx 9/9
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_9.trx 9/9
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\16_5.coverage m:18 12493/1355505 0.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_0.coverage m:24 13324/1496023 0.89%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\16_5.coverage m:18 12493/1355505 0.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_5.coverage m:24 13324/1496023 0.89%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\16_5.coverage m:18 12493/1355505 0.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.UnitTests\net7.0\17_9.coverage m:24 13314/1496010 0.89%
+
+Current: no_cc: 00:00:09.1881192, 16_5: 00:00:46.9055516 [+410.50%], 17_0: 00:00:44.2105773 [+381.17%], 17_5: 00:00:28.3125213 [+208.14%], 17_9: 00:00:22.5514271 [+145.44%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests net472 70e6577b-8d6e-4ea1-8e80-ed31f28de766 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests net472 883776bc-c682-4ff7-9568-14c230e631d3 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests net472 9dfb2161-096f-46d1-b827-2fc0698625e8 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests net472 c065ede3-228f-434d-b4a4-ceaf8444ebe2 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests net472 0480aca7-b06c-4211-bc50-a710c8584518 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\no_cc.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\16_5.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\no_cc.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_0.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\no_cc.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_5.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\no_cc.trx 985/985
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_9.trx 985/985
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\16_5.coverage m:30 334796/1555934 21.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_0.coverage m:45 335029/1698383 19.73%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\16_5.coverage m:30 334796/1555934 21.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_5.coverage m:45 334958/1698383 19.72%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\16_5.coverage m:30 334796/1555934 21.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.LanguageServer.Protocol.UnitTests\net472\17_9.coverage m:44 335025/1697678 19.73%
+
+Current: no_cc: 00:03:51.0196474, 16_5: 00:04:51.0624779 [+25.99%], 17_0: 00:04:40.8970236 [+21.59%], 17_5: 00:04:25.0089468 [+14.71%], 17_9: 00:04:15.0536796 [+10.40%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests net472 6e594869-0849-465a-93e1-3f263553bae6 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests net472 370373b9-5736-4ba2-8b50-074c26d74b8c D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests net472 0ade5e86-6573-4d1c-a37f-6a72f6a6c514 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests net472 4e992103-6df1-4cfc-b507-3068d5ad0f9a D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests net472 7cafc285-635f-40a7-b6c1-5c3c5aebf923 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\no_cc.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\16_5.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\no_cc.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_0.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\no_cc.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_5.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\no_cc.trx 175/175
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_9.trx 175/175
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\16_5.coverage m:22 503/1459659 0.03%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_0.coverage m:28 506/1591901 0.03%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\16_5.coverage m:22 503/1459659 0.03%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_5.coverage m:28 506/1591901 0.03%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\16_5.coverage m:22 503/1459659 0.03%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.FSharp.UnitTests\net472\17_9.coverage m:27 503/1591196 0.03%
+
+Current: no_cc: 00:00:06.3610753, 16_5: 00:00:39.7015226 [+524.13%], 17_0: 00:00:35.2417402 [+454.02%], 17_5: 00:00:20.4060347 [+220.80%], 17_9: 00:00:14.1804935 [+122.93%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests net472 a7543e67-244c-47b2-bad2-c9292c2b5136 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests net472 52ef18b1-50f7-4b34-bd10-dc812a50fe94 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests net472 b0615056-9524-45bd-b65a-acf2f9935263 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests net472 79a25bf2-4e90-4a75-8dfb-5d51858b64a4 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests net472 6caba569-6663-4e8f-a2b0-50077e1a2642 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\no_cc.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\16_5.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\no_cc.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_0.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\no_cc.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_5.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\no_cc.trx 4/4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_9.trx 4/4
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\16_5.coverage m:13 84/1307372 0.01%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_0.coverage m:19 87/1439614 0.01%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\16_5.coverage m:13 84/1307372 0.01%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_5.coverage m:19 87/1439614 0.01%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\16_5.coverage m:13 84/1307372 0.01%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.UnitTests\net472\17_9.coverage m:18 84/1438909 0.01%
+
+Current: no_cc: 00:00:04.3611964, 16_5: 00:00:37.5853323 [+761.81%], 17_0: 00:00:31.2199274 [+615.86%], 17_5: 00:00:17.7639209 [+307.32%], 17_9: 00:00:11.4548701 [+162.65%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net472 04df2df5-eacc-4ba1-8b30-05545fb02723 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net472 315939ec-2cb0-4af6-b429-c6affd5f388f D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net472 a46ce4f1-af3f-45f3-bca6-06cb738d83ba D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net472 66ad4483-6f71-4b09-a8d6-8da67e1ee361 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net472 f0700834-9a6c-4b00-837f-190f27165c03 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\16_5.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_0.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_5.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_9.trx 1/1
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\16_5.coverage m:9 21571/871280 2.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_0.coverage m:14 24705/993370 2.49%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\16_5.coverage m:9 21571/871280 2.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_5.coverage m:14 24705/993370 2.49%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\16_5.coverage m:9 21571/871280 2.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net472\17_9.coverage m:13 24702/992665 2.49%
+
+Current: no_cc: 00:00:05.8305525, 16_5: 00:00:34.0955846 [+484.77%], 17_0: 00:00:22.7654167 [+290.45%], 17_5: 00:00:17.4079678 [+198.56%], 17_9: 00:00:12.0214632 [+106.18%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net8.0 cbe89b5b-9b6a-4153-ab76-7300dc7f2419 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net8.0 d6d6254a-8aed-4fc9-9010-783da1d34a65 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net8.0 582dff8d-e81a-4a9a-88db-10c1f3aaf4d4 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net8.0 48f7762f-9831-466b-b35a-d1afc0c6d6aa D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests net8.0 41a261fc-afbf-4b07-be8a-b8ad2850be10 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\16_5.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_0.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_5.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\no_cc.trx 1/1
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_9.trx 1/1
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\16_5.coverage m:9 20690/872065 2.37%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_0.coverage m:13 24638/993463 2.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\16_5.coverage m:9 20690/872065 2.37%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_5.coverage m:13 24638/993463 2.48%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\16_5.coverage m:9 20690/872065 2.37%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.UnitTests\net8.0\17_9.coverage m:13 24638/993450 2.48%
+
+Current: no_cc: 00:00:04.2775648, 16_5: 00:00:25.1369063 [+487.65%], 17_0: 00:00:19.9490877 [+366.37%], 17_5: 00:00:13.9733718 [+226.67%], 17_9: 00:00:10.9318001 [+155.56%]
+========================================================================
+RunTest Roslyn.VisualStudio.Next.UnitTests net472 9cddd463-d1e1-4674-8ade-2a5e0c94cc07 D:\github\roslyn1\artifacts\bin\Roslyn.VisualStudio.Next.UnitTests\Debug\net472
+RunTest Roslyn.VisualStudio.Next.UnitTests net472 5a513dbd-e593-4c46-b2cd-217d38477fe4 D:\github\roslyn2\artifacts\bin\Roslyn.VisualStudio.Next.UnitTests\Debug\net472
+RunTest Roslyn.VisualStudio.Next.UnitTests net472 862cc04a-5c5f-4afb-a3a1-fbfefa1dc40f D:\github\roslyn3\artifacts\bin\Roslyn.VisualStudio.Next.UnitTests\Debug\net472
+RunTest Roslyn.VisualStudio.Next.UnitTests net472 ec9aef92-92a5-4034-8ea8-8112abab635c D:\github\roslyn4\artifacts\bin\Roslyn.VisualStudio.Next.UnitTests\Debug\net472
+RunTest Roslyn.VisualStudio.Next.UnitTests net472 4a82c404-dcd1-460d-83d6-d556671554a6 D:\github\roslyn5\artifacts\bin\Roslyn.VisualStudio.Next.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\no_cc.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\16_5.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\no_cc.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_0.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\no_cc.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_5.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\no_cc.trx 1693/1693
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_9.trx 1693/1693
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\16_5.coverage m:40 171541/1644393 10.43%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_0.coverage m:55 172366/1786842 9.65%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\16_5.coverage m:40 171541/1644393 10.43%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_5.coverage m:55 172395/1786842 9.65%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\16_5.coverage m:40 171541/1644393 10.43%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Roslyn.VisualStudio.Next.UnitTests\net472\17_9.coverage m:54 172520/1786137 9.66%
+
+Current: no_cc: 00:00:36.1316829, 16_5: 00:01:31.1295401 [+152.22%], 17_0: 00:01:18.2149975 [+116.47%], 17_5: 00:01:01.4941950 [+70.19%], 17_9: 00:00:49.7199548 [+37.61%]
+========================================================================
+RunTest Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests net472 deb0433f-32ff-4b3f-80cc-e5f2458fdbac D:\github\roslyn1\artifacts\bin\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\Debug\net472
+RunTest Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests net472 40bbfbfc-dbeb-4c1a-b41d-4755c44c4c5d D:\github\roslyn2\artifacts\bin\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\Debug\net472
+RunTest Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests net472 88e87d5b-32de-4750-b0e6-df8693bb27e6 D:\github\roslyn3\artifacts\bin\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\Debug\net472
+RunTest Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests net472 888923a7-c84d-4623-99de-7c228b07ff93 D:\github\roslyn4\artifacts\bin\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\Debug\net472
+RunTest Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests net472 5780247d-dbbb-4f56-87bc-3f76f6f7171b D:\github\roslyn5\artifacts\bin\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\no_cc.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\16_5.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\no_cc.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_0.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\no_cc.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_5.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\no_cc.trx 2/2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_9.trx 2/2
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\16_5.coverage m:32 20319/1582619 1.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_0.coverage m:47 20427/1725068 1.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\16_5.coverage m:32 20319/1582619 1.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_5.coverage m:47 20427/1725068 1.18%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\16_5.coverage m:32 20319/1582619 1.28%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.VisualStudio.LanguageServices.LiveShare.UnitTests\net472\17_9.coverage m:46 20439/1724363 1.19%
+
+Current: no_cc: 00:00:09.1860868, 16_5: 00:00:58.7967212 [+540.06%], 17_0: 00:00:43.7409268 [+376.16%], 17_5: 00:00:29.0731541 [+216.49%], 17_9: 00:00:18.3824227 [+100.11%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests net6.0-windows 282d5bd9-7da1-445e-b290-bb5aff7ec9ba D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests net6.0-windows a7c8c2cf-8fb3-4533-a033-8412d1fd5117 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests net6.0-windows 04ee60d6-60a2-443a-b366-1b72dd5d3696 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests net6.0-windows d43e315e-ee43-4eb0-b302-34ae891dd63e D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\Debug\net6.0-windows
+RunTest Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests net6.0-windows 4bdfe0f3-d620-4fc5-b29c-15eb6a46ef1c D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\Debug\net6.0-windows
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\no_cc.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\16_5.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\no_cc.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_0.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\no_cc.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_5.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\no_cc.trx 13/13
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_9.trx 13/13
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\16_5.coverage m:21 76974/1391464 5.53%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_0.coverage m:26 77791/1525448 5.1%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\16_5.coverage m:21 76974/1391464 5.53%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_5.coverage m:26 77790/1525448 5.1%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\16_5.coverage m:21 76974/1391464 5.53%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests\net6.0-windows\17_9.coverage m:26 77790/1525435 5.1%
+
+Current: no_cc: 00:00:06.4734837, 16_5: 00:00:35.0916112 [+442.08%], 17_0: 00:00:34.1851922 [+428.08%], 17_5: 00:00:20.4553434 [+215.99%], 17_9: 00:00:15.6968447 [+142.48%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net472 46e418d8-00a1-49f0-9a02-7e3bb1de6585 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net472 3e9b4340-f525-431a-b88a-a117fd5bee4c D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net472 c0f23ed7-eb3a-4e77-9a68-b5fe4bbff1b2 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net472 3f8f8d12-49a0-4fbd-b363-ec12ed2d6c49 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net472 a62e6ed9-bc55-4055-9698-c646656391d8 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net472
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\no_cc.trx 724/724
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\16_5.trx 722/724
+MISMATCH: passed 724 722
+MISMATCH: failed 0 2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\no_cc.trx 724/724
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_0.trx 724/724
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\no_cc.trx 724/724
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_5.trx 724/724
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\no_cc.trx 724/724
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_9.trx 724/724
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\16_5.coverage m:9 155523/888694 17.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_0.coverage m:15 160081/1011473 15.83%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\16_5.coverage m:9 155523/888694 17.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_5.coverage m:15 160064/1011473 15.82%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\16_5.coverage m:9 155523/888694 17.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net472\17_9.coverage m:14 160076/1010768 15.84%
+
+Current: no_cc: 00:01:19.3024139, 16_5: 00:05:27.1791970 [+312.57%], 17_0: 00:02:57.5357696 [+123.87%], 17_5: 00:02:47.6106735 [+111.36%], 17_9: 00:01:48.1576844 [+36.39%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net8.0 30172a61-6a09-4d08-8471-ca4a6730ba8f D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net8.0 e2206680-af1a-40de-8f10-6fb476648e25 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net8.0 f25b79f5-9921-4c6b-bbdd-6208b194378e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net8.0 3dd1e3f0-a892-4df9-ac00-f10f89e3ccac D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests net8.0 fa8342cb-202b-43d7-89d8-aabff03894e5 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\Debug\net8.0
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\no_cc.trx 689/689
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\16_5.trx 685/689
+MISMATCH: passed 689 685
+MISMATCH: failed 0 4
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\no_cc.trx 689/689
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_0.trx 689/689
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\no_cc.trx 689/689
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_5.trx 689/689
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\no_cc.trx 689/689
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_9.trx 689/689
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\16_5.coverage m:9 139053/889716 15.63%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_0.coverage m:14 143795/1011803 14.21%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\16_5.coverage m:9 139053/889716 15.63%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_5.coverage m:14 143801/1011803 14.21%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\16_5.coverage m:9 139053/889716 15.63%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.CommandLine.UnitTests\net8.0\17_9.coverage m:14 143803/1011790 14.21%
+
+Current: no_cc: 00:00:41.9323501, 16_5: 00:01:12.9619876 [+74.00%], 17_0: 00:01:11.1816752 [+69.75%], 17_5: 00:01:03.4342245 [+51.28%], 17_9: 00:00:53.4847469 [+27.55%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net472 a63d67cd-3389-4e5c-be32-6290e133c7ad D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net472 b6c88e76-d3d6-4da2-b2e6-c1899e3cc0dd D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net472 b8c1761f-cd58-46a9-b15e-70ded1564c9c D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net472 20369f5f-0a93-486a-83af-67ece93f8afb D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net472 55b50b52-47f4-418c-9ee8-74672eafc50a D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net472
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\no_cc.trx 7708/7708
+FAIL TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\16_5.trx 7706/7708
+MISMATCH: passed 7708 7706
+MISMATCH: failed 0 2
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\no_cc.trx 7708/7708
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_0.trx 7708/7708
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\no_cc.trx 7708/7708
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_5.trx 7708/7708
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\no_cc.trx 7708/7708
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_9.trx 7708/7708
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\16_5.coverage m:8 432689/964915 44.84%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_0.coverage m:16 442566/1093047 40.49%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\16_5.coverage m:8 432689/964915 44.84%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_5.coverage m:16 442560/1093047 40.49%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\16_5.coverage m:8 432689/964915 44.84%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net472\17_9.coverage m:15 442603/1092342 40.52%
+
+Current: no_cc: 00:12:32.0797158, 16_5: 00:28:36.2737752 [+128.20%], 17_0: 00:17:13.5426690 [+37.42%], 17_5: 00:16:58.3912548 [+35.41%], 17_9: 00:14:55.8657813 [+19.12%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net8.0 15a5b785-05c9-47b2-a5aa-5d0f5cb12c00 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net8.0 a5e6bf12-1e0e-4c10-9254-c1a5ba0bdd41 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net8.0 2685c5ec-c2f6-4f53-8a01-b5ef1adecb20 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net8.0 b2c8c8f7-02ec-4cb4-93fa-43664bc869b5 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit.UnitTests net8.0 2c057000-5141-49d6-98b2-0de336db5c58 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\no_cc.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\16_5.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\no_cc.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_0.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\no_cc.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_5.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\no_cc.trx 7370/7370
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_9.trx 7370/7370
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\16_5.coverage m:8 426294/964399 44.2%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_0.coverage m:15 435896/1091839 39.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\16_5.coverage m:8 426294/964399 44.2%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_5.coverage m:15 435924/1091839 39.93%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\16_5.coverage m:8 426294/964399 44.2%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit.UnitTests\net8.0\17_9.coverage m:15 435885/1091826 39.92%
+
+Current: no_cc: 00:09:21.1477595, 16_5: 00:19:10.3739863 [+105.00%], 17_0: 00:17:43.9242859 [+89.60%], 17_5: 00:10:29.9985197 [+12.27%], 17_9: 00:09:58.6315350 [+6.68%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net472 a1a6e476-53c9-4a8e-a8a7-1af082640082 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net472 037c6ddf-e747-45b2-84c0-f1db14d8be5e D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net472 ba9e7429-521d-4ce7-b184-0544282a405e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net472 06bf82a8-e25b-4258-9b16-c2f014096ea5 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net472 b0be57d7-05c2-4036-9d2d-bb6aa96dfb20 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\no_cc.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\16_5.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\no_cc.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_0.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\no_cc.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_5.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\no_cc.trx 16810/16810
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_9.trx 16810/16810
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\16_5.coverage m:8 516650/1028700 50.22%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_0.coverage m:16 526398/1156832 45.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\16_5.coverage m:8 516650/1028700 50.22%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_5.coverage m:16 526379/1156832 45.5%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\16_5.coverage m:8 516650/1028700 50.22%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net472\17_9.coverage m:15 526406/1156127 45.53%
+
+Current: no_cc: 00:11:54.4060847, 16_5: 00:32:46.7237342 [+175.29%], 17_0: 00:16:15.2772195 [+36.52%], 17_5: 00:16:18.4766545 [+36.96%], 17_9: 00:15:07.8558669 [+27.08%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net8.0 e64035ef-61f7-459d-a127-bd6102228e0f D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net8.0 f17ddc89-e896-4bb0-82c6-b3987f2c6b30 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net8.0 3a3160ae-4346-4005-8124-9a71ac286a79 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net8.0 c0fa1bf0-ba36-426c-b9bd-aa0d398f2d54 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests net8.0 fb4a42e7-f936-4ca1-9df0-df0398988960 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\no_cc.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\16_5.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\no_cc.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_0.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\no_cc.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_5.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\no_cc.trx 17138/17138
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_9.trx 17138/17138
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\16_5.coverage m:8 520991/1031197 50.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_0.coverage m:15 530733/1158637 45.81%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\16_5.coverage m:8 520991/1031197 50.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_5.coverage m:15 530735/1158637 45.81%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\16_5.coverage m:8 520991/1031197 50.52%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Emit2.UnitTests\net8.0\17_9.coverage m:15 530772/1158624 45.81%
+
+Current: no_cc: 00:08:10.4136732, 16_5: 00:18:46.2803407 [+129.66%], 17_0: 00:16:21.0018498 [+100.04%], 17_5: 00:09:06.2646504 [+11.39%], 17_9: 00:08:55.2169940 [+9.14%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net472 3e9974f4-469e-4505-b734-6b7e03421b6b D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net472 38fdf6d5-96dc-40aa-9038-cd1a3fbf163c D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net472 4be74711-c7f9-4c47-ba61-c4b1ef86d8a7 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net472 2c46a9f1-c62a-48c1-a06c-e78ea6e53919 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net472 49a19cec-ec3f-4aa3-b6d0-2d39ddc790ef D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\16_5.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_0.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_5.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_9.trx 17/17
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\16_5.coverage m:8 115192/871788 13.21%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_0.coverage m:13 118315/993878 11.9%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\16_5.coverage m:8 115192/871788 13.21%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_5.coverage m:13 118320/993878 11.9%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\16_5.coverage m:8 115192/871788 13.21%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net472\17_9.coverage m:12 118337/993173 11.92%
+
+Current: no_cc: 00:00:21.9831597, 16_5: 00:02:14.2611693 [+510.75%], 17_0: 00:02:01.8899841 [+454.47%], 17_5: 00:01:56.8473280 [+431.53%], 17_9: 00:01:21.9271288 [+272.68%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net8.0 88ffbb56-3f4a-4b92-a1e1-7dac220fac23 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net8.0 e8736a98-2a5d-4f03-8adb-50867ab83fb9 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net8.0 eac4b2d6-5886-42c1-9d9b-e78e4f7e672e D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net8.0 ab7c01fa-5f6d-48e8-afb6-deb937754153 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests net8.0 110d6a29-fad1-477d-8f54-1d8dc4e06a6a D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\16_5.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_0.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_5.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\no_cc.trx 17/17
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_9.trx 17/17
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\16_5.coverage m:8 113921/872685 13.05%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_0.coverage m:12 117799/994083 11.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\16_5.coverage m:8 113921/872685 13.05%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_5.coverage m:12 117818/994083 11.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\16_5.coverage m:8 113921/872685 13.05%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.EndToEnd.UnitTests\net8.0\17_9.coverage m:12 117800/994070 11.85%
+
+Current: no_cc: 00:00:16.5721052, 16_5: 00:01:57.2238996 [+607.36%], 17_0: 00:01:44.7989147 [+532.38%], 17_5: 00:01:36.5225147 [+482.44%], 17_9: 00:01:36.0731673 [+479.73%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net472 37ca8fc8-bb12-4942-b1dc-9f98c3891b05 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net472 39f7bc64-ee30-4c37-94d2-e4e8ab08cbf4 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net472 6b3a16dc-57b3-453e-85f5-5517a325aab4 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net472 a4b4a379-91c3-46a9-89fb-4b36b68f11ca D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net472 112fea54-a7d4-4abb-b774-7ff866f7822c D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\no_cc.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\16_5.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\no_cc.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_0.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\no_cc.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_5.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\no_cc.trx 2384/2384
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_9.trx 2384/2384
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\16_5.coverage m:8 273487/884409 30.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_0.coverage m:15 279356/1010818 27.64%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\16_5.coverage m:8 273487/884409 30.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_5.coverage m:15 279258/1010818 27.63%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\16_5.coverage m:8 273487/884409 30.92%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net472\17_9.coverage m:14 279298/1010113 27.65%
+
+Current: no_cc: 00:00:37.0894174, 16_5: 00:01:22.1838444 [+121.58%], 17_0: 00:01:10.7701971 [+90.81%], 17_5: 00:01:03.4591447 [+71.10%], 17_9: 00:00:57.2228888 [+54.28%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net8.0 c4e059c3-587c-44f4-8281-95a22c54cccc D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net8.0 42ce5cc4-fa26-4b6e-bff4-94cf9e2f0af3 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net8.0 3d1cc0ac-63e0-4dc5-86f4-795d5fab75cf D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net8.0 b0dd52c3-ec22-4d5a-8575-07a1935fd09d D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests net8.0 672088f6-1145-4395-b1a1-ddb798fcec51 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\no_cc.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\16_5.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\no_cc.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_0.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\no_cc.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_5.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\no_cc.trx 2383/2383
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_9.trx 2383/2383
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\16_5.coverage m:8 273086/885210 30.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_0.coverage m:14 279675/1010927 27.67%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\16_5.coverage m:8 273086/885210 30.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_5.coverage m:14 279600/1010927 27.66%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\16_5.coverage m:8 273086/885210 30.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.IOperation.UnitTests\net8.0\17_9.coverage m:14 279648/1010914 27.66%
+
+Current: no_cc: 00:00:27.5697531, 16_5: 00:01:03.6825026 [+130.99%], 17_0: 00:00:50.2465726 [+82.25%], 17_5: 00:00:43.0339326 [+56.09%], 17_9: 00:00:39.7762000 [+44.27%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net472 68f1ef66-8cfe-4d39-a17d-1f806de231d5 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net472 ea964e55-cb1f-40f4-b3c2-ff87a1f3640f D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net472 02de3847-8f85-4292-a513-4b8af081ddf3 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net472 25589940-d303-46ea-bace-d07a73d785f0 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net472 9d4995dc-9933-4eed-9b35-80907aa05745 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\no_cc.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\16_5.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\no_cc.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_0.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\no_cc.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_5.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\no_cc.trx 17711/17711
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_9.trx 17711/17711
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\16_5.coverage m:8 587403/1090768 53.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_0.coverage m:15 598176/1219295 49.06%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\16_5.coverage m:8 587403/1090768 53.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_5.coverage m:15 598183/1219295 49.06%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\16_5.coverage m:8 587403/1090768 53.85%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net472\17_9.coverage m:14 598189/1218590 49.09%
+
+Current: no_cc: 00:15:00.1807773, 16_5: 00:24:05.3653781 [+60.56%], 17_0: 00:21:35.0004373 [+43.86%], 17_5: 00:22:02.8403730 [+46.95%], 17_9: 00:20:48.4809290 [+38.69%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net8.0 1c8be7da-9bcd-4716-8696-d7f21630782f D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net8.0 4e40176f-b224-4d3c-ab3c-2aaf1556776d D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net8.0 c510f990-d926-4f59-84fb-784e99f25db4 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net8.0 69472bd0-1dd8-4af3-9c93-0b9a1390cad1 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests net8.0 5c76952d-8b90-4efd-a082-b81e6ff4330e D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\no_cc.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\16_5.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\no_cc.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_0.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\no_cc.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_5.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\no_cc.trx 17840/17840
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_9.trx 17840/17840
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\16_5.coverage m:8 589357/1094243 53.86%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_0.coverage m:14 600049/1222078 49.1%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\16_5.coverage m:8 589357/1094243 53.86%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_5.coverage m:14 600110/1222078 49.11%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\16_5.coverage m:8 589357/1094243 53.86%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests\net8.0\17_9.coverage m:14 600100/1222065 49.11%
+
+Current: no_cc: 00:10:56.5506826, 16_5: 00:27:19.1874452 [+149.67%], 17_0: 00:22:26.2275194 [+105.05%], 17_5: 00:11:46.3162495 [+7.58%], 17_9: 00:11:50.4698846 [+8.21%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests net8.0 e420d91a-7df9-4242-bd83-2c2aab16fcd2 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests net8.0 096ba81d-2324-46e6-a5ef-6fb58c68fa9f D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests net8.0 2b11e31e-69ed-4504-bfc5-47fda37f4470 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests net8.0 bcd2d57b-8262-4685-8859-7075c7533033 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests net8.0 21be19d3-8ca3-49f0-9ad6-92862fc0f62f D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\no_cc.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\16_5.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\no_cc.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_0.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\no_cc.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_5.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\no_cc.trx 13224/13224
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_9.trx 13224/13224
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\16_5.coverage m:8 537207/1068047 50.3%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_0.coverage m:14 544659/1192968 45.66%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\16_5.coverage m:8 537207/1068047 50.3%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_5.coverage m:14 544663/1192968 45.66%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\16_5.coverage m:8 537207/1068047 50.3%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Symbol.UnitTests\net8.0\17_9.coverage m:14 544651/1192955 45.66%
+
+Current: no_cc: 00:05:44.7545589, 16_5: 00:10:47.6230818 [+87.85%], 17_0: 00:08:47.6446502 [+53.05%], 17_5: 00:06:34.4819917 [+14.42%], 17_9: 00:06:26.5075195 [+12.11%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net472 7b408436-a2ae-42e5-aa9d-fb2a6e8ae6f5 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net472 7972e117-e451-4bd9-ad57-48f99acf79fc D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net472 49758692-8ca0-4ad6-8b51-5c1e46fc6d47 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net472 a4bc2f25-e420-497c-a2c4-c419bc6598a9 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net472 4125b5d3-e326-404b-983a-6c84ab241941 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\16_5.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_0.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_5.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_9.trx 8240/8240
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\16_5.coverage m:8 398245/1046329 38.06%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_0.coverage m:13 401373/1168419 34.35%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\16_5.coverage m:8 398245/1046329 38.06%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_5.coverage m:13 401242/1168419 34.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\16_5.coverage m:8 398245/1046329 38.06%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net472\17_9.coverage m:12 401248/1167714 34.36%
+
+Current: no_cc: 00:01:04.6928202, 16_5: 00:02:23.5283031 [+121.86%], 17_0: 00:01:48.4119941 [+67.58%], 17_5: 00:01:46.6599434 [+64.87%], 17_9: 00:01:34.8786847 [+46.66%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net8.0 52263fb7-baa8-4d31-b677-7345d3fbe200 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net8.0 b2554aef-9152-4089-9648-817ff43a1c73 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net8.0 3f7da055-f1c9-49d0-8830-692fdcbd45ee D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net8.0 98ed6d9d-7b28-4e25-bd77-e35db892fcf6 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net8.0
+RunTest Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests net8.0 8c9a50f0-f057-4267-94ed-1931b8fe34d1 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\Debug\net8.0
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\16_5.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_0.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_5.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\no_cc.trx 8240/8240
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_9.trx 8240/8240
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\16_5.coverage m:8 397261/1047233 37.93%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_0.coverage m:12 401303/1168631 34.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\16_5.coverage m:8 397261/1047233 37.93%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_5.coverage m:12 401312/1168631 34.34%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\16_5.coverage m:8 397261/1047233 37.93%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.Syntax.UnitTests\net8.0\17_9.coverage m:12 401232/1168618 34.33%
+
+Current: no_cc: 00:01:07.3970469, 16_5: 00:02:24.0921448 [+113.80%], 17_0: 00:02:11.2060225 [+94.68%], 17_5: 00:01:14.6818295 [+10.81%], 17_9: 00:01:12.6724911 [+7.83%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests net472 dfbeedae-43b7-4798-a0d0-c2cdcefd59c0 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests net472 071d378f-e5f7-4afc-abf5-f4cf3324c666 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests net472 fd234cfb-e1aa-49a0-83cd-44c0ff898a06 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests net472 d9e12172-81f7-4fec-8431-70b5e129ee4c D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests net472 f0a8dcff-d3b2-4c6d-ab05-e7373e87408c D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\no_cc.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\16_5.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\no_cc.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_0.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\no_cc.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_5.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\no_cc.trx 68/68
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_9.trx 68/68
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\16_5.coverage m:8 124464/872876 14.26%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_0.coverage m:13 127614/994966 12.83%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\16_5.coverage m:8 124464/872876 14.26%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_5.coverage m:13 127592/994966 12.82%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\16_5.coverage m:8 124464/872876 14.26%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.WinRT.UnitTests\net472\17_9.coverage m:12 127588/994261 12.83%
+
+Current: no_cc: 00:00:13.7648631, 16_5: 00:00:50.9177376 [+269.91%], 17_0: 00:00:34.9536219 [+153.93%], 17_5: 00:00:29.7254425 [+115.95%], 17_9: 00:00:22.5758382 [+64.01%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.FunctionResolver.UnitTests net472 aaf3a1ea-b30b-4b50-b6bb-b9b6fc5caefd D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.FunctionResolver.UnitTests net472 5168bb95-b550-4544-92b5-86a15aeed57b D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.FunctionResolver.UnitTests net472 01fbd256-1027-4cef-8bbe-b81f24d2ca03 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.FunctionResolver.UnitTests net472 b2d2c36c-19ab-4f9e-9b0b-fd8bfad3fc77 D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.FunctionResolver.UnitTests net472 7c0ef8c6-56de-4bff-bcdf-2ae68704d114 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\no_cc.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\16_5.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\no_cc.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_0.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\no_cc.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_5.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\no_cc.trx 62/62
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_9.trx 62/62
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\16_5.coverage m:10 89162/882007 10.11%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_0.coverage m:15 92290/1004097 9.19%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\16_5.coverage m:10 89162/882007 10.11%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_5.coverage m:15 92294/1004097 9.19%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\16_5.coverage m:10 89162/882007 10.11%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.FunctionResolver.UnitTests\net472\17_9.coverage m:14 92286/1003392 9.2%
+
+Current: no_cc: 00:00:08.0173390, 16_5: 00:00:40.2642945 [+402.22%], 17_0: 00:00:26.5357239 [+230.98%], 17_5: 00:00:21.4574067 [+167.64%], 17_9: 00:00:15.7096089 [+95.95%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests net472 b246889f-9e1d-4afb-b1ac-542089c17ce9 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests net472 d68bf2a1-54e2-414d-9810-2ad207bd8f21 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests net472 8bc5e5c1-8263-4b4c-8b47-a788446cff02 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests net472 45c36382-ea07-45c0-abf0-e5fb56516fcf D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests net472 5f27b66e-f3f7-4649-97ee-82f377b50d72 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\no_cc.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\16_5.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\no_cc.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_0.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\no_cc.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_5.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\no_cc.trx 727/727
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_9.trx 727/727
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\16_5.coverage m:10 189893/879880 21.58%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_0.coverage m:17 208844/1020165 20.47%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\16_5.coverage m:10 189893/879880 21.58%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_5.coverage m:17 208815/1020165 20.47%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\16_5.coverage m:10 189893/879880 21.58%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.UnitTests\net472\17_9.coverage m:16 208852/1019460 20.49%
+
+Current: no_cc: 00:00:34.2743262, 16_5: 00:01:20.7895786 [+135.71%], 17_0: 00:01:05.6025453 [+91.40%], 17_5: 00:00:57.5808014 [+68.00%], 17_9: 00:00:49.9520806 [+45.74%]
+========================================================================
+RunTest Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests net472 e77e9657-23c4-4c0e-b9f2-7995a39adf13 D:\github\roslyn1\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests net472 207a2a17-cebc-4e13-9854-b994e7dbabb4 D:\github\roslyn2\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests net472 a03237ec-b4b2-4b8a-8245-ce92ab5afcb6 D:\github\roslyn3\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests net472 eff4f068-2b25-4d67-ae20-752bb97a26da D:\github\roslyn4\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\Debug\net472
+RunTest Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests net472 c3af7e3b-2be2-486f-bec3-28cf7751ba03 D:\github\roslyn5\artifacts\bin\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\Debug\net472
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\16_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_0.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_5.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\no_cc.trx 338/338
+OK TRX:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_9.trx 338/338
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\16_5.coverage m:8 122936/878373 14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_0.coverage m:14 134596/1009541 13.33%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\16_5.coverage m:8 122936/878373 14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_5.coverage m:14 134612/1009541 13.33%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\16_5.coverage m:8 122936/878373 14%
+FAIL IO:C:\Users\UseThisAccount\AppData\Local\Temp\c47fb49b-0830-4313-b4b3-9489cc0a2d4e\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests\net472\17_9.coverage m:13 134573/1008836 13.34%
+
+Current: no_cc: 00:00:23.5871659, 16_5: 00:00:54.9793244 [+133.09%], 17_0: 00:00:43.6594340 [+85.10%], 17_5: 00:00:38.0381515 [+61.27%], 17_9: 00:00:32.7240587 [+38.74%]
