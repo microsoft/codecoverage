@@ -28,7 +28,7 @@ This example shows dynamic code coverage with child processes collection disable
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator/src/Calculator.Console/
 dotnet build
-cd codecoverage/samples/Calculator/tests/Calculator.Console.Tests/
+cd ../../tests/Calculator.Console.Tests/
 dotnet test --settings ../../scenarios/scenario12/coverage.runsettings
 ```
 
