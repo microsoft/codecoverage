@@ -1,6 +1,6 @@
 # Scenario Description
 
-This example shows dynamic code coverage with child processes collection disabled (compare with [scenario 11](../scenario11/README.md)). `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requres specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `False` means our system will not restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
 # Configuration
 
@@ -12,14 +12,20 @@ This example shows dynamic code coverage with child processes collection disable
       <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
         <Configuration>
           <CodeCoverage>
-            <CollectFromChildProcesses>False</CollectFromChildProcesses>
+            <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
+            <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
+            <EnableStaticManagedInstrumentationRestore>False</EnableStaticManagedInstrumentationRestore>
+            <ModulePaths>
+              <IncludeDirectories>
+                <Directory Recursive="true">%STATIC_INSTRUMENTATION_DIR%</Directory>
+              </IncludeDirectories>
+            </ModulePaths>
           </CodeCoverage>
         </Configuration>
       </DataCollector>
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
-
 ```
 
 # Collect code coverage using command line
@@ -28,8 +34,9 @@ This example shows dynamic code coverage with child processes collection disable
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator/src/Calculator.Console/
 dotnet build
+export STATIC_INSTRUMENTATION_DIR=`pwd`
 cd ../../tests/Calculator.Console.Tests/
-dotnet test --settings ../../scenarios/scenario12/coverage.runsettings
+dotnet test --settings ../../scenarios/scenario22/coverage.runsettings
 ```
 
 > **_NOTE:_** You don't have to use `--collect "Code Coverage"` when you specify runsettings with code coverage configuration.
@@ -54,7 +61,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Build  (Console project)
       run: dotnet build --no-restore ../../src/Calculator.Console/Calculator.Console.csproj
     - name: Test
-      run: dotnet test --settings ../../scenarios/scenario12/coverage.runsettings --no-build --verbosity normal
+      run: dotnet test --settings ../../scenarios/scenario22/coverage.runsettings --no-build --verbosity normal
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Convert .coverage report to cobertura
@@ -74,9 +81,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ./**/TestResults/**/*.coverage
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario12.yml)
+[Full source example](../../../../.github/workflows/Calculator_Scenario22.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario12.yml)
+[Run example](../../../../../../actions/workflows/Calculator_Scenario22.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -111,9 +118,11 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario12/coverage.runsettings'
+    arguments: '--no-build --configuration $(buildConfiguration) --settings samples/Calculator/scenarios/scenario22/coverage.runsettings'
     projects: '$(testProjectPath)' # this is specific to example - in most cases not needed
   displayName: 'dotnet test'
+  env:
+    STATIC_INSTRUMENTATION_DIR: '$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console'
 ```
 
 > **_NOTE:_** Azure DevOps pipelines automatically recognize binary coverage report format. Code coverage results are automatically processed and published to Azure DevOps. No additional steps needed.

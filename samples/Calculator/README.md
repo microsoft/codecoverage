@@ -32,3 +32,5 @@ Solution contains seven projects:
 19. [***Scenario 19*** Code coverage for whole solution with test projects excluded](scenarios/scenario19/README.md)
 20. [***Scenario 20*** Code coverage for whole solution with logs](scenarios/scenario20/README.md)
 21. [***Scenario 21*** Code coverage for whole solution with script to run tests](scenarios/scenario21/README.md)
+22. [***Scenario 22*** Code coverage for child processes using static instrumentation without binaries restore](scenarios/scenario22/README.md)
+23. [***Scenario 23*** Code coverage for child processes using static instrumentation with binaries restore](scenarios/scenario23/README.md)

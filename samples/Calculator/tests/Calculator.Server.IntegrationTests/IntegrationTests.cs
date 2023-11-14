@@ -26,7 +26,7 @@ public class IntegrationTests
     [Parallelizable(ParallelScope.All)]
     public async Task TestOperations(string input, string output)
     {
-        try 
+        try
         {
             // Act
             var response = await _client.GetAsync(input);
@@ -39,5 +39,11 @@ public class IntegrationTests
         {
             Assert.Ignore(e.Message);
         }
+    }
+
+    [OneTimeTearDown]
+    public void TearDown()
+    {
+        _client.Dispose();
     }
 }
