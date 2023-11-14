@@ -7,6 +7,7 @@
           <CodeCoverage>
             <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
             <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
+            <EnableStaticManagedInstrumentationRestore>False</EnableStaticManagedInstrumentationRestore>
             <ModulePaths>
               <IncludeDirectories>
                 <Directory Recursive="true">%STATIC_INSTRUMENTATION_DIR%</Directory>
