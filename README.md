@@ -46,12 +46,26 @@ Hello, World!
 Code coverage results: output.coverage.
 ```
 
+For existing projects to get latest features and best performance please keep up to date below references:
+```xml
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+<PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
+```
+
+If your solution doesn't contain any C++ code it is recommended to disable native code coverage by adding into configuration below flags:
+```xml
+<EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+<EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
+```
+Check other configuration options [here](docs/configuration.md).
+
 ## Documentation 
 
 * Documentation for `dotnet-coverage` tool is available at https://aka.ms/dotnet-coverage.
-* Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis.
+* Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
+* [Performance data](docs/performance/Performance.md)
 
 ## Contributing
 
