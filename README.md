@@ -2,6 +2,50 @@
 
 Microsoft code coverage functionality is closed source. This repository contains documentation and samples. You can also use it to report any issues related to `Microsoft.CodeCoverage` NuGet package, `dotnet-coverage` NuGet package or Visual Studio code coverage functionality.
 
+## Get started
+
+To collect code coverage for .NET test project you can simply execute:
+```shell
+dotnet new mstest -o mstests
+cd mstests
+dotnet test --collect "Code Coverage;Format=cobertura"
+```
+You should see output:
+```shell
+Determining projects to restore...
+  All projects are up-to-date for restore.
+  mstests -> D:\mstests\bin\Debug\net8.0\mstests.dll
+Test run for D:\mstests\bin\Debug\net8.0\mstests.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.8.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:     1, Skipped:     0, Total:     1, Duration: 16 ms - mstests.dll (net8.0)
+
+Attachments:
+  D:\mstests\TestResults\caf685fa-04ce-4858-9feb-ae472f1a71e1\dd166e58-6e19-4741-931a-816d025fcb32.cobertura.xml
+```
+
+For any .NET application you can collect code coverage in this way:
+```shell
+dotnet new console -o sample1
+cd sample1
+dotnet tool install -g dotnet-coverage
+dotnet-coverage collect "dotnet run"
+```
+
+You should see output:
+```shell
+Microsoft (R) Code Coverage Command Line Tool (x64)
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+SessionId: d1bf31db-f634-4b2c-a627-c708ac93d85b
+Hello, World!
+Code coverage results: output.coverage.
+```
+
 ## Documentation 
 
 * Documentation for `dotnet-coverage` tool is available at https://aka.ms/dotnet-coverage.
