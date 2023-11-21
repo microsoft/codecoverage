@@ -51,6 +51,7 @@ Code coverage results: output.coverage.
 * Documentation for `dotnet-coverage` tool is available at https://aka.ms/dotnet-coverage.
 * Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis.
 * [Supported OS versions](docs/supported-os.md)
+* [Configuration](docs/configuration.md)
 
 ## Contributing
 
