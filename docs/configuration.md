@@ -42,6 +42,7 @@
 | EnableStaticManagedInstrumentation | `True`, `False` | `False` | Enable static managed instrumentation. | `<EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>` |
 | EnableStaticManagedInstrumentationRestore | `True`, `False` | `True` | Enable static managed instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>` |
 | SymbolSearchPaths | XML | | Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented. If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here. Note that searching for symbols increases code coverage runtime. So keep this small and local. | `<SymbolSearchPaths><Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path></SymbolSearchPaths>` |
+| AllowedUsers | XML | | Supported only for .NET Framework. Additional users that will be able to access internal shared memory and pipes. | `<AllowedUsers><User>UserName1</User></AllowedUsers>` |
 | ModulePaths | XML | | Include and exclude lists for module paths. <br> Empty "Include" clauses imply all; empty "Exclude" clauses imply none. Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio. An item must first match at least one entry in the include list to be included. Included items must then not match any entries in the exclude list to remain included. |  `<ModulePaths><Exclude><ModulePath>.*CPPUnitTestFramework.*</ModulePath></Exclude></ModulePaths>` |
 | PublicKeyTokens | XML | | Include and exclude lists for public key tokens.<br>Matches the public key token of a signed assembly. | `<PublicKeyTokens><Exclude><PublicKeyToken>^B77A5C561934E089$</PublicKeyToken></Exclude></PublicKeyTokens>` |
 | CompanyNames | XML | | Include and exclude lists for company names.<br>Matches the company name property in the assembly. | `<CompanyNames><Exclude><CompanyName>.*microsoft.*</CompanyName></Exclude></CompanyNames>` |
@@ -90,9 +91,13 @@
             <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
             <EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>
             <SymbolSearchPaths>
-                   <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>
-                   <Path>\\mybuildshare\builds\ProjectX</Path>
+              <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>
+              <Path>\\mybuildshare\builds\ProjectX</Path>
             </SymbolSearchPaths>
+            <AllowedUsers>
+              <User>UserName1</User>
+              <User>UserName2</User>
+            </AllowedUsers>
             <ModulePaths>
               <Include>
                 <ModulePath>.*\.dll$</ModulePath>
