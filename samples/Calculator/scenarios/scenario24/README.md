@@ -18,7 +18,6 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 Executing tests is automatically creating `cobertura` report. Then `reportgenerator` can be used to generate final github summary markdown.
 
 ```yml
-    steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -43,7 +42,7 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: '${{ github.workspace }}/report.cobertura.xml'
+        path: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario24.yml)
