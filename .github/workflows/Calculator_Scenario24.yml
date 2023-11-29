@@ -25,18 +25,13 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Install dotnet-coverage
-      run: dotnet tool install -g dotnet-coverage
     - name: Run tests
-      run: dotnet test --collect "Code Coverage" --no-build --verbosity normal --results-directory ./TestResults/
-      working-directory: ./samples/Calculator
-    - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
+      run: dotnet test --collect "Code Coverage;Format=Cobertura" --no-build --verbosity normal --results-directory ./TestResults/
       working-directory: ./samples/Calculator
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
       with:
-        reports: '${{ github.workspace }}/report.cobertura.xml'
+        reports: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
         reporttypes: 'MarkdownSummaryGithub'
     - name: Upload coverage into summary
