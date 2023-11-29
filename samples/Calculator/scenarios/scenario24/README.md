@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage for whole solution. You can find here example how to collect coverage for all unit tests. All coverage reports, from all test projects are automatically merged.
+Collect code coverage for whole solution. You can find here example how to collect coverage for all unit tests. All coverage reports, from all test projects are automatically merged. To simplify integration tests are skipped because server is not started.
 
 # Collect code coverage using command line
 
