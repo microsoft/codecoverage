@@ -1,6 +1,6 @@
 # Supported OS versions
 
-Table below shows availability of our tooling on different operating systems. It also specifies if particular instrumentation is enabled or disabled by default.
+Below table illustrates the availability of our tooling on different operating systems and specifies whether dynamic or static instrumentation is enabled or disabled by default.
 
 OS                                    | Version               | Architectures     | Dynamic instrumentation |Static instrumentation
 --------------------------------------|-----------------------|-------------------|-------------------------|----------------------

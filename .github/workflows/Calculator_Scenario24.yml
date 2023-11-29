@@ -1,0 +1,43 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: "Calculator Scenario 24"
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ 'samples/Calculator/tests/**', 'samples/Calculator/src/**', '.github/workflows/Calculator_Scenario24.yml' ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./samples/Calculator
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Run tests
+      run: dotnet test --collect "Code Coverage;Format=Cobertura" --no-build --verbosity normal --results-directory ./TestResults/
+      working-directory: ./samples/Calculator
+    - name: ReportGenerator
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      with:
+        reports: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
+        targetdir: '${{ github.workspace }}/coveragereport'
+        reporttypes: 'MarkdownSummaryGithub'
+    - name: Upload coverage into summary
+      run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
