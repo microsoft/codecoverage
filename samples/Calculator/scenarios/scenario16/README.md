@@ -73,7 +73,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       run: dotnet-coverage merge -f cobertura -o report.cobertura.xml **/snapshot*.cobertura.xml
       working-directory: '${{ github.workspace }}/coverage'
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/coverage/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
