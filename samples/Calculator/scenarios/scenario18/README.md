@@ -113,7 +113,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml "**/*.coverage"'
     workingDirectory: "$(Agent.TempDirectory)"
   displayName: 'merge coverage results'
 
