@@ -7,4 +7,4 @@ dotnet-coverage collect -l $PSScriptRoot/../../logs/collect.log -ll Verbose --se
 cd $PSScriptRoot/../..
 dotnet test --settings ./scenarios/scenario20/coverage.runsettings --results-directory "$PSScriptRoot/../../TestResults/" --diag $PSScriptRoot/../../logs/log.txt
 dotnet-coverage shutdown -l $PSScriptRoot/../../logs/shutdown.log -ll Verbose TagScenario20
-dotnet-coverage merge -l $PSScriptRoot/../../logs/merge.log -ll Verbose -r --output-format cobertura --output merged.cobertura.xml $PSScriptRoot/../../TestResults/*.coverage $PSScriptRoot/../../src/Calculator.Server/report.coverage
+dotnet-coverage merge -l $PSScriptRoot/../../logs/merge.log -ll Verbose --output-format cobertura --output merged.cobertura.xml $PSScriptRoot/../../TestResults/**/*.coverage $PSScriptRoot/../../src/Calculator.Server/report.coverage

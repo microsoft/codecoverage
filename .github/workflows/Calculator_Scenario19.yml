@@ -36,10 +36,10 @@ jobs:
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario19
     - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
+      run: dotnet-coverage merge -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/**/*.coverage" src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

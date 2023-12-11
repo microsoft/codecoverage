@@ -14,7 +14,7 @@ dotnet-coverage collect --output report.coverage --session-id TagScenario14 "dot
 cd ../../tests/Calculator.Server.IntegrationTests
 dotnet test --collect "Code Coverage"
 dotnet-coverage shutdown TagScenario14
-dotnet-coverage merge -r --output merged.coverage *.coverage ../../src/Calculator.Server/report.coverage
+dotnet-coverage merge --output merged.coverage **/*.coverage ../../src/Calculator.Server/report.coverage
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -45,10 +45,10 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario14
     - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml *.coverage ../../src/Calculator.Server/report.coverage
+      run: dotnet-coverage merge -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml **/*.coverage ../../src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator/tests/Calculator.Server.IntegrationTests
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
@@ -126,7 +126,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    script: 'dotnet-coverage merge -f cobertura -o merged.cobertura.xml "**/*.coverage"'
     workingDirectory: "$(Agent.TempDirectory)"
   displayName: 'merge coverage results'
 

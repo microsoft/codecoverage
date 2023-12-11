@@ -32,7 +32,7 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
     - name: Run
       run: dotnet-coverage collect -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "dotnet run --no-build add 10 24"
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

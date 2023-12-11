@@ -6,4 +6,4 @@ dotnet-coverage collect --output report.coverage --session-id TagScenario14 "dot
 cd $PSScriptRoot/../../tests/Calculator.Server.IntegrationTests
 dotnet test --collect "Code Coverage"
 dotnet-coverage shutdown TagScenario14
-dotnet-coverage merge -r --output merged.coverage *.coverage $PSScriptRoot/../../src/Calculator.Server/report.coverage
+dotnet-coverage merge --output merged.coverage **/*.coverage $PSScriptRoot/../../src/Calculator.Server/report.coverage

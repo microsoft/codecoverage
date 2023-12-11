@@ -32,9 +32,9 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Convert .coverage report to cobertura
-      run: dotnet-coverage merge -r $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+      run: dotnet-coverage merge $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/**/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

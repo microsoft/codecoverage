@@ -32,7 +32,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Run tests
       run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura "bash scenarios/scenario21/tests.sh"
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

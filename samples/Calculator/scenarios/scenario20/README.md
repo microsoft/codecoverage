@@ -41,7 +41,7 @@ dotnet-coverage collect -l $LOGS_DIR/collect.log -ll Verbose --settings ./../../
 cd ../../
 dotnet test --no-build --settings ./scenarios/scenario20/coverage.runsettings "Code Coverage" --results-directory "./TestResults/" --diag $LOGS_DIR/log.txt
 dotnet-coverage shutdown -l $LOGS_DIR/shutdown.log -ll Verbose TagScenario20
-dotnet-coverage merge -l $LOGS_DIR/merge.log -ll Verbose -r --output merged.coverage "./TestResults/*.coverage" ./src/Calculator.Server/report.coverage
+dotnet-coverage merge -l $LOGS_DIR/merge.log -ll Verbose --output merged.coverage "./TestResults/**/*.coverage" ./src/Calculator.Server/report.coverage
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -74,10 +74,10 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Stop server
       run: dotnet-coverage shutdown -l $LOGS_DIR/shutdown.log -ll Verbose TagScenario20
     - name: Merge coverage reports
-      run: dotnet-coverage merge -l $LOGS_DIR/merge.log -ll Verbose -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
+      run: dotnet-coverage merge -l $LOGS_DIR/merge.log -ll Verbose -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/**/*.coverage" src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
@@ -157,7 +157,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage merge -l $(Agent.TempDirectory)/logs/merge.log -ll Verbose -f cobertura -o merged.cobertura.xml --recursive "*.coverage"'
+    script: 'dotnet-coverage merge -l $(Agent.TempDirectory)/logs/merge.log -ll Verbose -f cobertura -o merged.cobertura.xml "**/*.coverage"'
     workingDirectory: "$(Agent.TempDirectory)"
   displayName: 'merge coverage results'
 

@@ -31,7 +31,7 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
       run: dotnet test --collect "Code Coverage;Format=Cobertura" --no-build --verbosity normal --results-directory ./TestResults/
       working-directory: ./samples/Calculator
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

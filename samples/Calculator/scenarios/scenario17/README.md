@@ -69,7 +69,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario17
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/coverage/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
