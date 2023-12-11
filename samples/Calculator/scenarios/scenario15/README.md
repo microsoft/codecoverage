@@ -48,7 +48,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario15
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

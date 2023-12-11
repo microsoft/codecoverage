@@ -28,7 +28,7 @@ jobs:
     - name: Test
       run: dotnet test --collect "Code Coverage;Format=xml" --no-build --verbosity normal
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: './**/TestResults/**/*.xml'
         targetdir: '${{ github.workspace }}/coveragereport'

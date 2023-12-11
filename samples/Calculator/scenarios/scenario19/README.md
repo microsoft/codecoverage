@@ -43,7 +43,7 @@ dotnet-coverage collect --output report.coverage --session-id TagScenario19 "dot
 cd ../../
 dotnet test --no-build --settings ./scenarios/scenario19/coverage.runsettings "Code Coverage" --results-directory "./TestResults/"
 dotnet-coverage shutdown TagScenario19
-dotnet-coverage merge -r --output merged.coverage "./TestResults/*.coverage" ./src/Calculator.Server/report.coverage
+dotnet-coverage merge --output merged.coverage "./TestResults/**/*.coverage" ./src/Calculator.Server/report.coverage
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -74,7 +74,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario19
     - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/*.coverage" src/Calculator.Server/report.coverage
+      run: dotnet-coverage merge -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml "./TestResults/**/*.coverage" src/Calculator.Server/report.coverage
       working-directory: ./samples/Calculator
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26

@@ -70,7 +70,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario16
     - name: Merge coverage reports
-      run: dotnet-coverage merge -r -f cobertura -o report.cobertura.xml snapshot*.cobertura.xml
+      run: dotnet-coverage merge -f cobertura -o report.cobertura.xml **/snapshot*.cobertura.xml
       working-directory: '${{ github.workspace }}/coverage'
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.26

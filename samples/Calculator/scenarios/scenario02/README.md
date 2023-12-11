@@ -28,7 +28,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Test
       run: dotnet test --collect "Code Coverage;Format=cobertura" --no-build --verbosity normal
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.1.24
+      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
         reports: './**/TestResults/**/*.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
