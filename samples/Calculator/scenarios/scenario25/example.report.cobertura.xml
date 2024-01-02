@@ -1,82 +1,56 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<coverage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" line-rate="0.8888888888888888" branch-rate="0.7857142857142857" complexity="36" version="1.9" timestamp="0" lines-covered="96" lines-valid="108" branches-covered="11" branches-valid="14">
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage line-rate="0.8888888888888888" branch-rate="0.7857142857142857" complexity="36" version="1.9" timestamp="1704201045" lines-covered="96" lines-valid="108" branches-covered="11" branches-valid="14">
   <packages>
-    <package line-rate="0.7727272727272727" branch-rate="0.5" complexity="4" name="Calculator.Server.IntegrationTests">
+    <package line-rate="0.5714285714285714" branch-rate="0.5" complexity="3" name="Calculator.Console">
       <classes>
-        <class line-rate="1" branch-rate="0.5" complexity="3" name="Calculator.Server.IntegrationTests.IntegrationTests" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Server.IntegrationTests/IntegrationTests.cs">
+        <class line-rate="0.5714285714285714" branch-rate="0.5" complexity="3" name="Program" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Console/Program.cs">
           <methods>
-            <method line-rate="1" branch-rate="0.5" complexity="2" name=".ctor" signature="()">
+            <method line-rate="0.7272727272727273" branch-rate="0.5" complexity="2" name="Main" signature="(string[])">
               <lines>
-                <line number="11" hits="1" branch="False" />
-                <line number="12" hits="1" branch="False" />
-                <line number="13" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="6" hits="1" branch="False" />
+                <line number="7" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
                     <condition number="0" type="jump" coverage="50%" />
                   </conditions>
                 </line>
+                <line number="8" hits="0" branch="False" />
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
                 <line number="15" hits="1" branch="False" />
-                <line number="16" hits="1" branch="False" />
                 <line number="17" hits="1" branch="False" />
                 <line number="18" hits="1" branch="False" />
                 <line number="19" hits="1" branch="False" />
               </lines>
             </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="TearDown" signature="()">
+            <method line-rate="0" branch-rate="1" complexity="1" name="PrintHelp" signature="()">
               <lines>
-                <line number="46" hits="1" branch="False" />
-                <line number="47" hits="1" branch="False" />
-                <line number="48" hits="1" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="1" branch="False" />
-            <line number="12" hits="1" branch="False" />
-            <line number="13" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
                 <condition number="0" type="jump" coverage="50%" />
               </conditions>
             </line>
+            <line number="8" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
             <line number="15" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
             <line number="17" hits="1" branch="False" />
             <line number="18" hits="1" branch="False" />
             <line number="19" hits="1" branch="False" />
-            <line number="46" hits="1" branch="False" />
-            <line number="47" hits="1" branch="False" />
-            <line number="48" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class line-rate="0.5454545454545454" branch-rate="1" complexity="1" name="Calculator.Server.IntegrationTests.IntegrationTests.&lt;TestOperations&gt;d__2" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Server.IntegrationTests/IntegrationTests.cs">
-          <methods>
-            <method line-rate="0.5454545454545454" branch-rate="1" complexity="1" name="MoveNext" signature="()">
-              <lines>
-                <line number="28" hits="1" branch="False" />
-                <line number="30" hits="1" branch="False" />
-                <line number="32" hits="1" branch="False" />
-                <line number="35" hits="0" branch="False" />
-                <line number="36" hits="0" branch="False" />
-                <line number="37" hits="0" branch="False" />
-                <line number="38" hits="1" branch="False" />
-                <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
-                <line number="41" hits="0" branch="False" />
-                <line number="42" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="28" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
-            <line number="32" hits="1" branch="False" />
-            <line number="35" hits="0" branch="False" />
-            <line number="36" hits="0" branch="False" />
-            <line number="37" hits="0" branch="False" />
-            <line number="38" hits="1" branch="False" />
-            <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
-            <line number="41" hits="0" branch="False" />
-            <line number="42" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
@@ -135,6 +109,96 @@
         </class>
       </classes>
     </package>
+    <package line-rate="1" branch-rate="1" complexity="12" name="Calculator.Server">
+      <classes>
+        <class line-rate="1" branch-rate="1" complexity="8" name="Program" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Server/Program.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="8" name="&lt;Main&gt;$" signature="(string[])">
+              <lines>
+                <line number="3" hits="1" branch="False" />
+                <line number="4" hits="1" branch="False" />
+                <line number="6" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="7" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="8" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="9" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="11" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="3" hits="1" branch="False" />
+            <line number="4" hits="1" branch="False" />
+            <line number="6" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="7" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="8" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="9" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="11" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class line-rate="1" branch-rate="1" complexity="4" name="Program.&lt;&gt;c" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Server/Program.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_0" signature="(double, double)">
+              <lines>
+                <line number="6" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_1" signature="(double, double)">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_2" signature="(double, double)">
+              <lines>
+                <line number="8" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_3" signature="(double, double)">
+              <lines>
+                <line number="9" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
     <package line-rate="1" branch-rate="1" complexity="4" name="Calculator.Core.Tests">
       <classes>
         <class line-rate="1" branch-rate="1" complexity="4" name="Calculator.Core.Tests.CalculatorUnitTests" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Core.Tests/CalculatorUnitTests.cs">
@@ -181,60 +245,6 @@
             <line number="29" hits="1" branch="False" />
             <line number="30" hits="1" branch="False" />
             <line number="31" hits="1" branch="False" />
-          </lines>
-        </class>
-      </classes>
-    </package>
-    <package line-rate="0.5714285714285714" branch-rate="0.5" complexity="3" name="Calculator.Console">
-      <classes>
-        <class line-rate="0.5714285714285714" branch-rate="0.5" complexity="3" name="Program" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Console/Program.cs">
-          <methods>
-            <method line-rate="0.7272727272727273" branch-rate="0.5" complexity="2" name="Main" signature="(string[])">
-              <lines>
-                <line number="6" hits="1" branch="False" />
-                <line number="7" hits="1" branch="True" condition-coverage="50% (1/2)">
-                  <conditions>
-                    <condition number="0" type="jump" coverage="50%" />
-                  </conditions>
-                </line>
-                <line number="8" hits="0" branch="False" />
-                <line number="9" hits="0" branch="False" />
-                <line number="10" hits="0" branch="False" />
-                <line number="13" hits="1" branch="False" />
-                <line number="14" hits="1" branch="False" />
-                <line number="15" hits="1" branch="False" />
-                <line number="17" hits="1" branch="False" />
-                <line number="18" hits="1" branch="False" />
-                <line number="19" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="0" branch-rate="1" complexity="1" name="PrintHelp" signature="()">
-              <lines>
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="6" hits="1" branch="False" />
-            <line number="7" hits="1" branch="True" condition-coverage="50% (1/2)">
-              <conditions>
-                <condition number="0" type="jump" coverage="50%" />
-              </conditions>
-            </line>
-            <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="13" hits="1" branch="False" />
-            <line number="14" hits="1" branch="False" />
-            <line number="15" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="18" hits="1" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
@@ -375,92 +385,82 @@
         </class>
       </classes>
     </package>
-    <package line-rate="1" branch-rate="1" complexity="12" name="Calculator.Server">
+    <package line-rate="0.7727272727272727" branch-rate="0.5" complexity="4" name="Calculator.Server.IntegrationTests">
       <classes>
-        <class line-rate="1" branch-rate="1" complexity="8" name="Program" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Server/Program.cs">
+        <class line-rate="1" branch-rate="0.5" complexity="3" name="Calculator.Server.IntegrationTests.IntegrationTests" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Server.IntegrationTests/IntegrationTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="8" name="&lt;Main&gt;$" signature="(string[])">
+            <method line-rate="1" branch-rate="0.5" complexity="2" name=".ctor" signature="()">
               <lines>
-                <line number="3" hits="1" branch="False" />
-                <line number="4" hits="1" branch="False" />
-                <line number="6" hits="1" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="7" hits="1" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="8" hits="1" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
-                <line number="9" hits="1" branch="True" condition-coverage="100% (2/2)">
-                  <conditions>
-                    <condition number="0" type="jump" coverage="100%" />
-                  </conditions>
-                </line>
                 <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="0" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="TearDown" signature="()">
+              <lines>
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="3" hits="1" branch="False" />
-            <line number="4" hits="1" branch="False" />
-            <line number="6" hits="1" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="0" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="7" hits="1" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="0" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="8" hits="1" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="0" type="jump" coverage="100%" />
-              </conditions>
-            </line>
-            <line number="9" hits="1" branch="True" condition-coverage="100% (2/2)">
-              <conditions>
-                <condition number="0" type="jump" coverage="100%" />
-              </conditions>
-            </line>
             <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="0" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
           </lines>
         </class>
-        <class line-rate="1" branch-rate="1" complexity="4" name="Program.&lt;&gt;c" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/src/Calculator.Server/Program.cs">
+        <class line-rate="0.5454545454545454" branch-rate="1" complexity="1" name="Calculator.Server.IntegrationTests.IntegrationTests.&lt;TestOperations&gt;d__2" filename="/home/runner/work/codecoverage/codecoverage/samples/Calculator/tests/Calculator.Server.IntegrationTests/IntegrationTests.cs">
           <methods>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_0" signature="(double, double)">
+            <method line-rate="0.5454545454545454" branch-rate="1" complexity="1" name="MoveNext" signature="()">
               <lines>
-                <line number="6" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_1" signature="(double, double)">
-              <lines>
-                <line number="7" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_2" signature="(double, double)">
-              <lines>
-                <line number="8" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;b__0_3" signature="(double, double)">
-              <lines>
-                <line number="9" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="6" hits="1" branch="False" />
-            <line number="7" hits="1" branch="False" />
-            <line number="8" hits="1" branch="False" />
-            <line number="9" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
           </lines>
         </class>
       </classes>
