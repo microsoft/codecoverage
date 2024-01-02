@@ -35,3 +35,4 @@ Solution contains seven projects:
 22. [***Scenario 22*** Code coverage for child processes using static instrumentation without binaries restore](scenarios/scenario22/README.md)
 23. [***Scenario 23*** Code coverage for child processes using static instrumentation with binaries restore](scenarios/scenario23/README.md)
 24. [***Scenario 24*** Code coverage for whole solution (only unit tests)](scenarios/scenario24/README.md)
+25. [***Scenario 25*** Code coverage for whole solution (only unit tests - using dotnet-coverage)](scenarios/scenario25/README.md)
