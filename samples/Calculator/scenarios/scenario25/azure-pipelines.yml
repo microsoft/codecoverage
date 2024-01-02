@@ -5,7 +5,6 @@ pool:
 
 variables:
   buildConfiguration: 'Debug'
-  solutionPath: './samples/Calculator/Calculator.sln' # this is specific to example - in most cases not needed
 
 steps:
 - task: DotNetCoreCLI@2
@@ -18,20 +17,21 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/'
   displayName: 'dotnet restore'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration $(buildConfiguration)'
-    projects: '$(solutionPath)' # this is specific to example - in most cases not needed
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/'
   displayName: 'dotnet build'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
     script: 'dotnet-coverage collect -f cobertura -o $(Agent.TempDirectory)/report.cobertura.xml "dotnet test --project $(solutionPath) --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/'
   displayName: 'dotnet test'
 
 - task: PublishTestResults@2
