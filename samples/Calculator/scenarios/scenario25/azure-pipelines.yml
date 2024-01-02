@@ -31,7 +31,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect -f cobertura -o $(Agent.TempDirectory)/report.cobertura.xml "dotnet test --project $(solutionPath) --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
+    script: 'dotnet-coverage collect -f cobertura -o $(Agent.TempDirectory)/report.cobertura.xml "dotnet test --configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)"'
     workingDirectory: '$(Build.SourcesDirectory)/samples/Calculator/'
   displayName: 'dotnet test'
 
