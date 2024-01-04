@@ -1,12 +1,12 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: "Algorithms Scenario 01"
+name: "Algorithms Scenario 02"
 
 on:
   push:
     branches: [ "main" ]
-    paths: [ 'samples/Algorithms/tests/**', 'samples/Algorithms/src/**', '.github/workflows/Algorithms_Scenario01.yml', 'samples/Algorithms/scenarios/scenario02/coverage.config' ]
+    paths: [ 'samples/Algorithms/tests/**', 'samples/Algorithms/src/**', '.github/workflows/Algorithms_Scenario02.yml', 'samples/Algorithms/scenarios/scenario02/coverage.config' ]
 
 jobs:
   build:
