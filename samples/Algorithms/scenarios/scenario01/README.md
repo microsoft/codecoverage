@@ -1,20 +1,20 @@
 # Scenario Description
 
-Collect code coverage using default settings. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+Collect code coverage using dynamic instrumentation for MSTest runner project.
 
 # Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
-cd codecoverage/samples/Calculator/tests/Calculator.Core.Tests/
-dotnet test --collect "Code Coverage"
+cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
+dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
 # Collect code coverage inside github workflow
 
-To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
+`reportgenerator` can be used to generate final github summary markdown.
 
 ```yml
     steps:
@@ -22,17 +22,13 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --collect "Code Coverage" --no-build --verbosity normal
-    - name: Install dotnet-coverage
-      run: dotnet tool install -g dotnet-coverage
-    - name: Convert .coverage report to cobertura
-      run: dotnet-coverage merge $GITHUB_WORKSPACE/samples/Calculator/tests/Calculator.Core.Tests/TestResults/**/*.coverage -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
+      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -45,12 +41,12 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: ./**/TestResults/**/*.coverage
+        path: ${{ github.workspace }}/report.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Calculator_Scenario01.yml)
+[Full source example](../../../../.github/workflows/Algorithms_Scenario01.yml)
 
-[Run example](../../../../../../actions/workflows/Calculator_Scenario01.yml)
+[Run example](../../../../../../actions/workflows/Algorithms_Scenario01.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -60,24 +56,32 @@ steps:
   inputs:
     command: 'restore'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet restore'
+  displayName: 'restore'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration $(buildConfiguration)'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet build'
+  displayName: 'build'
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'test'
-    arguments: '--no-build --configuration $(buildConfiguration) --collect "Code Coverage"'
+    command: 'run'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --ms-coverage-output $(Agent.TempDirectory)/report.cobertura.xml --ms-coverage-output-format cobertura --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'dotnet test'
-```
+  displayName: 'test'
 
-> **_NOTE:_** Azure DevOps pipelines automatically recognize binary coverage report format. Code coverage results are automatically processed and published to Azure DevOps. No additional steps needed.
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
+```
 
 [Full source example](azure-pipelines.yml)
 
@@ -87,4 +91,4 @@ steps:
 
 ![alt text](example.report.jpg "Example report")
 
-[Link](example.report.coverage)
+[Link](example.report.cobertura.xml)
