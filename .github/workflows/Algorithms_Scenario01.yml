@@ -39,4 +39,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: code-coverage-report
-        path: $GITHUB_WORKSPACE/report.cobertura.xml
+        path: ${{ github.workspace }}/report.cobertura.xml
