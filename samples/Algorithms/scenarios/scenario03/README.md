@@ -1,19 +1,6 @@
 # Scenario Description
 
-Collect code coverage using static instrumentation for MSTest runner project. As MSTest runner is console application which is performing static instrumentation it will fail on windows to instrument itself as file is locked. This is the reason why code coverage for test projects will be automatically excluded on Windows.
-
-# Configuration
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Configuration>
-    <CodeCoverage>
-        <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
-        <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
-        <EnableStaticManagedInstrumentationRestore>False</EnableStaticManagedInstrumentationRestore>
-    </CodeCoverage>
-</Configuration>
-```
+Collect code coverage using compile-time instrumentation for MSTest runner project.
 
 # Collect code coverage using command line
 

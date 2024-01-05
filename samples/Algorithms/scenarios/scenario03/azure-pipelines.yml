@@ -1,0 +1,34 @@
+name: "Algorithms Scenario 03"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  projectPath: './samples/Algorithms/tests/Algorithms.Core.Tests/Algorithms.Core.Tests.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'restore'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration $(buildConfiguration) /p:MsCodeCoverageInstrumentation="true"'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'build'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'run'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --ms-coverage-output $(Agent.TempDirectory)/report.cobertura.xml --ms-coverage-output-format cobertura --report-trx'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
