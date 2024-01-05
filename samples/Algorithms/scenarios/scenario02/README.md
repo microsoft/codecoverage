@@ -1,13 +1,13 @@
 # Scenario Description
 
-Collect code coverage using dynamic instrumentation for MSTest runner project.
+Collect code coverage using static instrumentation for MSTest runner project. As MSTest runner is console application which is performing static instrumentation it will fail on windows to instrument itself as file is locked. This is the reason why code coverage for test projects will be automatically excluded on Windows.
 
 # Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
-dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura
+dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -28,7 +28,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura
+      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -44,9 +44,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ${{ github.workspace }}/report.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Algorithms_Scenario01.yml)
+[Full source example](../../../../.github/workflows/Algorithms_Scenario02.yml)
 
-[Run example](../../../../../../actions/workflows/Algorithms_Scenario01.yml)
+[Run example](../../../../../../actions/workflows/Algorithms_Scenario02.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
