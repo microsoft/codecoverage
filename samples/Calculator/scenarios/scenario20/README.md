@@ -18,6 +18,9 @@ Collect code coverage for whole solution. Runsettings are configured to get all 
           <CodeCoverage>
             <FileLogPath>%LOGS_DIR%</FileLogPath>
             <LogLevel>All</LogLevel>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

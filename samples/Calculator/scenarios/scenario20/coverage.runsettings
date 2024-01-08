@@ -11,6 +11,9 @@
           <CodeCoverage>
             <FileLogPath>%LOGS_DIR%</FileLogPath>
             <LogLevel>All</LogLevel>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

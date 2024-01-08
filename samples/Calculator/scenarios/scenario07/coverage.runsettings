@@ -7,6 +7,9 @@
           <CodeCoverage>
             <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
             <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

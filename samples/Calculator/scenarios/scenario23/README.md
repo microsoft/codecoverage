@@ -20,6 +20,9 @@ This example shows that code coverage by default is collecting code coverage als
                 <Directory Recursive="true">%STATIC_INSTRUMENTATION_DIR%</Directory>
               </IncludeDirectories>
             </ModulePaths>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>
