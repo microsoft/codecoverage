@@ -13,6 +13,9 @@
                 <ModulePath>.*tests.dll$</ModulePath>
               </Exclude>
             </ModulePaths>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

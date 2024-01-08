@@ -13,6 +13,9 @@ This example shows that dynamic code coverage by default is collecting code cove
         <Configuration>
           <CodeCoverage>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

@@ -13,6 +13,9 @@ This example shows dynamic code coverage with child processes collection disable
         <Configuration>
           <CodeCoverage>
             <CollectFromChildProcesses>False</CollectFromChildProcesses>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

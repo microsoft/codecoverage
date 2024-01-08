@@ -14,6 +14,9 @@ In this example we want to show you how to collect code coverage using [static i
           <CodeCoverage>
             <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
             <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

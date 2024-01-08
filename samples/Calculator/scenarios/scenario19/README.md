@@ -20,6 +20,9 @@ Collect code coverage for whole solution. Runsettings are configured to exclude 
                 <ModulePath>.*tests.dll$</ModulePath>
               </Exclude>
             </ModulePaths>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

@@ -20,6 +20,9 @@ In this example we want to show you how to exclude from code coverage tests proj
                 <ModulePath>.*tests.dll$</ModulePath>
               </Exclude>
             </ModulePaths>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

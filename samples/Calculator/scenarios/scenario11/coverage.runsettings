@@ -6,6 +6,9 @@
         <Configuration>
           <CodeCoverage>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

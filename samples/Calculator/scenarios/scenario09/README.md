@@ -14,6 +14,9 @@ This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage
           <CodeCoverage>
             <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
             <EnableDynamicManagedInstrumentation>False</EnableDynamicManagedInstrumentation>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>

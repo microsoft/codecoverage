@@ -28,6 +28,9 @@ In this example we want to show you how to exclude from code coverage report who
                 <Source>.*OperationConsts\.cs$</Source>
               </Exclude>
             </Sources>
+            <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+            <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+            <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
           </CodeCoverage>
         </Configuration>
       </DataCollector>
