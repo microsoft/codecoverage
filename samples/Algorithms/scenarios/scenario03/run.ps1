@@ -1,2 +1,3 @@
 cd $PSScriptRoot/../../tests/Algorithms.Core.Tests
-dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings $PSScriptRoot/coverage.config
+dotnet build /p:MsCodeCoverageInstrumentation="true"
+dotnet run --no-build --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura

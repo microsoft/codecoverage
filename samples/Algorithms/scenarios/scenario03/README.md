@@ -7,7 +7,8 @@ Collect code coverage using compile-time instrumentation for MSTest runner proje
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
-dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
+dotnet build /p:MsCodeCoverageInstrumentation="true"
+dotnet run --no-build --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -26,9 +27,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore /p:MsCodeCoverageInstrumentation="true"
     - name: Test
-      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
+      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -44,9 +45,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ${{ github.workspace }}/report.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Algorithms_Scenario02.yml)
+[Full source example](../../../../.github/workflows/Algorithms_Scenario03.yml)
 
-[Run example](../../../../../../actions/workflows/Algorithms_Scenario02.yml)
+[Run example](../../../../../../actions/workflows/Algorithms_Scenario03.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -61,14 +62,14 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    arguments: '--no-restore --configuration $(buildConfiguration)'
+    arguments: '--no-restore --configuration $(buildConfiguration) /p:MsCodeCoverageInstrumentation="true"'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'build'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --ms-coverage-output $(Agent.TempDirectory)/report.cobertura.xml --ms-coverage-output-format cobertura --report-trx'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'test'
 
@@ -76,11 +77,6 @@ steps:
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
-    publishRunAttachments: false
-
-- task: PublishCodeCoverageResults@2
-  inputs:
-    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
 ```
 
 [Full source example](azure-pipelines.yml)
