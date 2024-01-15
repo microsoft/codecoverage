@@ -5,11 +5,13 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 # Collect code coverage
 
 1. Clone repository
+
     ```shell
     git clone https://github.com/microsoft/codecoverage.git
     ```
 
 2. Open solution in Visual Studio Enterprise
+
     ```shell
     cd codecoverage/samples/VisualStudio
     start VisualStudio.sln
@@ -20,6 +22,7 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
     ![alt text](analyze-codecoverage.png "Test menu with Analyze Code Coverage for All Tests command.")
     
 # Enable code coverage coloring
+
 1. Enable code coverage coloring, choose ![](code-coverage.png) **Show Code Coverage Coloring** to enable coloring in the editor.
 
     ![](enable-coloring.png "Enable Code Coverage Coloring in Visual Studio.")
