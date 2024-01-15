@@ -41,7 +41,3 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 2.  Add/remove or order columns shown in the code coverage results window.
     
     ![](columns-window.png)
-
-# Report
-
-[Link](coverage-status.coverage)
