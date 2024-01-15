@@ -9,13 +9,14 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
     git clone https://github.com/microsoft/codecoverage.git
     ```
 
-2. Open solution in Visual Studio
+2. Open solution in Visual Studio Enterprise
     ```shell
     cd codecoverage/samples/VisualStudio
     start VisualStudio.sln
     ```
 
-3. On the **Test** menu, select **Analyze Code Coverage for All Tests**.
+3. Calculate code coverage using **Analyze Code Coverage for All Tests** in the **Test** menu.
+
     ![alt text](analyze-codecoverage.png "Test menu with Analyze Code Coverage for All Tests command.")
     
 # Enable code coverage coloring
@@ -31,8 +32,8 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 
     ![](margin-glyphs.png "Show Code Coverage Coloring in the margin editor.")
 
-
 # Update code coverage result window layout
+
 1. Update columns using ![](add-remove-columns.png) **Add/Remove Columns...** from the context menu.
     ![](add-remove-columns-menu.png)
 
@@ -40,4 +41,5 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
     ![](columns-window.png)
 
 # Report
+
 [Link](coverage-status.coverage)
