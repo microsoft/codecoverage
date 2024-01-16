@@ -21,11 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scenario01", "scenario01", 
 		scenarios\scenario01\README.md = scenarios\scenario01\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTfmLibrary", "src\MultiTfmLibrary\MultiTfmLibrary.csproj", "{DAFA6101-898A-4617-9E2B-A9319816C1A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTfmLibrary.Tests", "tests\MultiTfmLibrary.Tests\MultiTfmLibrary.Tests.csproj", "{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}"
+EndProject
 Global
 	GlobalSection(NestedProjects) = preSolution
 		{178730C9-EBD9-4A56-8A95-D5985015C04B} = {7D136571-B643-4CCF-AC78-C031D65B4F3F}
 		{361476F3-BE2F-4787-9E52-61F0F2477630} = {1BF973D4-E255-42A6-BFDC-5743FDA937BE}
 		{75268D0A-BD93-400C-832C-58D625AC418B} = {86A86D8A-ABEE-43C8-99A1-4BD6F1928194}
+		{DAFA6101-898A-4617-9E2B-A9319816C1A9} = {7D136571-B643-4CCF-AC78-C031D65B4F3F}
+		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E} = {86A86D8A-ABEE-43C8-99A1-4BD6F1928194}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{178730C9-EBD9-4A56-8A95-D5985015C04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,6 +42,14 @@ Global
 		{75268D0A-BD93-400C-832C-58D625AC418B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75268D0A-BD93-400C-832C-58D625AC418B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75268D0A-BD93-400C-832C-58D625AC418B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
