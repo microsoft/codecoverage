@@ -41,6 +41,6 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 
     ![Add remove columns context menu](add-remove-columns-menu.png)
 
-2. Add/remove or order columns shown in the code coverage results window.
+2. Add/remove or re-order columns in the **Add / Remove Columns** dialog.
 
     ![Columns selector window](columns-window.png)

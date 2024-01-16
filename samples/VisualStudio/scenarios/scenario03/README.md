@@ -13,7 +13,7 @@ Merge reports in Microsoft Visual Studio Enterprise.
 
     ![merge reports](merge.png)
 
-3. Select reports to merge in the **Merge Coverage Results** pop-up window.
+3. Select reports to merge in the **Merge Coverage Results** dialog.
 
     ![select reports to merge](merge-reports-window.png)
 
