@@ -2,6 +2,8 @@
 
 Collect code coverage using dynamic instrumentation for MSTest runner project.
 
+> **_NOTE:_** MSTest runner project coverage extension by default is not collecting native code coverage. If you want to enable please set to `True` `EnableStaticNativeInstrumentation` or `EnableDynamicNativeInstrumentation` in configuration.
+
 # Collect code coverage using command line
 
 ```shell
