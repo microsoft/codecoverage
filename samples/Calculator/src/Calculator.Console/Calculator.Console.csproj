@@ -12,9 +12,4 @@
     <UseAppHost>true</UseAppHost>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- This assumes GitHub source control but other repo options are available --> 
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
-  </ItemGroup>
-
 </Project>
