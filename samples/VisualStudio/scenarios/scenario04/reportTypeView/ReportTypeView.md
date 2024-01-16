@@ -43,7 +43,7 @@ Source view combines coverage data available for all projects and combine them o
 
 ## Example
 
-**Helpers.cs** file contains **MathHelpers**, **DirectoryHelpers**, and **FileHelpers** classes and is included in **SourceViewLibrary** and **SourceViewLibrary.Tests** project.
+Open [report](../../../reports/sourceview.coverage) in the window. **Helpers.cs** file contains **MathHelpers**, **DirectoryHelpers**, and **FileHelpers** classes and is included in **SourceViewLibrary** and **SourceViewLibrary.Tests** project.
 
   1. Project view shows classes in both project nodes. Coverage statistics are according to respective project.
   ![project view report](project-view-report.png)
