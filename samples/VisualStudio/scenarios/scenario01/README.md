@@ -37,7 +37,7 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 
 ## Update code coverage result window layout
 
-1. Update columns using ![](../../media/add-remove-columns.png) **Add/Remove Columns...** from the context menu.
+1. Update columns using ![add remove columns](../../media/add-remove-columns.png) **Add/Remove Columns...** from the context menu.
 
     ![Add remove columns context menu](add-remove-columns-menu.png)
 
