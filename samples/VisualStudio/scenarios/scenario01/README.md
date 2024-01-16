@@ -17,13 +17,13 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
     start VisualStudio.sln
     ```
 
-3. Calculate code coverage using **Analyze Code Coverage for All Tests** in the **Test** menu.
+3. Collect code coverage using **Analyze Code Coverage for All Tests** in the **Test** menu.
 
     ![alt text](analyze-codecoverage.png "Test menu with Analyze Code Coverage for All Tests command.")
 
 ## Enable code coverage coloring
 
-1. Enable code coverage coloring, choose ![enable code coverage coloring](../../media/code-coverage.png) **Show Code Coverage Coloring** to enable coloring in the editor.
+1. Enable overall code coverage coloring using ![enable code coverage coloring](../../media/code-coverage.png) **Show Code Coverage Coloring** button in the **Code Coverage Results** window toolbar.
 
     ![Enable Code Coverage Coloring in Visual Studio](enable-coloring.png "Enable Code Coverage Coloring in Visual Studio.")
 

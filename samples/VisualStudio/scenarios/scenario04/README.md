@@ -4,7 +4,7 @@ Code coverage views supported in Microsoft Visual Studio Enterprise.
 
 ## Code coverage report views
 
-Code coverage results window allows developers to view coverage report data in different ways. Following views are supported
+**Code coverage results window** allows developers to view coverage report data in different ways. Following views are supported
 
 - [Report type view](reportTypeView/ReportTypeView.md)
 - [Report content view](ReportContentView.md)

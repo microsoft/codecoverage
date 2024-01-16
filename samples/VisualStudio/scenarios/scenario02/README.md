@@ -4,14 +4,11 @@ Code coverage formats supported in Microsoft Visual Studio Enterprise.
 
 ## Supported formats
 
-Following coverage report formats can be opened in Code Coverage Results window in Microsoft Visual Studio Enterprise
+**Code Coverage Results** window supports following report types
 
 - **Binary (Default):** .coverage (Microsoft's special binary format) [Sample report](../../reports/sample.coverage)
-
 - **Cobertura:** .cobertura.xml (Open-source XML format) [Sample report](../../reports/sample.cobertura.xml)
-
 - **XML:** .xml (Microsoft's XML Format) [Sample report](../../reports/sample.xml)
-
 - **CoverageXml:** .coveragexml (Microsoft XML format) [Sample report](../../reports/sample.coveragexml)
 
 ## Import code coverage report
