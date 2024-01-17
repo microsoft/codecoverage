@@ -4,7 +4,7 @@ Solution contains seven projects:
 
 - `CoverageStatus` - contains project to visualize different type of coverage status.
 - `CoverageStatus.Tests` - contains unit tests for `CoverageStatus`
-- `MultiTfmLibrary` - contains a library project targetting multiple target frameworks
+- `MultiTfmLibrary` - contains a library project targeting multiple target frameworks
 - `MultiTfmLibrary.Tests` - contains unit tests for `MultiTfmLibrary`
 
 ## Code coverage scenarios for Microsoft Visual Studio Enterprise

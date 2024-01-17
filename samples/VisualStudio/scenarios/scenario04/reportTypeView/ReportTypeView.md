@@ -1,6 +1,6 @@
 # Report Type View
 
-Report content can be visualzied in two different ways in the **Code Coverage Results** window
+Report content can be visualized in two different ways in the **Code Coverage Results** window
 
 1. Project View
 2. Source View

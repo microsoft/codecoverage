@@ -23,7 +23,7 @@ Some report formats do not support blocks (e.g. cobertura), in that case columns
 
     ![report with blocks data](coverage-report.png)
 
-- Report withtout blocks information
+- Report without blocks information
 
     ![report without blocks data](cobertura-report.png)
 
@@ -35,4 +35,4 @@ Opened coverage report can be exported to any supported format by using **Export
 
 Specify format type and export report.
 
-![export repot type](export-type.png)
+![export report type](export-type.png)
