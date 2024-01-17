@@ -2,6 +2,8 @@
 
 Collect code coverage using static instrumentation for MSTest runner project. As MSTest runner is console application which is performing static instrumentation it will fail on windows to instrument itself as file is locked. This is the reason why code coverage for test projects will be automatically excluded on Windows.
 
+> **_NOTE:_** MSTest runner project coverage extension by default is not collecting native code coverage. If you want to enable please set to `True` `EnableStaticNativeInstrumentation` or `EnableDynamicNativeInstrumentation` in configuration.
+
 # Configuration
 
 ```xml
