@@ -1,6 +1,6 @@
 ﻿namespace ChangesetViewLibrary;
 
-public static class CoverageLibrary
+public static class ChangesetLibrary
 {
     public static string ExistingMethodCovered()
     {
