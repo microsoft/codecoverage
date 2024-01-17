@@ -18,7 +18,7 @@ Merge reports in Microsoft Visual Studio Enterprise.
 
     ![select reports to merge](merge-reports-window.png)
 
-4. **Merged report** is added in the results window.
+4. The **Merged report** is added in the results window.
 
     ![merge report](merged-report.png)
 
