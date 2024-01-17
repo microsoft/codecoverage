@@ -47,7 +47,7 @@ Source view shows coverage data in directory/file hierarchy
   - ![file](../../../media/file.png) File4
     - ![method](../../../media/method.png) Method
 
-Source view combines coverage data available for all projects and combine them on a file level. Source view does not support blocks coverage data. It combines data from
+Source view combines coverage data available for all projects and combines them on a file level. Source view does not support blocks coverage data.
 
 ## Example
 
