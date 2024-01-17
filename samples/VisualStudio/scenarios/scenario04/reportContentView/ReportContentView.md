@@ -1,4 +1,4 @@
-# Report Type View
+# Report Content View
 
 Coverage report content can be filtered in two different ways in the **Code Coverage Results** window
 
@@ -23,7 +23,7 @@ Changeset report filters the coverage report and shows only statistics for the c
 
 ## Example
 
-1. Open [solution](../../../VisualStudio.sln) in Visual Studio Enterprise and switch branch to **changeset-view**
+1. Open [solution](../../../VisualStudio.sln) in Visual Studio Enterprise and switch current git branch to **changeset-view**
 
 2. Open [changesetReport.coverage](../../../reports/changesetReport.coverage)
 
