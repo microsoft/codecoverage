@@ -17,27 +17,35 @@ Select report style from the **Code Coverage Views** dialog.
 
 Project view shows coverage data in the following hierarchy
 
-- Project1
-  - Namespace1
-    - Class1
-      - Method
-    - Class2
-      - Method
-      - Method
-  - Namespace2
-    - Class3
-      - Method
-- Project2
+- ![report](../../../media/code-coverage.png) Report
+  - ![project](../../../media/module.png) Project1
+    - ![namespace](../../../media/namespace.png) Namespace1
+      - ![class](../../../media/class.png) Class1
+        - ![method](../../../media/method.png) Method
+      - ![class](../../../media/class.png) Class2
+        - ![method](../../../media/method.png) Method
+        - ![method](../../../media/method.png) Method
+    - ![namespace](../../../media/namespace.png) Namespace2
+      - ![class](../../../media/class.png) Class3
+        - ![method](../../../media/method.png) Method
+  - ![project](../../../media/module.png) Project2
 
 ## Source View
 
 Source view shows coverage data in directory/file hierarchy
 
-- Directory1
-  - Directory2
-    - File1
-    - File2
-  - File3
+- ![report](../../../media/code-coverage.png) Report
+  - ![directory](../../../media/directory.png) Directory1
+    - ![directory](../../../media/directory.png) Directory2
+      - ![file](../../../media/file.png) File1
+        - ![method](../../../media/method.png) Method
+        - ![method](../../../media/method.png) Method
+      - ![file](../../../media/file.png) File2
+        - ![method](../../../media/method.png) Method
+    - ![file](../../../media/file.png) File3
+      - ![method](../../../media/method.png) Method
+  - ![file](../../../media/file.png) File4
+    - ![method](../../../media/method.png) Method
 
 Source view combines coverage data available for all projects and combine them on a file level. Source view does not support blocks coverage data. It combines data from
 
