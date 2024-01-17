@@ -8,6 +8,5 @@ Code coverage views supported in Microsoft Visual Studio Enterprise.
 
 - [Report type view](reportTypeView/ReportTypeView.md)
 - [Report content view](reportContentView/ReportContentView.md)
-- [Search](search/Search.md)
 
 All views are compatible with each other and can be applied in any order.

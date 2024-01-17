@@ -1,4 +1,8 @@
-# Search
+# Scenario Description
+
+Search code coverage content in Microsoft Visual Studio Enterprise.
+
+## Search
 
 Search parameters can be used to filter the coverage report.
 
