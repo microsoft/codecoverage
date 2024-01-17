@@ -22,7 +22,7 @@ Following search parameters are available to filter the coverage report
     5. Not Covered (%Lines)
 1. String - items that contain input search query in their name and type
     1. Common
-        1. string
+        1. Name
         2. Method
     2. Project Report only
         1. Project
@@ -38,7 +38,7 @@ Following search parameters are available to filter the coverage report
 
   ![no search](no-search.png)
 
-- String search
+- Name search
   
   ![any search](any-search.png)
 
