@@ -12,7 +12,7 @@ Search parameters are provided in the search control in the window toolbar.
 
 ## Search Parameters
 
-Following search parameters are available to filter the coverage report
+The following search parameters are available to filter the coverage report
 
 1. Coverage numbers - methods where coverage value is greater or smaller than the specified search query
     1. Covered (%Blocks)
