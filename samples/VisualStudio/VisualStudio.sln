@@ -29,9 +29,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceViewLibrary", "src\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceViewLibrary.Tests", "tests\SourceViewLibrary.Tests\SourceViewLibrary.Tests.csproj", "{B986EE4E-BCA6-41CC-ADB2-97A35399F971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangesetViewLibrary", "src\ChangesetViewLibrary\ChangesetViewLibrary.csproj", "{CD8FBF29-3AB4-429C-9C6B-78F6DB373752}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangesetViewLibrary", "src\ChangesetViewLibrary\ChangesetViewLibrary.csproj", "{CD8FBF29-3AB4-429C-9C6B-78F6DB373752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangesetViewLibrary.Tests", "tests\ChangesetViewLibrary.Tests\ChangesetViewLibrary.Tests.csproj", "{80FB8BAF-5F8D-4692-BF86-8136F51977EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangesetViewLibrary.Tests", "tests\ChangesetViewLibrary.Tests\ChangesetViewLibrary.Tests.csproj", "{80FB8BAF-5F8D-4692-BF86-8136F51977EB}"
 EndProject
 Global
 	GlobalSection(NestedProjects) = preSolution
@@ -54,14 +54,6 @@ Global
 		{CD8FBF29-3AB4-429C-9C6B-78F6DB373752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD8FBF29-3AB4-429C-9C6B-78F6DB373752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD8FBF29-3AB4-429C-9C6B-78F6DB373752}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DAFA6101-898A-4617-9E2B-A9319816C1A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE3E91C3-FD22-4DCF-9C2B-E9ACC655475E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

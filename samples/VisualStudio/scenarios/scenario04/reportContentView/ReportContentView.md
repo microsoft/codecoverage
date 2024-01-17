@@ -37,7 +37,7 @@ Changeset report filters coverage report and shows only statistics for the chang
     start VisualStudio.sln
     ```
 
-3. Analyze code coverage
+3. Open [changesetReport.coverage](../../../reports/changesetReport.coverage)
 
 4. Switch to **Changeset Report** and set **Base Branch** (origin/main)
 
