@@ -55,5 +55,5 @@ Open [sourceview.coverage](../../../reports/sourceview.coverage) in the window. 
 
   1. Project view shows classes in both project nodes. Coverage statistics are according to respective project.
   ![project view report](project-view-report.png)
-  2. Source view takes show combines coverage statistics for all classes and methods present in a file.
+  2. Source view combines coverage statistics for all classes and methods present in a file.
   ![source view report](source-view-report.png)
