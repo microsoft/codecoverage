@@ -39,12 +39,14 @@ Changeset report filters coverage report and shows only statistics for the chang
 
 3. Open [changesetReport.coverage](../../../reports/changesetReport.coverage)
 
-4. Switch to **Changeset Report** and set **Base Branch** (origin/main)
+4. Open [ChangesetLibrary.cs](../../../src/ChangesetViewLibrary/ChangesetLibrary.cs)
+
+5. Switch to **Changeset Report** and set **Base Branch** (origin/main)
 
     ![changeset-report](changeset.png)
+
+Full report shows coverage statistics for whole report, while changeset report shows coverage only for changes made in local branch (changeset-view).
 
 Full Report | Changeset Report
 --- | ---
 ![full report](full-report.png) | ![changeset report](changeset-report.png)
-
-Full report shows coverage statistics for whole report, while changeset report shows coverage only for changes made in local branch (changeset-view).
