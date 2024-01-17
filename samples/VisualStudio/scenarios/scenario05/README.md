@@ -20,17 +20,18 @@ Following search parameters are available to filter the coverage report
     3. Covered (%Lines)
     4. Partially Covered (%Lines)
     5. Not Covered (%Lines)
-1. String - items that contain input search query in their name and type
-    1. Common
+1. Name - items that contain input search query in their name
+    1. Project Report
         1. Name
-        2. Method
-    2. Project Report only
-        1. Project
-        2. Namespace
-        3. Class
-    3. Source Report only
-        1. Directory
-        2. File
+        2. Project
+        3. Namespace
+        4. Class
+        5. Method
+    2. Source Report
+        1. Name
+        2. Directory
+        3. File
+        4. Method
 
 ## Examples
 
