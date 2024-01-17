@@ -9,5 +9,6 @@ public class ChangesetLibraryTests
         _ = ChangesetLibrary.ExistingMethodCovered();
         _ = ChangesetLibrary.ExistingMethod(1);
         _ = ChangesetLibrary.ExistingMethod(2);
+        _ = ChangesetLibrary.NewMethodCovered();
     }
 }

@@ -22,12 +22,22 @@ public static class ChangesetLibrary
         else if (condition == 2)
         {
             Console.WriteLine(condition);
-            return "condition = 1";
+            return "condition = 2";
         }
         else
         {
             Console.WriteLine(condition);
             return $"condition = {condition}";
         }
+    }
+
+    public static string NewMethodNotCovered()
+    {
+        return "Not Covered in new branch";
+    }
+
+    public static string NewMethodCovered()
+    {
+        return "Covered in new branch";
     }
 }
