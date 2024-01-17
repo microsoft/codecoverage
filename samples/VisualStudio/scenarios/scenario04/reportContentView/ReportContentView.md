@@ -10,6 +10,7 @@ View can be selected by using ![configure views](../../../media/categorized-view
 ![configure code coverage views](../configure-views.png)
 
 Select report content from the **Code Coverage Views** dialog.
+
 ![select report style](report-content.png)
 
 ## Full Report
@@ -39,6 +40,7 @@ Changeset report filters coverage report and shows only statistics for the chang
 3. Analyze code coverage
 
 4. Switch to **Changeset Report** and set **Base Branch** (origin/main)
+
     ![changeset-report](changeset.png)
 
 Full Report | Changeset Report
