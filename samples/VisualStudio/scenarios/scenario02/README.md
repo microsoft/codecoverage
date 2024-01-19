@@ -29,7 +29,7 @@ Some report formats do not support blocks (e.g. cobertura), in that case columns
 
 ## Export code coverage report
 
-Opened coverage report can be exported to any supported format by using **Export Results** butt in the **Code Coverage Results** window toolbar.
+Opened coverage report can be exported to any supported format by using **Export Results** button in the **Code Coverage Results** window toolbar.
 
 ![export report](export.png)
 
