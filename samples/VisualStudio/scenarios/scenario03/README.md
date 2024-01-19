@@ -10,8 +10,6 @@ Merge reports in Microsoft Visual Studio Enterprise.
 
     ![import reports](../scenario02/import.png)
 
-    ![import reports](../scenario02/import.png)
-
 2. Merge reports using **Merge Results** button in the **Code Coverage Results** window toolbar.
 
     ![merge reports](merge.png)
