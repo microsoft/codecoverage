@@ -10,7 +10,7 @@ Collect code coverage using compile-time instrumentation for MSTest runner proje
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
 dotnet build /p:MsCodeCoverageInstrumentation="true"
-dotnet run --no-build --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura
+dotnet run --no-build --coverage --coverage-output report.cobertura.xml --coverage-output-format cobertura
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -31,7 +31,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Build
       run: dotnet build --no-restore /p:MsCodeCoverageInstrumentation="true"
     - name: Test
-      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura
+      run: dotnet run --no-build --coverage --coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --coverage-output-format cobertura
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -71,7 +71,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --report-trx'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --coverage --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'test'
 

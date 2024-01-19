@@ -24,7 +24,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --report-trx'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --coverage --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'test'
 

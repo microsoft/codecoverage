@@ -13,10 +13,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest" Version="3.2.0-preview.23623.1" />
-    <PackageReference Include="Microsoft.Testing.Platform.Extensions" Version="1.0.0-preview.23622.9" />
-    <PackageReference Include="Microsoft.Testing.Platform.Extensions.CodeCoverage" Version="17.10.0-preview.23622.1" />
-    <PackageReference Include="Microsoft.CodeCoverage.MSBuild" Version="17.10.0-preview.23622.1" />
+    <PackageReference Include="MSTest" Version="3.2.0-preview.24069.3" />
+    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.0.0-preview.24068.6" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.10.1-preview.24069.1" />
+    <PackageReference Include="Microsoft.CodeCoverage.MSBuild" Version="17.10.1-preview.24069.1" />
   </ItemGroup>
 
   <ItemGroup>
