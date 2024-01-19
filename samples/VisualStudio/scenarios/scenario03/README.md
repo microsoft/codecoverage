@@ -7,7 +7,7 @@ Merge reports in Microsoft Visual Studio Enterprise.
 1. Import reports in the window.
     - [NetFramework report](../../reports/netframework.coverage)
     - [NetCore report](../../reports/netcore.coverage)
-    
+
     ![import reports](../scenario02/import.png)
 
     ![import reports](../scenario02/import.png)
