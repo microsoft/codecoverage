@@ -24,7 +24,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --ms-coverage-output $(Agent.TempDirectory)/report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings $(Build.SourcesDirectory)/samples/Algorithms/scenarios/scenario02/coverage.config --report-trx'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --coverage --coverage-output $(Agent.TempDirectory)/report.cobertura.xml --coverage-output-format cobertura --coverage-settings $(Build.SourcesDirectory)/samples/Algorithms/scenarios/scenario02/coverage.config --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'test'
 
