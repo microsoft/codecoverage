@@ -1,4 +1,4 @@
-name: "Algorithms Scenario 01"
+name: "Algorithms Scenario 04"
 
 pool:
   vmImage: 'ubuntu-latest'
