@@ -64,7 +64,7 @@ Open [sourceview.coverage](../../../reports/sourceview.coverage) in the window. 
 
 Open [sourceviewcpp.coverage](../../../reports/sourceviewcpp.coverage) in the window. Test projects call static library project.
 
-    1. Project view shows 50% coverage for the static library methods.
-    ![project report static view](project-view-report-static.png)
-    2. Source view shows 100% coverage for the static library file.
-    ![source report static view](source-view-report-static.png)
+  1. Project view shows 50% coverage for the static library methods.
+  ![project report static view](project-view-report-static.png)
+  2. Source view shows 100% coverage for the static library file.
+  ![source report static view](source-view-report-static.png)
