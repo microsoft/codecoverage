@@ -51,6 +51,8 @@ Source view combines coverage data available for all projects and combines them 
 
 ## Example
 
+### Example 1
+
 Open [sourceview.coverage](../../../reports/sourceview.coverage) in the window. **Helpers.cs** file contains **MathHelpers**, **DirectoryHelpers**, and **FileHelpers** classes and is included in **SourceViewLibrary** and **SourceViewLibrary.Tests** project.
 
 1. Project view shows classes in both project nodes. Coverage statistics are according to respective project.
@@ -58,3 +60,12 @@ Open [sourceview.coverage](../../../reports/sourceview.coverage) in the window. 
   
 2. Source view combines coverage statistics for all classes and methods present in a file.  
   ![source view report](source-view-report.png)
+
+### Example 2
+
+Open [sourceviewcpp.coverage](../../../reports/sourceviewcpp.coverage) in the window. Test projects call static library project.
+
+    1. Project view shows 50% coverage for the static library methods.
+    ![project report static view](project-view-report-static.png)
+    2. Source view shows 100% coverage for the static library file.
+    ![source report static view](source-view-report-static.png)
