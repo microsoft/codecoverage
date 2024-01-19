@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage using dynamic instrumentation for MSTest runner project.
+Collect code coverage using `dotnet-coverage` tool for MSTest runner project.
 
 > **_NOTE:_** MSTest runner project coverage extension by default is not collecting native code coverage. If you want to enable please set to `True` `EnableStaticNativeInstrumentation` or `EnableDynamicNativeInstrumentation` in configuration.
 
@@ -9,7 +9,9 @@ Collect code coverage using dynamic instrumentation for MSTest runner project.
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
-dotnet run --coverage --coverage-output report.cobertura.xml --coverage-output-format cobertura
+dotnet build
+dotnet tool install -g dotnet-coverage
+dotnet-coverage collect --output report.cobertura.xml --output-format cobertura "dotnet run --no-build"
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -29,8 +31,10 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Install dotnet-coverage
+      run: dotnet tool install -g dotnet-coverage
     - name: Test
-      run: dotnet run --no-build --coverage --coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --coverage-output-format cobertura
+      run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura "dotnet run --no-build"
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -46,9 +50,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ${{ github.workspace }}/report.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Algorithms_Scenario01.yml)
+[Full source example](../../../../.github/workflows/Algorithms_Scenario04.yml)
 
-[Run example](../../../../../../actions/workflows/Algorithms_Scenario01.yml)
+[Run example](../../../../../../actions/workflows/Algorithms_Scenario04.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -69,9 +73,15 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --coverage --coverage-output $(Agent.TempDirectory)/report.cobertura.xml --coverage-output-format cobertura --report-trx'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml "dotnet run --project $(projectPath) --no-build --report-trx --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory)"'
   displayName: 'test'
 
 - task: PublishTestResults@2
