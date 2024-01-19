@@ -21,6 +21,10 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 
     ![alt text](analyze-codecoverage.png "Test menu with Analyze Code Coverage for All Tests command.")
 
+4. Specify [cobertura.runsettings](cobertura.runsettings) file to generate cobertura report instead of default coverage report.
+
+    ![runsettings-file](runsttings-set.png)
+
 ## Enable code coverage coloring
 
 1. Enable overall code coverage coloring using ![enable code coverage coloring](../../media/code-coverage.png) **Show Code Coverage Coloring** button in the **Code Coverage Results** window toolbar.
