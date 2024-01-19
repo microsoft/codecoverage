@@ -22,7 +22,7 @@ Collect code coverage using static instrumentation for MSTest runner project. As
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
-dotnet run --ms-coverage --ms-coverage-output report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
+dotnet run --coverage --coverage-output report.cobertura.xml --coverage-output-format cobertura --coverage-settings ../../scenarios/scenario02/coverage.config
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -43,7 +43,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura --ms-coverage-settings ../../scenarios/scenario02/coverage.config
+      run: dotnet run --no-build --coverage --coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --coverage-output-format cobertura --coverage-settings ../../scenarios/scenario02/coverage.config
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -83,7 +83,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'run'
-    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --ms-coverage --ms-coverage-output $(Agent.TempDirectory)/report.cobertura.xml --ms-coverage-output-format cobertura --report-trx'
+    arguments: '--no-build --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory) --coverage --coverage-output $(Agent.TempDirectory)/report.cobertura.xml --coverage-output-format cobertura --report-trx'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'test'
 

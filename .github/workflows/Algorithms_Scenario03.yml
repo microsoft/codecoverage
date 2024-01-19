@@ -26,7 +26,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore /p:MsCodeCoverageInstrumentation="true"
     - name: Test
-      run: dotnet run --no-build --ms-coverage --ms-coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --ms-coverage-output-format cobertura
+      run: dotnet run --no-build --coverage --coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --coverage-output-format cobertura
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
