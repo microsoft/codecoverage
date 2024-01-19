@@ -23,6 +23,25 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
 
 4. Specify [cobertura.runsettings](cobertura.runsettings) file to generate cobertura report instead of default coverage report.
 
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <RunSettings>
+      <DataCollectionRunSettings>
+        <DataCollectors>
+          <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+            <Configuration>
+              <Format>cobertura</Format>
+              <CodeCoverage>
+                <UseVerifiableInstrumentation>False</UseVerifiableInstrumentation>
+                <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
+                <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
+              </CodeCoverage>
+            </Configuration>
+          </DataCollector>
+        </DataCollectors>
+      </DataCollectionRunSettings>
+    </RunSettings>
+    ```
     ![runsettings-file](runsttings-set.png)
 
 ## Enable code coverage coloring
