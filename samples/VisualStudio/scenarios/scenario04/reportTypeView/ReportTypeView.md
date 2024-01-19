@@ -1,6 +1,6 @@
 # Report Type View
 
-Report content can be visualized in two different ways in the **Code Coverage Results** window
+Coverage report content can be visualized in two different ways in the **Code Coverage Results** window
 
 1. Project View
 2. Source View
@@ -9,7 +9,7 @@ View can be selected by using ![configure views](../../../media/categorized-view
 
 ![configure code coverage views](../configure-views.png)
 
-Select report style from the **Code Coverage Views** dialog.
+Select **Report Style** from the **Code Coverage Views** dialog.
 
 ![select report style](report-style.png)
 
@@ -47,13 +47,13 @@ Source view shows coverage data in directory/file hierarchy
   - ![file](../../../media/file.png) File4
     - ![method](../../../media/method.png) Method
 
-Source view combines coverage data available for all projects and combine them on a file level. Source view does not support blocks coverage data. It combines data from
+Source view combines coverage data available for all projects and combines them on a file level. Source view does not support blocks coverage data.
 
 ## Example
 
-Open [report](../../../reports/sourceview.coverage) in the window. **Helpers.cs** file contains **MathHelpers**, **DirectoryHelpers**, and **FileHelpers** classes and is included in **SourceViewLibrary** and **SourceViewLibrary.Tests** project.
+Open [sourceview.coverage](../../../reports/sourceview.coverage) in the window. **Helpers.cs** file contains **MathHelpers**, **DirectoryHelpers**, and **FileHelpers** classes and is included in **SourceViewLibrary** and **SourceViewLibrary.Tests** project.
 
   1. Project view shows classes in both project nodes. Coverage statistics are according to respective project.
   ![project view report](project-view-report.png)
-  2. Source view takes show combines coverage statistics for all classes and methods present in a file.
+  2. Source view combines coverage statistics for all classes and methods present in a file.
   ![source view report](source-view-report.png)
