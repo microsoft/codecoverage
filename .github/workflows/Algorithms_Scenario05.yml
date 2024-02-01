@@ -21,10 +21,8 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
     - name: Publish
-      run: dotnet publish --no-restore -r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
+      run: dotnet publish -r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Run
