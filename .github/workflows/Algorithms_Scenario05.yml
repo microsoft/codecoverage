@@ -28,7 +28,7 @@ jobs:
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Run
-      run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura ./bin/Release/net8.0/win-x64/publish/Algorithms.Console
+      run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura ./bin/Release/net8.0/linux-x64/publish/Algorithms.Console
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
