@@ -9,8 +9,9 @@ variables:
 steps:
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'custom'
-    custom: 'publish'
+    command: 'publish'
+    #custom: 'publish'
+    publishWebProjects: false
     arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
     #workingDirectory: "$(Build.SourcesDirectory)/samples/Algorithms/src/Algorithms.Console/"
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
