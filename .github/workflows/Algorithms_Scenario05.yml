@@ -24,7 +24,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Publish
-      run: dotnet publish --no-restore -r linux-arm64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
+      run: dotnet publish --no-restore -r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Run
