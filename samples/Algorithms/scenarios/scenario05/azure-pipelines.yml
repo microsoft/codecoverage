@@ -4,7 +4,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  buildConfiguration: 'Debug'
+  projectPath: './samples/Algorithms/src/Algorithms.Console/Algorithms.Console.csproj' # this is specific to example - in most cases not needed
 
 steps:
 - task: DotNetCoreCLI@2
@@ -12,7 +12,8 @@ steps:
     command: 'custom'
     custom: 'publish'
     arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
-    workingDirectory: "$(Build.SourcesDirectory)/samples/Algorithms/src/Algorithms.Console/"
+    #workingDirectory: "$(Build.SourcesDirectory)/samples/Algorithms/src/Algorithms.Console/"
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
   displayName: 'publish'
 
 - task: DotNetCoreCLI@2
@@ -27,12 +28,6 @@ steps:
     targetType: 'inline'
     script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml ./samples/Algorithms/src/Algorithms.Console/bin/Release/net8.0/linux-x64/publish/Algorithms.Console'
   displayName: 'test'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
-    publishRunAttachments: false
 
 - task: PublishCodeCoverageResults@2
   inputs:
