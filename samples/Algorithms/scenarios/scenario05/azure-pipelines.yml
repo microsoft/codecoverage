@@ -5,15 +5,13 @@ pool:
 
 variables:
   buildConfiguration: 'Debug'
-  projectPath: './samples/Algorithms/src/Algorithms.Console/Algorithms.Console.csproj' # this is specific to example - in most cases not needed
 
 steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
     arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
-    workingDirectory: './samples/Algorithms/src/Algorithms.Console/'
+    workingDirectory: "$(Build.SourcesDirectory)/samples/Algorithms/src/Algorithms.Console/"
   displayName: 'publish'
 
 - task: DotNetCoreCLI@2
