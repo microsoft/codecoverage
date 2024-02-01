@@ -27,7 +27,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml ./samples/Algorithms/src/Algorithms.Console/bin/Release/net8.0/linux-x64/publish/Algorithms.Console'
-  displayName: 'test'
+  displayName: 'run'
 
 - task: PublishCodeCoverageResults@2
   inputs:

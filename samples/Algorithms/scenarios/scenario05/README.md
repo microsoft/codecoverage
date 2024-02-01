@@ -1,17 +1,17 @@
 # Scenario Description
 
-Collect code coverage using `dotnet-coverage` tool for MSTest runner project.
+Collect code coverage using `dotnet-coverage` tool for Native AOT console application. 
 
-> **_NOTE:_** MSTest runner project coverage extension by default is not collecting native code coverage. If you want to enable please set to `True` `EnableStaticNativeInstrumentation` or `EnableDynamicNativeInstrumentation` in configuration.
+> **_NOTE:_** `Microsoft.CodeCoverage.MSBuild` package needs to be added as reference of console application. Remember to re-publish your application without coverage instrumentation before deploying to production.
 
 # Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
-cd codecoverage/samples/Algorithms/tests/Algorithms.Core.Tests/
-dotnet build
+cd codecoverage/samples/Algorithms/src/Algorithms.Console/
+dotnet publish -r win-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
 dotnet tool install -g dotnet-coverage
-dotnet-coverage collect --output report.cobertura.xml --output-format cobertura "dotnet run --no-build"
+dotnet-coverage collect --output report.cobertura.xml --output-format cobertura bin/Release/net8.0/win-x64/publish/Algorithms.Console.exe
 ```
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
@@ -27,14 +27,12 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
+    - name: Publish
+      run: dotnet publish -r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
-    - name: Test
-      run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura "dotnet run --no-build"
+    - name: Run
+      run: dotnet-coverage collect --output $GITHUB_WORKSPACE/report.cobertura.xml --output-format cobertura ./bin/Release/net8.0/linux-x64/publish/Algorithms.Console
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
       with:
@@ -50,9 +48,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
         path: ${{ github.workspace }}/report.cobertura.xml
 ```
 
-[Full source example](../../../../.github/workflows/Algorithms_Scenario04.yml)
+[Full source example](../../../../.github/workflows/Algorithms_Scenario05.yml)
 
-[Run example](../../../../../../actions/workflows/Algorithms_Scenario04.yml)
+[Run example](../../../../../../actions/workflows/Algorithms_Scenario05.yml)
 
 # Collect code coverage inside Azure DevOps Pipelines
 
@@ -60,16 +58,12 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 steps:
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'restore'
+    command: 'publish'
+    publishWebProjects: false
+    zipAfterPublish: false
+    arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
     projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'restore'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    arguments: '--no-restore --configuration $(buildConfiguration)'
-    projects: '$(projectPath)' # this is specific to example - in most cases not needed
-  displayName: 'build'
+  displayName: 'publish'
 
 - task: DotNetCoreCLI@2
   inputs:
@@ -81,14 +75,8 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml "dotnet run --project $(projectPath) --no-build --report-trx --configuration $(buildConfiguration) --results-directory $(Agent.TempDirectory)"'
-  displayName: 'test'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
-    publishRunAttachments: false
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml ./samples/Algorithms/src/Algorithms.Console/bin/Release/net8.0/linux-x64/publish/Algorithms.Console'
+  displayName: 'run'
 
 - task: PublishCodeCoverageResults@2
   inputs:
