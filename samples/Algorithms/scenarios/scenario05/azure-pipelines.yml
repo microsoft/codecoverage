@@ -1,0 +1,34 @@
+name: "Algorithms Scenario 05"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  projectPath: './samples/Algorithms/src/Algorithms.Console/Algorithms.Console.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    zipAfterPublish: false
+    arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'publish'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'custom'
+    custom: "tool"
+    arguments: 'install -g dotnet-coverage'
+  displayName: 'install dotnet-coverage'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dotnet-coverage collect --output-format cobertura --output $(Agent.TempDirectory)/report.cobertura.xml ./samples/Algorithms/src/Algorithms.Console/bin/Release/net8.0/linux-x64/publish/Algorithms.Console'
+  displayName: 'run'
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml

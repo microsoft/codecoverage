@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage line-rate="0.95" branch-rate="1" complexity="3" version="1.9" timestamp="1706778071" lines-covered="19" lines-valid="20">
+  <packages>
+    <package line-rate="1" branch-rate="1" complexity="2" name="Algorithms.Console">
+      <classes>
+        <class line-rate="1" branch-rate="1" complexity="2" name="Program" filename="/home/runner/work/codecoverage/codecoverage/samples/Algorithms/src/Algorithms.Console/Program.cs">
+          <methods>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;Main&gt;$" signature="(string[])">
+              <lines>
+                <line number="4" hits="1" branch="False" />
+                <line number="5" hits="1" branch="False" />
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method line-rate="1" branch-rate="1" complexity="1" name="&lt;&lt;Main&gt;$&gt;g__Print|0_0" signature="(string, int[])">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="1" branch="False" />
+            <line number="5" hits="1" branch="False" />
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package line-rate="0.9230769230769231" branch-rate="1" complexity="1" name="Algorithms.Core">
+      <classes>
+        <class line-rate="0.9230769230769231" branch-rate="1" complexity="1" name="Algorithms.Core.Merger" filename="/home/runner/work/codecoverage/codecoverage/samples/Algorithms/src/Algorithms.Core/Merger.cs">
+          <methods>
+            <method line-rate="0.9230769230769231" branch-rate="1" complexity="1" name="Merge" signature="(int[], int[])">
+              <lines>
+                <line number="7" hits="1" branch="False" />
+                <line number="8" hits="1" branch="False" />
+                <line number="9" hits="1" branch="False" />
+                <line number="11" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="1" branch="False" />
+            <line number="8" hits="1" branch="False" />
+            <line number="9" hits="1" branch="False" />
+            <line number="11" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
