@@ -65,7 +65,7 @@ Check other configuration options [here](docs/configuration.md).
 * Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
-* [Performance data](docs/performance/Performance.md)
+* [Performance data](/docs/performance/README.md)
 
 ## Contributing
 
