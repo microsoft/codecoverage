@@ -9,8 +9,8 @@ git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator/src/Calculator.Console/
 dotnet build
 dotnet tool install -g dotnet-coverage
-dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Core.dll"
-dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Console.dll"
+dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Core.dll"
+dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Console.dll"
 dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura
 dotnet run --no-build add 10 24
 dotnet run --no-build multiply 10 24
@@ -35,9 +35,9 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Instrument Calculator.Core.dll
-      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Core.dll"
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Core.dll"
     - name: Instrument Calculator.Console.dll
-      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Console.dll"
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Console.dll"
     - name: Start code coverage collection session
       run: dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
     - name: Run (add)
@@ -92,13 +92,13 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net7.0/Calculator.Core.dll"'
+    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net8.0/Calculator.Core.dll"'
   displayName: 'Instrument Calculator.Core.dll'
 
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net7.0/Calculator.Console.dll"'
+    script: 'dotnet-coverage instrument --session-id TagScenario10 "$(Build.SourcesDirectory)/samples/Calculator/src/Calculator.Console/bin/Debug/net8.0/Calculator.Console.dll"'
   displayName: 'Instrument Calculator.Console.dll'
 
 - task: Bash@3

@@ -28,9 +28,9 @@ jobs:
     - name: Install dotnet-coverage
       run: dotnet tool install -g dotnet-coverage
     - name: Instrument Calculator.Core.dll
-      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Core.dll"
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Core.dll"
     - name: Instrument Calculator.Console.dll
-      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net7.0/Calculator.Console.dll"
+      run: dotnet-coverage instrument --session-id TagScenario10 "./bin/Debug/net8.0/Calculator.Console.dll"
     - name: Start code coverage collection session
       run: dotnet-coverage collect --session-id TagScenario10 --server-mode --background -f cobertura -o $GITHUB_WORKSPACE/report.cobertura.xml
     - name: Run (add)
