@@ -48,8 +48,8 @@ Code coverage results: output.coverage.
 
 For existing projects to get latest features and best performance please keep up to date below references:
 ```xml
-<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-<PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+<PackageReference Include="Microsoft.CodeCoverage" Version="17.9.0" />
 ```
 
 If your solution doesn't contain any C++ code it is recommended to disable native code coverage by adding into configuration below flags:
@@ -66,6 +66,12 @@ Check other configuration options [here](docs/configuration.md).
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
 * [Performance data](/docs/performance/README.md)
+
+## Samples
+
+* [Unit tests, E2E, console applications, merging, exclusions, static instrumentation](samples/Calculator/README.md)
+* [MSTest Runner, Native AOT](samples/Algorithms/README.md)
+* [Visual Studio](samples/VisualStudio/README.md)
 
 ## Contributing
 
