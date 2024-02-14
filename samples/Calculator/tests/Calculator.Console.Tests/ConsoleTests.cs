@@ -44,7 +44,7 @@ public class ConsoleTests
         Process process = new Process();
         process.StartInfo = new ProcessStartInfo()
         {
-            FileName = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "..", "src", "Calculator.Console", "bin", Configuration, "net7.0", fileName),
+            FileName = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..", "..", "src", "Calculator.Console", "bin", Configuration, "net8.0", fileName),
             Arguments = arguments,
             UseShellExecute = false,
             CreateNoWindow = true,
