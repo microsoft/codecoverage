@@ -32,3 +32,4 @@ Other operating systems are supported at best effort.
 ## Dependencies (only dynamic instrumentation)
 
 On macOS and linux dynamic instrumentation requires [libxml2](https://github.com/GNOME/libxml2) package to be installed.
+On Alpine 3.18+ dynamic instrumentation requires [libintl](https://pkgs.alpinelinux.org/package/edge/main/x86/libintl) package to be installed.
