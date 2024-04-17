@@ -4,6 +4,7 @@ Solution contains two projects:
 1. `Algorithms.Core` - contains core logic for solution
 2. `Algorithms.Console` - contains Native AOT console app
 3. `Algorithms.Core.Tests` - contains unit tests for `Algorithms.Core`. It is [MSTest runner project](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-intro?tabs=dotnetcli)
+4. `Algorithms.Core.MSTest.Sdk.Tests` - contains unit tests for `Algorithms.Core`. It is [MSTest runner project using MSTest SDK](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-sdk)
 
 # Scenarios
 
@@ -13,3 +14,4 @@ Solution contains two projects:
 4. [***Scenario 04*** Code coverage for MSTest Runner project using `dotnet-coverage` tool](scenarios/scenario04/README.md)
 5. [***Scenario 05*** Code coverage for Native AOT console app](scenarios/scenario05/README.md)
 6. [***Scenario 06*** Code coverage for Native AOT MSTest Runner project](scenarios/scenario06/README.md)
+7. [***Scenario 07*** Code coverage for MSTest SDK project using dynamic instrumentation](scenarios/scenario07/README.md)
