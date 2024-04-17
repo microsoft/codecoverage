@@ -1,9 +1,9 @@
-using Algorithms.Core;
+﻿using Algorithms.Core;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
 
-namespace Algorithms.Core.Tests;
+namespace Algorithms.Core.MSTest.Sdk.Tests;
 
 [TestClass]
 public class MergerTests
