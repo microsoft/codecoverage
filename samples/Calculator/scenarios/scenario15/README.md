@@ -9,7 +9,7 @@ git clone https://github.com/microsoft/codecoverage.git
 cd codecoverage/samples/Calculator
 dotnet build
 dotnet tool install -g dotnet-coverage
-otnet-coverage collect --output-format cobertura --output report.cobertura.xml --session-id TagScenario15 --background --server-mode
+dotnet-coverage collect --output-format cobertura --output report.cobertura.xml --session-id TagScenario15 --background --server-mode
 cd src/Calculator.Server
 dotnet-coverage connect --background TagScenario15 "dotnet run --no-build"
 cd ../../tests/Calculator.Server.IntegrationTests

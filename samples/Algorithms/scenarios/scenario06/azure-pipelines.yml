@@ -1,0 +1,34 @@
+name: "Algorithms Scenario 06"
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Debug'
+  projectPath: './samples/Algorithms/tests/Algorithms.Core.NativeAot.Tests/Algorithms.Core.NativeAot.Tests.csproj' # this is specific to example - in most cases not needed
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    zipAfterPublish: false
+    arguments: '-r linux-x64 -c Release /p:AotMsCodeCoverageInstrumentation="true"'
+    projects: '$(projectPath)' # this is specific to example - in most cases not needed
+  displayName: 'publish'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: './samples/Algorithms/tests/Algorithms.Core.NativeAot.Tests/bin/Release/net8.0/linux-x64/publish/Algorithms.Core.NativeAot.Tests --coverage --coverage-output-format cobertura --coverage-output $(Agent.TempDirectory)/report.cobertura.xml --report-trx --results-directory $(Agent.TempDirectory)'
+  displayName: 'test'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '$(Agent.TempDirectory)/**/*.trx'
+    publishRunAttachments: false
+
+- task: PublishCodeCoverageResults@2
+  inputs:
+    summaryFileLocation: $(Agent.TempDirectory)/**/*.cobertura.xml
