@@ -4,6 +4,7 @@ Solution contains two projects:
 1. `Algorithms.Core` - contains core logic for solution
 2. `Algorithms.Console` - contains Native AOT console app
 3. `Algorithms.Core.Tests` - contains unit tests for `Algorithms.Core`. It is [MSTest runner project](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-runner-intro?tabs=dotnetcli)
+4. `Algorithms.Core.MSTest.Sdk.Tests` - contains unit tests for `Algorithms.Core`. It is [MSTest runner project using MSTest SDK](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-mstest-sdk)
 
 # Scenarios
 
