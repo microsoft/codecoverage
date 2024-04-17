@@ -13,3 +13,4 @@ Solution contains two projects:
 3. [***Scenario 03*** Code coverage for MSTest Runner project using compile-time instrumentation](scenarios/scenario03/README.md)
 4. [***Scenario 04*** Code coverage for MSTest Runner project using `dotnet-coverage` tool](scenarios/scenario04/README.md)
 5. [***Scenario 05*** Code coverage for Native AOT console app](scenarios/scenario05/README.md)
+6. [***Scenario 06*** Code coverage for Native AOT MSTest Runner project](scenarios/scenario06/README.md)
