@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [assembly: Parallelize(Workers = 0, Scope = ExecutionScope.MethodLevel)]
 
-namespace Algorithms.Core.MSTest.Sdk.Tests;
+namespace Algorithms.Core.Tests;
 
 [TestClass]
 public class MergerTests
