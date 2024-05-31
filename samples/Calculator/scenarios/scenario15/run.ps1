@@ -1,3 +1,4 @@
+Push-Location
 cd $PSScriptRoot/../..
 dotnet build
 dotnet tool install -g dotnet-coverage
@@ -8,3 +9,4 @@ cd $PSScriptRoot/../../tests/Calculator.Server.IntegrationTests
 dotnet-coverage connect TagScenario15 "dotnet test --no-build"
 dotnet-coverage shutdown TagScenario15
 cd $PSScriptRoot/../..
+Pop-Location

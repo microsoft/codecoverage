@@ -1,3 +1,4 @@
+Push-Location
 cd $PSScriptRoot/../..
 dotnet build
 dotnet tool install -g dotnet-coverage
@@ -14,3 +15,4 @@ dotnet-coverage connect TagScenario17 "dotnet test --no-build --filter divide"
 dotnet-coverage snapshot --output ../../snapshot4.cobertura.xml TagScenario17
 dotnet-coverage shutdown TagScenario17
 cd $PSScriptRoot/../..
+Pop-Location

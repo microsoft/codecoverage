@@ -1,3 +1,4 @@
+Push-Location
 cd $PSScriptRoot/../..
 dotnet build
 dotnet tool install -g dotnet-coverage
@@ -7,3 +8,4 @@ cd $PSScriptRoot/../../tests/Calculator.Server.IntegrationTests
 dotnet test --collect "Code Coverage"
 dotnet-coverage shutdown TagScenario14
 dotnet-coverage merge --output merged.coverage **/*.coverage $PSScriptRoot/../../src/Calculator.Server/report.coverage
+Pop-Location
