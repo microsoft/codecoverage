@@ -1,3 +1,4 @@
+Push-Location
 cd $PSScriptRoot/../..
 dotnet build
 dotnet tool install -g dotnet-coverage
@@ -15,3 +16,4 @@ dotnet-coverage snapshot --reset --output ../../snapshot4.cobertura.xml TagScena
 dotnet-coverage shutdown TagScenario16
 cd $PSScriptRoot/../..
 dotnet-coverage merge --output-format cobertura --output report.cobertura.xml *.cobertura.xml
+Pop-Location
