@@ -5,3 +5,5 @@
 3. [**Scenario 03** Merge coverage reports](scenarios/scenario03/README.md)
 4. [**Scenario 04** Coverage report views](scenarios/scenario04/README.md)
 5. [**Scenario 05** Search](scenarios/scenario05/README.md)
+6. [**Scenario 06** C++ code coverage in Visual Studio](scenarios/scenario06/README.md)
+7. [**Scenario 07** C++ code coverage in Visual Studio ARM64](scenarios/scenario07/README.md)
