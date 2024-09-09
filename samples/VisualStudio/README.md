@@ -7,3 +7,4 @@
 5. [**Scenario 05** Search](scenarios/scenario05/README.md)
 6. [**Scenario 06** C++ code coverage in Visual Studio](scenarios/scenario06/README.md)
 7. [**Scenario 07** C++ code coverage in Visual Studio ARM64](scenarios/scenario07/README.md)
+8. [**Scenario 08** Static code coverage for ASP.NET Core Web App (Razor Pages) in IIS](scenarios/scenario08/README.md)
