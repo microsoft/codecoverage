@@ -21,6 +21,7 @@
 | CLRIEARM64InstallDir | Directory path | | Path to directory with custom CLR IE ARM64 binary | `<CLRIEARM64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\arm64</CLRIEARM64InstallDir>` |
 | PerTestCodeCoverage | `True`, `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
 | IncludeTestAssembly | `True`, `False` | `True` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
+| DeterministicReport | `True`, `False` | `False` | Indicates if paths in the report should start with deterministic fragment `/_/..` | `<DeterministicReport>True</DeterministicReport>` |
 
 ## Settings under CodeCoverage tag
 
