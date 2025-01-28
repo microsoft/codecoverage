@@ -22,7 +22,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build

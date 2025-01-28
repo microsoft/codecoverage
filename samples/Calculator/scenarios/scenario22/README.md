@@ -54,7 +54,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Restore dependencies (Console project)
