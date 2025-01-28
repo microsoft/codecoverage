@@ -22,7 +22,7 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
