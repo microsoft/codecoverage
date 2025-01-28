@@ -48,8 +48,8 @@ Code coverage results: output.coverage.
 
 For existing projects to get latest features and best performance please keep up to date below references:
 ```xml
-<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
-<PackageReference Include="Microsoft.CodeCoverage" Version="17.11.1" />
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+<PackageReference Include="Microsoft.CodeCoverage" Version="17.12.0" />
 ```
 
 If your solution doesn't contain any C++ code it is recommended to disable native code coverage by adding into configuration below flags:
