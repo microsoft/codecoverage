@@ -1,3 +1,5 @@
+# Code coverage performance results
+
 Project name | Configuration | No code coverage | Code coverage 16.5 | Code coverage 17.0 | Code coverage 17.5 | Code coverage 17.9
 -------------|---------------------------|----------|----------|----------|----------|---------
 InteractiveHost UnitTests | net8.0 Debug | 129.82s | 361.82s (+178.70%) | 278.19s (+114.28%) | 266.49s (+105.27%) | 188.61s (+45.28%)
@@ -100,8 +102,7 @@ VBCSCompiler UnitTests | net472 Debug | 58.47s | 87.00s (+48.80%) | 75.98s (+29.
 VBCSCompiler UnitTests | net472 Release | 52.65s | 82.66s (+56.99%) | 71.18s (+35.18%) | 65.19s (+23.80%) | 60.04s (+14.02%)
 VBCSCompiler UnitTests | net8.0 Debug | 30.34s | 52.15s (+71.85%) | 47.68s (+57.12%) | 42.01s (+38.44%) | 39.00s (+28.52%)
 VBCSCompiler UnitTests | net8.0 Release | 29.26s | 48.75s (+66.62%) | 45.37s (+55.06%) | 39.92s (+36.45%) | 36.80s (+25.78%)
-**Total** | | **11520.27s** | **25493.41s (+121.29%)** | **20270.25s (+75.95%)** | **16792.62s (+45.77%)** | **14520.69s (+26.04%)** 
-
+**Total** | | **11520.27s** | **25493.41s (+121.29%)** | **20270.25s (+75.95%)** | **16792.62s (+45.77%)** | **14520.69s (+26.04%)**
 
 Package | Time | Ratio
 --------|------|------

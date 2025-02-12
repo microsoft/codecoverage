@@ -4,7 +4,7 @@ Collect code coverage using `dotnet-coverage` tool for MSTest runner project.
 
 > **_NOTE:_** MSTest runner project coverage extension by default is not collecting native code coverage. If you want to enable please set to `True` `EnableStaticNativeInstrumentation` or `EnableDynamicNativeInstrumentation` in configuration.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -16,7 +16,7 @@ dotnet-coverage collect --output report.cobertura.xml --output-format cobertura 
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 `reportgenerator` can be used to generate final github summary markdown.
 
@@ -54,7 +54,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Algorithms_Scenario04.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -99,7 +99,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

@@ -2,7 +2,7 @@
 
 Collect code coverage for ASP.NET Core integration tests. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool in server mode is used to collect code coverage for server and tests. `connect`  command is used to attach server and tests processes into coverage collection.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -19,7 +19,7 @@ dotnet-coverage shutdown TagScenario15
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
 
@@ -66,7 +66,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario15.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -144,7 +144,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

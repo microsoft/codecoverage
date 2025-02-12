@@ -2,7 +2,7 @@
 
 Collect code coverage using default settings. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -12,7 +12,7 @@ dotnet test --collect "Code Coverage"
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
 
@@ -52,7 +52,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario01.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -83,7 +83,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

@@ -2,7 +2,7 @@
 
 Collect code coverage for ASP.NET Core integration tests and take snapshots for each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. We generate code coverage report for each test separately using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation resets all coverage data. At the end all snapshots are merged into final coverage report.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -27,7 +27,7 @@ dotnet-coverage merge --output-format cobertura --output report.cobertura.xml *.
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 `reportgenerator` can be used to generate final github summary markdown.
 
@@ -91,7 +91,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario16.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -217,7 +217,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report examples
+## Report examples
 
 ![alt text](example.report.jpg "Example report")
 

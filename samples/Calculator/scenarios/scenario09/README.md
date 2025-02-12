@@ -2,7 +2,7 @@
 
 This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage) can be used to collect code coverage for console application using [static instrumentation](../../../../docs/instrumentation.md). It is important to remember that files to be instrumented need to be specified using `--include-files`. When executing tests this is not needed as our tooling automatically detects directory with libraries and instrument it. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
-# Configuration
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -25,7 +25,7 @@ This example shows how our tool [dotnet-coverage](https://aka.ms/dotnet-coverage
 </RunSettings>
 ```
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -37,7 +37,7 @@ dotnet-coverage collect -f cobertura -s ../../scenarios/scenario09/coverage.runs
 
 You can also use [run.ps1](run.ps1) to execute this scenario.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 ```yml
     steps:
@@ -73,7 +73,7 @@ You can also use [run.ps1](run.ps1) to execute this scenario.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario09.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -112,7 +112,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

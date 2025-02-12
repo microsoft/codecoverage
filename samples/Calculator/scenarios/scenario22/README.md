@@ -2,7 +2,7 @@
 
 This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requres specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `False` means our system will not restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
-# Configuration
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -31,7 +31,7 @@ This example shows that code coverage by default is collecting code coverage als
 </RunSettings>
 ```
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -46,7 +46,7 @@ dotnet test --settings ../../scenarios/scenario22/coverage.runsettings
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 ```yml
     steps:
@@ -88,7 +88,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario22.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -134,7 +134,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

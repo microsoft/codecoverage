@@ -2,7 +2,7 @@
 
 In this example we want to show you how to exclude from code coverage tests projects and any other libraries (moq, xunit). Regex `.*calculator[^/\\]*\.dll$` makes sure that only libraries containing `calculator` in file name are matched. If path is matched by one of the `<Include>` regexes and one of the `<Exclude>` regexes then finally path is excluded. Checking that after `calculator` string there is no `\` or '/' makes sure that path `D:\calculator\moq.dll` is not matched. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
-# Configuration
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -29,12 +29,11 @@ In this example we want to show you how to exclude from code coverage tests proj
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
-
 ```
 
 > **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -46,7 +45,7 @@ dotnet test --settings ../../scenarios/scenario06/coverage.runsettings
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 ```yml
     steps:
@@ -84,7 +83,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario06.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -115,7 +114,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

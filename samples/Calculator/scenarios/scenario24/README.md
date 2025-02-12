@@ -2,7 +2,7 @@
 
 Gather code coverage for the entire solution. Refer to the provided example for collecting coverage across all unit tests. The system automatically consolidates coverage reports from all test projects. Integration tests are excluded for simplification, as the server is not initiated during this process.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -13,7 +13,7 @@ dotnet test --no-build --collect "Code Coverage"
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 Executing tests is automatically creating `cobertura` report. Then `reportgenerator` can be used to generate final github summary markdown.
 
@@ -49,7 +49,7 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario24.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -80,7 +80,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

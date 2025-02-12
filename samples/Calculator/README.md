@@ -1,6 +1,7 @@
 # Solution summary
 
 Solution contains seven projects:
+
 1. `Calculator.Core` - contains core logic for solution
 2. `Calculator.Console` - console application, references `Calculator.Core`
 3. `Calculator.Server` - ASP.NET Core service, references `Calculator.Core`
@@ -9,7 +10,7 @@ Solution contains seven projects:
 6. `Calculator.Server.Tests` - standard ASP.NET Core tests for `Calculator.Server` project
 7. `Calculator.Server.IntegrationTests` - integration tests for `Calculator.Server` project. Before tests are executed `Calculator.Server` needs to be started locally
 
-# Scenarios
+## Scenarios
 
 1. [***Scenario 01*** Default settings (binary .coverage report)](scenarios/scenario01/README.md)
 2. [***Scenario 02*** Cobertura format by command line](scenarios/scenario02/README.md)
