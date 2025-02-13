@@ -46,6 +46,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
       with:
         name: code-coverage-report
         path: ./**/TestResults/**/*.coverage
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario13.yml)

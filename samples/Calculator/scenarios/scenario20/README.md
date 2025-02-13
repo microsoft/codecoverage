@@ -92,11 +92,13 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
+        overwrite: true
     - name: Archive code coverage logs
       uses: actions/upload-artifact@v4
       with:
         name: code-coverage-logs
         path: '${{ github.workspace }}/logs/*'
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario20.yml)

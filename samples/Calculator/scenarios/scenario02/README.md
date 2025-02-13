@@ -40,6 +40,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       with:
         name: code-coverage-report
         path: ./**/TestResults/**/*.cobertura.xml
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario02.yml)

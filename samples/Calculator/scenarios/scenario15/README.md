@@ -60,6 +60,7 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario15.yml)

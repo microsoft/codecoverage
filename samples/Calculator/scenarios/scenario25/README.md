@@ -46,6 +46,7 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/samples/Calculator/TestResults/**/*.cobertura.xml'
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario25.yml)

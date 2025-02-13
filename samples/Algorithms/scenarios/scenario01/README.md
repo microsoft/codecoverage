@@ -44,6 +44,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
       with:
         name: code-coverage-report
         path: ${{ github.workspace }}/report.cobertura.xml
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Algorithms_Scenario01.yml)
