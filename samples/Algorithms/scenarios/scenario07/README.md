@@ -40,10 +40,11 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
         path: ${{ github.workspace }}/report.cobertura.xml
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Algorithms_Scenario07.yml)

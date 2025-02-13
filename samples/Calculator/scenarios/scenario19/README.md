@@ -2,7 +2,7 @@
 
 Collect code coverage for whole solution. Runsettings are configured to exclude tests projects from coverage report. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. `dotnet-coverage` tool is used to collect code coverage for server. At the end code coverage results for server and tests are merged. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise. In pipelines during merging final coverage report is converted into cobertura format and published.
 
-# Configuration
+## Configuration
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -29,12 +29,11 @@ Collect code coverage for whole solution. Runsettings are configured to exclude 
     </DataCollectors>
   </DataCollectionRunSettings>
 </RunSettings>
-
 ```
 
 > **_NOTE:_** Remember that any regex used for `<ModulePath>` or `<Source>` is matched for file path not file name.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -51,7 +50,7 @@ dotnet-coverage merge --output merged.coverage "./TestResults/**/*.coverage" ./s
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
 
@@ -88,17 +87,18 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario19.yml)
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario19.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -166,7 +166,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

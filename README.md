@@ -5,12 +5,15 @@ Microsoft code coverage functionality is closed source. This repository contains
 ## Get started
 
 To collect code coverage for .NET test project you can simply execute:
+
 ```shell
 dotnet new mstest -o mstests
 cd mstests
 dotnet test --collect "Code Coverage;Format=cobertura"
 ```
+
 You should see output:
+
 ```shell
 Determining projects to restore...
   All projects are up-to-date for restore.
@@ -29,6 +32,7 @@ Attachments:
 ```
 
 For any .NET application you can collect code coverage in this way:
+
 ```shell
 dotnet new console -o sample1
 cd sample1
@@ -37,9 +41,9 @@ dotnet-coverage collect "dotnet run"
 ```
 
 You should see output:
+
 ```shell
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.13.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: d1bf31db-f634-4b2c-a627-c708ac93d85b
 Hello, World!
@@ -47,22 +51,25 @@ Code coverage results: output.coverage.
 ```
 
 For existing projects to get latest features and best performance please keep up to date below references:
+
 ```xml
-<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-<PackageReference Include="Microsoft.CodeCoverage" Version="17.12.0" />
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+<PackageReference Include="Microsoft.CodeCoverage" Version="17.13.0" />
 ```
 
 If your solution doesn't contain any C++ code it is recommended to disable native code coverage by adding into configuration below flags:
+
 ```xml
 <EnableStaticNativeInstrumentation>False</EnableStaticNativeInstrumentation>
 <EnableDynamicNativeInstrumentation>False</EnableDynamicNativeInstrumentation>
 ```
+
 Check other configuration options [here](docs/configuration.md).
 
-## Documentation 
+## Documentation
 
-* Documentation for `dotnet-coverage` tool is available at https://aka.ms/dotnet-coverage.
-* Documentation for `Microsoft.CodeCoverage` is available at https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis
+* Documentation for `dotnet-coverage` tool is available [here](https://aka.ms/dotnet-coverage).
+* Documentation for `Microsoft.CodeCoverage` is available [here](https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis)
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
 * [Performance data](/docs/performance/README.md)
@@ -77,7 +84,7 @@ Check other configuration options [here](docs/configuration.md).
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+the rights to use your contribution. For details, visit [Contributor License Agreements](https://opensource.microsoft.com/cla/).
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
@@ -89,8 +96,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
+trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.

@@ -19,10 +19,12 @@ Static C++ code coverage for new Native Console App project in Visual Studio.
     ![alt text](build.png "Build solution")
 
 5. Collect code coverage in Developer PowerShell for VS Enterprise
-```console
-Microsoft.CodeCoverage.Console.exe collect --include-files .\x64\Debug\** .\x64\Debug\ConsoleApplication1.exe
-```
-![alt text](collect.png "Collect code coverage")
+
+    ```console
+    Microsoft.CodeCoverage.Console.exe collect --include-files .\x64\Debug\** .\x64\Debug\ConsoleApplication1.exe
+    ```
+
+    ![alt text](collect.png "Collect code coverage")
 
 6. View code coverage results
 

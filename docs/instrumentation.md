@@ -8,8 +8,8 @@ Therefore, in version [17.5.0](https://www.nuget.org/packages/Microsoft.CodeCove
 
 Dynamic instrumentation necessitates configuring environment variables (CLR Profiling) for code coverage collection. In environments where this isn't feasible, such as in IIS, we recommend opting for static instrumentation.
 
-
 You can control dynamic and static instrumentation using below flags in your configuration:
+
 ```xml
 <CodeCoverage>
   <EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>
@@ -24,7 +24,8 @@ As we mentioned above when static instrumentation is enabled libraries and corre
   <EnableStaticManagedInstrumentationRestore>False</EnableStaticManagedInstrumentationRestore>
 </CodeCoverage>
 ```
-It can be useful when debugging some issues or to speed up build inside pipeline. 
+
+It can be useful when debugging some issues or to speed up build inside pipeline.
 
 > **_NOTE:_** Make sure instrumented binaries are not deployed into production.
 

@@ -7,55 +7,56 @@
 
 ## Settings
 
-| Name | Values | Default | Description | Example |
-|---|---|---|---|---|
-| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` |  | Code coverage log level  | `<CoverageLogLevel>Dumps</CoverageLogLevel>` |
-| InstrumentationLogLevel  | `Errors`,`Dumps`,`Messages`,`All` |  | CLR Instrumentation Engine log level. More info <a href="https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md">here</a>. | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` |
-| ManagedVanguardLogLevel  | `Error`,`Info`,`Verbose`,`None` |  | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` |
-| CoverageFileLogPath  | File or directory path | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` |
-| CoverageFileName | File path | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` |
-| Format | `coverage`, `cobertura`, `xml` | `coverage` | Output report format. | `<Format>coverage</Format>` |
-| VanguardInstallDir | Directory path | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` |
-| CLRIEX86InstallDir | Directory path | | Path to directory with custom CLR IE x86 binary | `<CLRIEX86InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>` |
-| CLRIEX64InstallDir | Directory path | | Path to directory with custom CLR IE x64 binary | `<CLRIEX64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>` |
-| CLRIEARM64InstallDir | Directory path | | Path to directory with custom CLR IE ARM64 binary | `<CLRIEARM64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\arm64</CLRIEARM64InstallDir>` |
-| PerTestCodeCoverage | `True`, `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
-| IncludeTestAssembly | `True`, `False` | `True` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
-| DeterministicReport | `True`, `False` | `False` | Indicates if paths in the report should start with deterministic fragment `/_/..` instead of full paths | `<DeterministicReport>True</DeterministicReport>` |
+| Name | Values | Default | [MTP.CodeCoverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) Default | Description | Example |
+|---|---|---|---|---|---|
+| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` |  |  | Code coverage log level | `<CoverageLogLevel>Dumps</CoverageLogLevel>` |
+| InstrumentationLogLevel  | `Errors`,`Dumps`,`Messages`,`All` |  |  | CLR Instrumentation Engine log level. More info [here](https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md). | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` |
+| ManagedVanguardLogLevel  | `Error`,`Info`,`Verbose`,`None` |  |  | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` |
+| CoverageFileLogPath  | File or directory path | | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` |
+| CoverageFileName | File path | | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` |
+| Format | `coverage`, `cobertura`, `xml` | `coverage` | `coverage` | Output report format. | `<Format>coverage</Format>` |
+| VanguardInstallDir | Directory path | | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` |
+| CLRIEX86InstallDir | Directory path | | | Path to directory with custom CLR IE x86 binary | `<CLRIEX86InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>` |
+| CLRIEX64InstallDir | Directory path | | | Path to directory with custom CLR IE x64 binary | `<CLRIEX64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>` |
+| CLRIEARM64InstallDir | Directory path | | | Path to directory with custom CLR IE ARM64 binary | `<CLRIEARM64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\arm64</CLRIEARM64InstallDir>` |
+| PerTestCodeCoverage | `True`, `False` | `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
+| IncludeTestAssembly | `True`, `False` | `True` | `False` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
+| DeterministicReport | `True`, `False` | `False` | `False` | Indicates if paths in the report should start with deterministic fragment `/_/..` instead of full paths | `<DeterministicReport>True</DeterministicReport>` |
 
 ## Settings under CodeCoverage tag
 
-| Name | Values | Default  | Description  | Example |
-|---|---|---|---|---|
-| CommunicationTimeout | Integer | 60000 | Specifies comminication time out in milliseconds | `<CommunicationTimeout>90000</CommunicationTimeout>` |
-| PipeClientsCount | Integer | 254 | Specifies number of pipe connections started by coverage server. | `<PipeClientsCount>2540</PipeClientsCount>` |
-| CollectFromChildProcesses | `True`, `False` | `True` | When set to True, collects coverage information from child processes that are launched by test or production code. | `<CollectFromChildProcesses>True</CollectFromChildProcesses>` |
-| UseVerifiableInstrumentation | `True`, `False` | `True` | Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. | `<UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>` |
-| AllowLowIntegrityProcesses | `True`, `False` | `False` | When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. | `<AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>` |
-| SymbolsRestrictOriginalPathAccess | `True`, `False` | `False` | Determines if looking for a .pdb file in the original debug directory. | `<SymbolsRestrictOriginalPathAccess>True</SymbolsRestrictOriginalPathAccess>` |
-| SymbolsRestrictReferencePathAccess | `True`, `False` | `False` | Determines if looking for a .pdb file is allowed in the path where the .exe file is located. | `<SymbolsRestrictReferencePathAccess>True</SymbolsRestrictReferencePathAccess>` |
-| SymbolsRestrictDBGAccess | `True`, `False` | `False` | Determines if looking for debug information is allowed from .dbg files. | `<SymbolsRestrictDBGAccess>True</SymbolsRestrictDBGAccess>` |
-| SymbolsRestrictSystemRootAccess | `True`, `False` | `False` | Determines if searching for .pdb files is allowed in the system root directory. | `<SymbolsRestrictSystemRootAccess>True</SymbolsRestrictSystemRootAccess>` |
-| EnableDynamicNativeInstrumentation | `True`, `False` | `True` | Enable dynamic native instrumentation. | `<EnableDynamicNativeInstrumentation>True</EnableDynamicNativeInstrumentation>` |
-| EnableStaticNativeInstrumentation | `True`, `False` | `True` | Enable static native instrumentation. | `<EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>` |
-| EnableStaticNativeInstrumentationRestore | `True`, `False` | `True` | Enable static native instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticNativeInstrumentationRestore>True</EnableStaticNativeInstrumentationRestore>` |
-| EnableDynamicManagedInstrumentation | `True`, `False` | `True` | Enable dynamic managed instrumentation. | `<EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>` |
-| EnableStaticManagedInstrumentation | `True`, `False` | `False` | Enable static managed instrumentation. | `<EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>` |
-| EnableStaticManagedInstrumentationRestore | `True`, `False` | `True` | Enable static managed instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>` |
-| SymbolSearchPaths | XML | | Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented. If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here. Note that searching for symbols increases code coverage runtime. So keep this small and local. | `<SymbolSearchPaths><Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path></SymbolSearchPaths>` |
-| AllowedUsers | XML | | Supported only for .NET Framework. Additional users that will be able to access internal shared memory and pipes. | `<AllowedUsers><User>UserName1</User></AllowedUsers>` |
-| ModulePaths | XML | | Include and exclude lists for module paths. <br> Empty "Include" clauses imply all; empty "Exclude" clauses imply none. Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio. An item must first match at least one entry in the include list to be included. Included items must then not match any entries in the exclude list to remain included. |  `<ModulePaths><Exclude><ModulePath>.*CPPUnitTestFramework.*</ModulePath></Exclude></ModulePaths>` |
-| PublicKeyTokens | XML | | Include and exclude lists for public key tokens.<br>Matches the public key token of a signed assembly. | `<PublicKeyTokens><Exclude><PublicKeyToken>^B77A5C561934E089$</PublicKeyToken></Exclude></PublicKeyTokens>` |
-| CompanyNames | XML | | Include and exclude lists for company names.<br>Matches the company name property in the assembly. | `<CompanyNames><Exclude><CompanyName>.*microsoft.*</CompanyName></Exclude></CompanyNames>` |
-| Attributes | XML | | Include and exclude lists for attributes.<br>Matches attributes on any code element. | `<Attributes><Exclude><Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute></Exclude></Attributes>` |
-| Sources | XML | | Include and exclude lists for source files.<br>Matches the path of the source files in which each method is defined. | `<Sources><Exclude><Source>.*\\atlmfc\\.*</Source></Exclude></Sources>` |
-| Functions | XML | | Include and exclude lists for functions.<br>Matches fully qualified names of functions. Use `\.` to delimit namespaces in C# or Visual Basic, `::` in C++.). | `<Functions><Exclude><Function>^Fabrikam\.UnitTest\..*</Function></Exclude></Functions>` |
-| DumpStaticNativeDisassembly | `True`, `False` | `False` | Generates the assembler dump of the native static instrumentation close to the module. | `<DumpStaticNativeDisassembly>True</DumpStaticNativeDisassembly>` |
-| FileLogPath | `C:\folder\` or `C:\folder\log.txt` | | Set the path for the static native instrumentation. | `<FileLogPath>C:\folder\log.txt</FileLogPath>` |
-| LogLevel | `Errors`,`Dumps`,`Messages`,`All` | | Set the log level for the static native instrumentation. | `<LogLevel>All</LogLevel>` |
+| Name | Values | Default | [MTP.CodeCoverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) Default | Description | Example |
+|---|---|---|---|---|---|
+| CommunicationTimeout | Integer | 60000 | 60000 | Specifies communication time out in milliseconds | `<CommunicationTimeout>90000</CommunicationTimeout>` |
+| PipeClientsCount | Integer | 254 | 254 | Specifies number of pipe connections started by coverage server. | `<PipeClientsCount>2540</PipeClientsCount>` |
+| CollectFromChildProcesses | `True`, `False` | `True` | `True` | When set to True, collects coverage information from child processes that are launched by test or production code. | `<CollectFromChildProcesses>True</CollectFromChildProcesses>` |
+| UseVerifiableInstrumentation | `True`, `False` | `True` | `False` | Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. | `<UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>` |
+| AllowLowIntegrityProcesses | `True`, `False` | `False` | `False` | When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. | `<AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>` |
+| SymbolsRestrictOriginalPathAccess | `True`, `False` | `False` | `False` | Determines if looking for a .pdb file in the original debug directory. | `<SymbolsRestrictOriginalPathAccess>True</SymbolsRestrictOriginalPathAccess>` |
+| SymbolsRestrictReferencePathAccess | `True`, `False` | `False` | `False` | Determines if looking for a .pdb file is allowed in the path where the .exe file is located. | `<SymbolsRestrictReferencePathAccess>True</SymbolsRestrictReferencePathAccess>` |
+| SymbolsRestrictDBGAccess | `True`, `False` | `False` | `False` | Determines if looking for debug information is allowed from .dbg files. | `<SymbolsRestrictDBGAccess>True</SymbolsRestrictDBGAccess>` |
+| SymbolsRestrictSystemRootAccess | `True`, `False` | `False` | `False` | Determines if searching for .pdb files is allowed in the system root directory. | `<SymbolsRestrictSystemRootAccess>True</SymbolsRestrictSystemRootAccess>` |
+| EnableDynamicNativeInstrumentation | `True`, `False` | `True` | `True` | Enable dynamic native instrumentation. | `<EnableDynamicNativeInstrumentation>True</EnableDynamicNativeInstrumentation>` |
+| EnableStaticNativeInstrumentation | `True`, `False` | `True` | `False` | Enable static native instrumentation. | `<EnableStaticNativeInstrumentation>True</EnableStaticNativeInstrumentation>` |
+| EnableStaticNativeInstrumentationRestore | `True`, `False` | `True` | `True` | Enable static native instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticNativeInstrumentationRestore>True</EnableStaticNativeInstrumentationRestore>` |
+| EnableDynamicManagedInstrumentation | `True`, `False` | `True` | `True` | Enable dynamic managed instrumentation. | `<EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>` |
+| EnableStaticManagedInstrumentation | `True`, `False` | `False` | `False` | Enable static managed instrumentation. | `<EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>` |
+| EnableStaticManagedInstrumentationRestore | `True`, `False` | `True` | `True` | Enable static managed instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>` |
+| SymbolSearchPaths | XML | | | Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented. If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here. Note that searching for symbols increases code coverage runtime. So keep this small and local. | `<SymbolSearchPaths><Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path></SymbolSearchPaths>` |
+| AllowedUsers | XML | | | Supported only for .NET Framework. Additional users that will be able to access internal shared memory and pipes. | `<AllowedUsers><User>UserName1</User></AllowedUsers>` |
+| ModulePaths | XML | | | Include and exclude lists for module paths.\\Empty "Include" clauses imply all; empty "Exclude" clauses imply none. Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio. An item must first match at least one entry in the include list to be included. Included items must then not match any entries in the exclude list to remain included. |  `<ModulePaths><Exclude><ModulePath>.*CPPUnitTestFramework.*</ModulePath></Exclude></ModulePaths>` |
+| PublicKeyTokens | XML | | | Include and exclude lists for public key tokens.\\Matches the public key token of a signed assembly. | `<PublicKeyTokens><Exclude><PublicKeyToken>^B77A5C561934E089$</PublicKeyToken></Exclude></PublicKeyTokens>` |
+| CompanyNames | XML | | | Include and exclude lists for company names.\\Matches the company name property in the assembly. | `<CompanyNames><Exclude><CompanyName>.*microsoft.*</CompanyName></Exclude></CompanyNames>` |
+| Attributes | XML | | | Include and exclude lists for attributes.\\Matches attributes on any code element. | `<Attributes><Exclude><Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute></Exclude></Attributes>` |
+| Sources | XML | | | Include and exclude lists for source files.\\Matches the path of the source files in which each method is defined. | `<Sources><Exclude><Source>.*\\atlmfc\\.*</Source></Exclude></Sources>` |
+| Functions | XML | | | Include and exclude lists for functions.\\Matches fully qualified names of functions. Use `\.` to delimit namespaces in C# or Visual Basic, `::` in C++.). | `<Functions><Exclude><Function>^Fabrikam\.UnitTest\..*</Function></Exclude></Functions>` |
+| DumpStaticNativeDisassembly | `True`, `False` | `False` | `False` | Generates the assembler dump of the native static instrumentation close to the module. | `<DumpStaticNativeDisassembly>True</DumpStaticNativeDisassembly>` |
+| FileLogPath | `C:\folder\` or `C:\folder\log.txt` | | | Set the path for the static native instrumentation. | `<FileLogPath>C:\folder\log.txt</FileLogPath>` |
+| LogLevel | `Errors`,`Dumps`,`Messages`,`All` | | | Set the log level for the static native instrumentation. | `<LogLevel>All</LogLevel>` |
+
 ## Example
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- File name extension must be .runsettings -->
 <RunSettings>
@@ -161,8 +162,10 @@
   </DataCollectionRunSettings>
 </RunSettings>
 ```
+
 To enable all available logs
-```
+
+```xml
  <RunSettings>
   <DataCollectionRunSettings>
     <DataCollectors>

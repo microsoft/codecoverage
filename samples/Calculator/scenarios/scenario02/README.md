@@ -2,7 +2,7 @@
 
 Collect code coverage using cobertura report format without specifying configuration. Cobertura report format can be used to generate HTML report using [report generator](https://github.com/danielpalme/ReportGenerator). This format can be also used with [PublishCodeCoverageResults@2](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-code-coverage-results-v2?view=azure-pipelines) in Azure DevOps pipelines.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -12,7 +12,7 @@ dotnet test --collect "Code Coverage;Format=cobertura"
 
 You can also use [run.ps1](run.ps1) to collect code coverage.
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 ```yml
     steps:
@@ -36,17 +36,18 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
         path: ./**/TestResults/**/*.cobertura.xml
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario02.yml)
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario02.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -90,7 +91,7 @@ steps:
 
 ![alt text](azure-pipelines2.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 

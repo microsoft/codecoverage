@@ -42,6 +42,7 @@ Collect and view code coverage in Microsoft Visual Studio Enterprise.
       </DataCollectionRunSettings>
     </RunSettings>
     ```
+
     ![runsettings-file](runsttings-set.png)
 
 ## Enable code coverage coloring

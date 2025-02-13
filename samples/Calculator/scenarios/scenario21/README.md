@@ -2,7 +2,7 @@
 
 Collect code coverage for whole solution. In this example we show that if you have script to run all tests you can easily prepend it with `dotnet-coverage collect` to collec coverage for whole solution.
 
-# Collect code coverage using command line
+## Collect code coverage using command line
 
 ```shell
 git clone https://github.com/microsoft/codecoverage.git
@@ -12,7 +12,7 @@ dotnet tool install -g dotnet-coverage
 dotnet-coverage collect --output-format cobertura --output report.cobertura.xml "bash ./scenarios/scenario21/tests.sh"
 ```
 
-# Collect code coverage inside github workflow
+## Collect code coverage inside github workflow
 
 To generate summary report `.coverage` report needs to be converted to `cobertura` report using `dotnet-coverage` tool. Then `reportgenerator` can be used to generate final github summary markdown.
 
@@ -40,17 +40,18 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
+        overwrite: true
 ```
 
 [Full source example](../../../../.github/workflows/Calculator_Scenario21.yml)
 
 [Run example](../../../../../../actions/workflows/Calculator_Scenario21.yml)
 
-# Collect code coverage inside Azure DevOps Pipelines
+## Collect code coverage inside Azure DevOps Pipelines
 
 ```yml
 steps:
@@ -95,7 +96,7 @@ steps:
 
 ![alt text](azure-pipelines.jpg "Code Coverage tab in Azure DevOps pipelines")
 
-# Report example
+## Report example
 
 ![alt text](example.report.jpg "Example report")
 
