@@ -88,12 +88,12 @@ To generate summary report `.coverage` report needs to be converted to `cobertur
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'
     - name: Archive code coverage logs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-coverage-logs
         path: '${{ github.workspace }}/logs/*'

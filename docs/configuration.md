@@ -7,21 +7,21 @@
 
 ## Settings
 
-| Name | Values | Default | Description | Example |
-|---|---|---|---|---|
-| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` |  | Code coverage log level  | `<CoverageLogLevel>Dumps</CoverageLogLevel>` |
-| InstrumentationLogLevel  | `Errors`,`Dumps`,`Messages`,`All` |  | CLR Instrumentation Engine log level. More info [here](https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md). | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` |
-| ManagedVanguardLogLevel  | `Error`,`Info`,`Verbose`,`None` |  | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` |
-| CoverageFileLogPath  | File or directory path | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` |
-| CoverageFileName | File path | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` |
-| Format | `coverage`, `cobertura`, `xml` | `coverage` | Output report format. | `<Format>coverage</Format>` |
-| VanguardInstallDir | Directory path | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` |
-| CLRIEX86InstallDir | Directory path | | Path to directory with custom CLR IE x86 binary | `<CLRIEX86InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>` |
-| CLRIEX64InstallDir | Directory path | | Path to directory with custom CLR IE x64 binary | `<CLRIEX64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>` |
-| CLRIEARM64InstallDir | Directory path | | Path to directory with custom CLR IE ARM64 binary | `<CLRIEARM64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\arm64</CLRIEARM64InstallDir>` |
-| PerTestCodeCoverage | `True`, `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
-| IncludeTestAssembly | `True`, `False` | `True` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
-| DeterministicReport | `True`, `False` | `False` | Indicates if paths in the report should start with deterministic fragment `/_/..` instead of full paths | `<DeterministicReport>True</DeterministicReport>` |
+| Name | Values | Default | Default [MTP.CodeCoverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) Description | Example |
+|---|---|---|---|---|---|
+| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` |  |  | Code coverage log level  | `<CoverageLogLevel>Dumps</CoverageLogLevel>` |
+| InstrumentationLogLevel  | `Errors`,`Dumps`,`Messages`,`All` |  |  | CLR Instrumentation Engine log level. More info [here](https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md). |  | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` |
+| ManagedVanguardLogLevel  | `Error`,`Info`,`Verbose`,`None` |  |  | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` |
+| CoverageFileLogPath  | File or directory path | | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` |
+| CoverageFileName | File path | | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` |
+| Format | `coverage`, `cobertura`, `xml` | `coverage` | `coverage` | Output report format. | `<Format>coverage</Format>` |
+| VanguardInstallDir | Directory path | | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` |
+| CLRIEX86InstallDir | Directory path | | | Path to directory with custom CLR IE x86 binary | `<CLRIEX86InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>` |
+| CLRIEX64InstallDir | Directory path | | | Path to directory with custom CLR IE x64 binary | `<CLRIEX64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>` |
+| CLRIEARM64InstallDir | Directory path | | | Path to directory with custom CLR IE ARM64 binary | `<CLRIEARM64InstallDir>D:\Microsoft.CodeCoverage\InstrumentationEngine\arm64</CLRIEARM64InstallDir>` |
+| PerTestCodeCoverage | `True`, `False` | `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
+| IncludeTestAssembly | `True`, `False` | `True` | `False` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
+| DeterministicReport | `True`, `False` | `False` | `False` | Indicates if paths in the report should start with deterministic fragment `/_/..` instead of full paths | `<DeterministicReport>True</DeterministicReport>` |
 
 ## Settings under CodeCoverage tag
 
