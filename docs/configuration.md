@@ -22,7 +22,7 @@
 | PerTestCodeCoverage | `True`, `False` | `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` |
 | IncludeTestAssembly | `True`, `False` | `True` | `False` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` |
 | DeterministicReport | `True`, `False` | `False` | `False` | Requires `DeterministicSourcePaths` to be set to `True` during the build. When enabled, paths in the report will start with a deterministic fragment `/_/..` instead of full paths. More details can be found [here](https://github.com/dotnet/sourcelink/blob/main/docs/README.md#deterministicsourcepaths). | `<DeterministicReport>True</DeterministicReport>` |
-| ExcludeAssembliesWithoutSources | `NotSpecified`, `MissingAny`, `MissingAll`, `None` | `NotSpecified` | `MissingAll` | Excludes assemblies from the coverage report if their source files are missing.  | `<ExcludeAssembliesWithoutSources>MissingAll</MissingAny>` |
+| ExcludeAssembliesWithoutSources | `NotSpecified`, `MissingAny`, `MissingAll`, `None` | `NotSpecified` | `MissingAll` | Excludes assemblies from the coverage report if their source files are missing.  | `<ExcludeAssembliesWithoutSources>MissingAll</ExcludeAssembliesWithoutSources>` |
 
 ## Settings under CodeCoverage tag
 
