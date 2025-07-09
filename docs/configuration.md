@@ -59,14 +59,14 @@ Code coverage configuration also supports the [Microsoft.Testing.Platform config
 | EnableDynamicManagedInstrumentation | `True`, `False` | `True` | `True` | Enable dynamic managed instrumentation. | `<EnableDynamicManagedInstrumentation>True</EnableDynamicManagedInstrumentation>` | `"EnableDynamicManagedInstrumentation": true` | 17.14 |
 | EnableStaticManagedInstrumentation | `True`, `False` | `False` | `False` | Enable static managed instrumentation. | `<EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>` | `"EnableStaticManagedInstrumentation": true` | 17.14 |
 | EnableStaticManagedInstrumentationRestore | `True`, `False` | `True` | `True` | Enable static managed instrumentation restore. If enabled all instrumented files are restored after collection. | `<EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>` | `"EnableStaticManagedInstrumentationRestore": true` | 17.14 |
-| SymbolSearchPaths | List | | | Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented. If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here. Note that searching for symbols increases code coverage runtime. So keep this small and local. | `<SymbolSearchPaths><Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path></SymbolSearchPaths>` | `"SymbolSearchPaths": ["C:\\Users\\User\\Documents\\Visual Studio 2012\\Projects\\ProjectX\\bin\\Debug"]` | 17.14 |
-| AllowedUsers | List | | | Supported only for .NET Framework. Additional users that will be able to access internal shared memory and pipes. | `<AllowedUsers><User>UserName1</User></AllowedUsers>` | `"AllowedUsers": ["UserName1"]` | 17.14 |
-| ModulePaths | List | | | Include and exclude lists for module paths.<br>Empty "Include" clauses imply all; empty "Exclude" clauses imply none. Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio. An item must first match at least one entry in the include list to be included. Included items must then not match any entries in the exclude list to remain included. | `<ModulePaths><Exclude><ModulePath>.*CPPUnitTestFramework.*</ModulePath></Exclude></ModulePaths>` | `"ModulePaths": {"Exclude": [".*CPPUnitTestFramework.*"]}` | 17.14 |
+| SymbolSearchPaths | List of strings | | | Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented. If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here. Note that searching for symbols increases code coverage runtime. So keep this small and local. | `<SymbolSearchPaths><Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path></SymbolSearchPaths>` | `"SymbolSearchPaths": ["C:\\Users\\User\\Documents\\Visual Studio 2012\\Projects\\ProjectX\\bin\\Debug"]` | 17.14 |
+| AllowedUsers | List of strings | | | Supported only for .NET Framework. Additional users that will be able to access internal shared memory and pipes. | `<AllowedUsers><User>UserName1</User></AllowedUsers>` | `"AllowedUsers": ["UserName1"]` | 17.14 |
+| ModulePaths | List of strings | | | Include and exclude lists for module paths.<br>Empty "Include" clauses imply all; empty "Exclude" clauses imply none. Each element in the list is a regular expression (ECMAScript syntax). See /visualstudio/ide/using-regular-expressions-in-visual-studio. An item must first match at least one entry in the include list to be included. Included items must then not match any entries in the exclude list to remain included. | `<ModulePaths><Exclude><ModulePath>.*CPPUnitTestFramework.*</ModulePath></Exclude></ModulePaths>` | `"ModulePaths": {"Exclude": [".*CPPUnitTestFramework.*"]}` | 17.14 |
 | PublicKeyTokens | List | | | Include and exclude lists for public key tokens.<br>Matches the public key token of a signed assembly. | `<PublicKeyTokens><Exclude><PublicKeyToken>^B77A5C561934E089$</PublicKeyToken></Exclude></PublicKeyTokens>` | `"PublicKeyTokens": {"Exclude": ["^B77A5C561934E089$"]}` | 17.14 |
-| CompanyNames | List | | | Include and exclude lists for company names.<br>Matches the company name property in the assembly. | `<CompanyNames><Exclude><CompanyName>.*microsoft.*</CompanyName></Exclude></CompanyNames>` | `"CompanyNames": {"Exclude": [".*microsoft.*"]}` | 17.14 |
-| Attributes | List | | | Include and exclude lists for attributes.<br>Matches attributes on any code element. | `<Attributes><Exclude><Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute></Exclude></Attributes>` | `"Attributes": {"Exclude": ["^System\\.Diagnostics\\.DebuggerHiddenAttribute$"]}` | 17.14 |
-| Sources | List | | | Include and exclude lists for source files.<br>Matches the path of the source files in which each method is defined. | `<Sources><Exclude><Source>.*\\atlmfc\\.*</Source></Exclude></Sources>` | `"Sources": {"Exclude": [".*\\\\atlmfc\\\\.*"]}` | 17.14 |
-| Functions | List | | | Include and exclude lists for functions.<br>Matches fully qualified names of functions. Use `\.` to delimit namespaces in C# or Visual Basic, `::` in C++.). | `<Functions><Exclude><Function>^Fabrikam\.UnitTest\..*</Function></Exclude></Functions>` | `"Functions": {"Exclude": ["^Fabrikam\\.UnitTest\\..*"]}` | 17.14 |
+| CompanyNames | List of strings | | | Include and exclude lists for company names.<br>Matches the company name property in the assembly. | `<CompanyNames><Exclude><CompanyName>.*microsoft.*</CompanyName></Exclude></CompanyNames>` | `"CompanyNames": {"Exclude": [".*microsoft.*"]}` | 17.14 |
+| Attributes | List of strings | | | Include and exclude lists for attributes.<br>Matches attributes on any code element. | `<Attributes><Exclude><Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute></Exclude></Attributes>` | `"Attributes": {"Exclude": ["^System\\.Diagnostics\\.DebuggerHiddenAttribute$"]}` | 17.14 |
+| Sources | List of strings | | | Include and exclude lists for source files.<br>Matches the path of the source files in which each method is defined. | `<Sources><Exclude><Source>.*\\atlmfc\\.*</Source></Exclude></Sources>` | `"Sources": {"Exclude": [".*\\\\atlmfc\\\\.*"]}` | 17.14 |
+| Functions | List of strings | | | Include and exclude lists for functions.<br>Matches fully qualified names of functions. Use `\.` to delimit namespaces in C# or Visual Basic, `::` in C++.). | `<Functions><Exclude><Function>^Fabrikam\.UnitTest\..*</Function></Exclude></Functions>` | `"Functions": {"Exclude": ["^Fabrikam\\.UnitTest\\..*"]}` | 17.14 |
 | DumpStaticNativeDisassembly | `True`, `False` | `False` | `False` | Generates the assembler dump of the native static instrumentation close to the module. | `<DumpStaticNativeDisassembly>True</DumpStaticNativeDisassembly>` | `"DumpStaticNativeDisassembly": true` | 17.14 |
 | FileLogPath | `C:\folder\` or `C:\folder\log.txt` | | | Set the path for the static native instrumentation. | `<FileLogPath>C:\folder\log.txt</FileLogPath>` | `"FileLogPath": "C:\\folder\\log.txt"` | 17.14 |
 | LogLevel | `Errors`,`Dumps`,`Messages`,`All` | | | Set the log level for the static native instrumentation. | `<LogLevel>All</LogLevel>` | `"LogLevel": "All"` | 17.14 |
@@ -82,7 +82,8 @@ Code coverage configuration also supports the [Microsoft.Testing.Platform config
 <RunSettings>
   <DataCollectionRunSettings>
     <DataCollectors>
-      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0"
+        assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
         <Configuration>
           <CoverageLogLevel>Dumps</CoverageLogLevel>
           <InstrumentationLogLevel>Dumps</InstrumentationLogLevel>
@@ -171,7 +172,7 @@ Code coverage configuration also supports the [Microsoft.Testing.Platform config
                 <PublicKeyToken>^8F50407C4E9E73B6$</PublicKeyToken>
                 <PublicKeyToken>^E361AF139669C375$</PublicKeyToken>
               </Exclude>
-            </PublicKeyTokens>        
+            </PublicKeyTokens>
             <DumpStaticNativeDisassembly>False</DumpStaticNativeDisassembly>
             <FileLogPath>C:\logs\</FileLogPath>
             <LogLevel>All</LogLevel>
@@ -189,7 +190,8 @@ To enable all available logs
 <RunSettings>
   <DataCollectionRunSettings>
     <DataCollectors>
-      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0" assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector">
+      <DataCollector friendlyName="Code Coverage" uri="datacollector://Microsoft/CodeCoverage/2.0"
+        assemblyQualifiedName="Microsoft.VisualStudio.Coverage.DynamicCoverageDataCollector, Microsoft.VisualStudio.TraceCollector">
         <Configuration>
           <CoverageLogLevel>Dumps</CoverageLogLevel>
           <InstrumentationLogLevel>Dumps</InstrumentationLogLevel>
@@ -213,19 +215,19 @@ To enable all available logs
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Configuration>
-    <CoverageLogLevel>Dumps</CoverageLogLevel>
-    <InstrumentationLogLevel>Dumps</InstrumentationLogLevel>
-    <ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>
-    <CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>
-    <CoverageFileName>D:\examples\report.coverage</CoverageFileName>
-    <Format>coverage</Format>
-    <CLRIEX86InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>
-    <CLRIEX64InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>
-    <VanguardInstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>
-    <PerTestCodeCoverage>True</PerTestCodeCoverage>
-    <IncludeTestAssembly>True</IncludeTestAssembly>
+  <CoverageLogLevel>Dumps</CoverageLogLevel>
+  <InstrumentationLogLevel>Dumps</InstrumentationLogLevel>
+  <ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>
+  <CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>
+  <CoverageFileName>D:\examples\report.coverage</CoverageFileName>
+  <Format>coverage</Format>
+  <CLRIEX86InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x86</CLRIEX86InstallDir>
+  <CLRIEX64InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>
+  <VanguardInstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>
+  <PerTestCodeCoverage>True</PerTestCodeCoverage>
+  <IncludeTestAssembly>True</IncludeTestAssembly>
 
-    <CodeCoverage>
+  <CodeCoverage>
     <CommunicationTimeout>90000</CommunicationTimeout>
     <PipeClientsCount>2540</PipeClientsCount>
     <CollectFromChildProcesses>True</CollectFromChildProcesses>
@@ -242,56 +244,56 @@ To enable all available logs
     <EnableStaticManagedInstrumentation>True</EnableStaticManagedInstrumentation>
     <EnableStaticManagedInstrumentationRestore>True</EnableStaticManagedInstrumentationRestore>
     <SymbolSearchPaths>
-        <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>
-        <Path>\\mybuildshare\builds\ProjectX</Path>
+      <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>
+      <Path>\\mybuildshare\builds\ProjectX</Path>
     </SymbolSearchPaths>
     <AllowedUsers>
-        <User>UserName1</User>
-        <User>UserName2</User>
+      <User>UserName1</User>
+      <User>UserName2</User>
     </AllowedUsers>
     <ModulePaths>
-        <Include>
+      <Include>
         <ModulePath>.*\.dll$</ModulePath>
         <ModulePath>.*\.exe$</ModulePath>
-        </Include>
-        <Exclude>
+      </Include>
+      <Exclude>
         <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
-        </Exclude>
+      </Exclude>
     </ModulePaths>
     <Functions>
-        <Exclude>
+      <Exclude>
         <Function>^Fabrikam\.UnitTest\..*</Function>
         <Function>^std::.*</Function>
         <Function>^ATL::.*</Function>
         <Function>.*::__GetTestMethodInfo.*</Function>
         <Function>^Microsoft::VisualStudio::CppCodeCoverageFramework::.*</Function>
         <Function>^Microsoft::VisualStudio::CppUnitTestFramework::.*</Function>
-        </Exclude>
+      </Exclude>
     </Functions>
     <Attributes>
-        <Exclude>
+      <Exclude>
         <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
         <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
         <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
         <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
-        </Exclude>
+      </Exclude>
     </Attributes>
     <Sources>
-        <Exclude>
+      <Exclude>
         <Source>.*\\atlmfc\\.*</Source>
         <Source>.*\\vctools\\.*</Source>
         <Source>.*\\public\\sdk\\.*</Source>
         <Source>.*\\microsoft sdks\\.*</Source>
         <Source>.*\\vc\\include\\.*</Source>
-        </Exclude>
+      </Exclude>
     </Sources>
     <CompanyNames>
-        <Exclude>
+      <Exclude>
         <CompanyName>.*microsoft.*</CompanyName>
-        </Exclude>
+      </Exclude>
     </CompanyNames>
     <PublicKeyTokens>
-        <Exclude>
+      <Exclude>
         <PublicKeyToken>^B77A5C561934E089$</PublicKeyToken>
         <PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>
         <PublicKeyToken>^31BF3856AD364E35$</PublicKeyToken>
@@ -299,117 +301,18 @@ To enable all available logs
         <PublicKeyToken>^71E9BCE111E9429C$</PublicKeyToken>
         <PublicKeyToken>^8F50407C4E9E73B6$</PublicKeyToken>
         <PublicKeyToken>^E361AF139669C375$</PublicKeyToken>
-        </Exclude>
-    </PublicKeyTokens>        
+      </Exclude>
+    </PublicKeyTokens>
     <DumpStaticNativeDisassembly>False</DumpStaticNativeDisassembly>
     <FileLogPath>C:\logs\</FileLogPath>
     <LogLevel>All</LogLevel>
-    </CodeCoverage>
+  </CodeCoverage>
 </Configuration>
 ```
 
 ```json
 {
-    "CoverageLogLevel": "Dumps",
-    "InstrumentationLogLevel": "Dumps",
-    "ManagedVanguardLogLevel": "Info",
-    "CoverageFileLogPath": "D:\\examples\\logs\\coverage.log",
-    "CoverageFileName": "D:\\examples\\report.coverage",
-    "Format": "coverage",
-    "CLRIEX86InstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\InstrumentationEngine\\x86",
-    "CLRIEX64InstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\InstrumentationEngine\\x64",
-    "VanguardInstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\CodeCoverage",
-    "PerTestCodeCoverage": true,
-    "IncludeTestAssembly": true,
-    "CodeCoverage": {
-        "CommunicationTimeout": 90000,
-        "PipeClientsCount": 2540,
-        "CollectFromChildProcesses": true,
-        "UseVerifiableInstrumentation": true,
-        "AllowLowIntegrityProcesses": true,
-        "SymbolsRestrictOriginalPathAccess": true,
-        "SymbolsRestrictReferencePathAccess": true,
-        "SymbolsRestrictDBGAccess": true,
-        "SymbolsRestrictSystemRootAccess": true,
-        "EnableDynamicNativeInstrumentation": true,
-        "EnableStaticNativeInstrumentation": true,
-        "EnableStaticNativeInstrumentationRestore": true,
-        "EnableDynamicManagedInstrumentation": true,
-        "EnableStaticManagedInstrumentation": true,
-        "EnableStaticManagedInstrumentationRestore": true,
-        "SymbolSearchPaths": [
-        "C:\\Users\\User\\Documents\\Visual Studio 2012\\Projects\\ProjectX\\bin\\Debug",
-        "\\\\mybuildshare\\builds\\ProjectX"
-        ],
-        "AllowedUsers": [
-        "UserName1",
-        "UserName2"
-        ],
-        "ModulePaths": {
-        "Include": [
-            ".*\\.dll$",
-            ".*\\.exe$"
-        ],
-        "Exclude": [
-            ".*CPPUnitTestFramework.*"
-        ]
-        },
-        "Functions": {
-        "Exclude": [
-            "^Fabrikam\\.UnitTest\\..*",
-            "^std::.*",
-            "^ATL::.*",
-            ".*::__GetTestMethodInfo.*",
-            "^Microsoft::VisualStudio::CppCodeCoverageFramework::.*",
-            "^Microsoft::VisualStudio::CppUnitTestFramework::.*"
-        ]
-        },
-        "Attributes": {
-        "Exclude": [
-            "^System\\.Diagnostics\\.DebuggerHiddenAttribute$",
-            "^System\\.Diagnostics\\.DebuggerNonUserCodeAttribute$",
-            "^System\\.CodeDom\\.Compiler\\.GeneratedCodeAttribute$",
-            "^System\\.Diagnostics\\.CodeAnalysis\\.ExcludeFromCodeCoverageAttribute$"
-        ]
-        },
-        "Sources": {
-        "Exclude": [
-            ".*\\\\atlmfc\\\\.*",
-            ".*\\\\vctools\\\\.*",
-            ".*\\\\public\\\\sdk\\\\.*",
-            ".*\\\\microsoft sdks\\\\.*",
-            ".*\\\\vc\\\\include\\\\.*"
-        ]
-        },
-        "CompanyNames": {
-        "Exclude": [
-            ".*microsoft.*"
-        ]
-        },
-        "PublicKeyTokens": {
-        "Exclude": [
-            "^B77A5C561934E089$",
-            "^B03F5F7F11D50A3A$",
-            "^31BF3856AD364E35$",
-            "^89845DCD8080CC91$",
-            "^71E9BCE111E9429C$",
-            "^8F50407C4E9E73B6$",
-            "^E361AF139669C375$"
-        ]
-        },
-        "DumpStaticNativeDisassembly": false,
-        "FileLogPath": "C:\\logs\\",
-        "LogLevel": "All"
-    }
-}
-```
-
-
-### Testconfig.json file
-
-```json
-{
-  "codeCoverage": {
+  "Configuration": {
     "CoverageLogLevel": "Dumps",
     "InstrumentationLogLevel": "Dumps",
     "ManagedVanguardLogLevel": "Info",
@@ -500,6 +403,108 @@ To enable all available logs
       "DumpStaticNativeDisassembly": false,
       "FileLogPath": "C:\\logs\\",
       "LogLevel": "All"
+    }
+  }
+}
+```
+
+### Testconfig.json file
+
+```json
+{
+  "codeCoverage": {
+    "Configuration": {
+      "CoverageLogLevel": "Dumps",
+      "InstrumentationLogLevel": "Dumps",
+      "ManagedVanguardLogLevel": "Info",
+      "CoverageFileLogPath": "D:\\examples\\logs\\coverage.log",
+      "CoverageFileName": "D:\\examples\\report.coverage",
+      "Format": "coverage",
+      "CLRIEX86InstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\InstrumentationEngine\\x86",
+      "CLRIEX64InstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\InstrumentationEngine\\x64",
+      "VanguardInstallDir": "D:\\vscodecoverage\\artifacts\\test\\Microsoft.CodeCoverage\\CodeCoverage",
+      "PerTestCodeCoverage": true,
+      "IncludeTestAssembly": true,
+      "CodeCoverage": {
+        "CommunicationTimeout": 90000,
+        "PipeClientsCount": 2540,
+        "CollectFromChildProcesses": true,
+        "UseVerifiableInstrumentation": true,
+        "AllowLowIntegrityProcesses": true,
+        "SymbolsRestrictOriginalPathAccess": true,
+        "SymbolsRestrictReferencePathAccess": true,
+        "SymbolsRestrictDBGAccess": true,
+        "SymbolsRestrictSystemRootAccess": true,
+        "EnableDynamicNativeInstrumentation": true,
+        "EnableStaticNativeInstrumentation": true,
+        "EnableStaticNativeInstrumentationRestore": true,
+        "EnableDynamicManagedInstrumentation": true,
+        "EnableStaticManagedInstrumentation": true,
+        "EnableStaticManagedInstrumentationRestore": true,
+        "SymbolSearchPaths": [
+          "C:\\Users\\User\\Documents\\Visual Studio 2012\\Projects\\ProjectX\\bin\\Debug",
+          "\\\\mybuildshare\\builds\\ProjectX"
+        ],
+        "AllowedUsers": [
+          "UserName1",
+          "UserName2"
+        ],
+        "ModulePaths": {
+          "Include": [
+            ".*\\.dll$",
+            ".*\\.exe$"
+          ],
+          "Exclude": [
+            ".*CPPUnitTestFramework.*"
+          ]
+        },
+        "Functions": {
+          "Exclude": [
+            "^Fabrikam\\.UnitTest\\..*",
+            "^std::.*",
+            "^ATL::.*",
+            ".*::__GetTestMethodInfo.*",
+            "^Microsoft::VisualStudio::CppCodeCoverageFramework::.*",
+            "^Microsoft::VisualStudio::CppUnitTestFramework::.*"
+          ]
+        },
+        "Attributes": {
+          "Exclude": [
+            "^System\\.Diagnostics\\.DebuggerHiddenAttribute$",
+            "^System\\.Diagnostics\\.DebuggerNonUserCodeAttribute$",
+            "^System\\.CodeDom\\.Compiler\\.GeneratedCodeAttribute$",
+            "^System\\.Diagnostics\\.CodeAnalysis\\.ExcludeFromCodeCoverageAttribute$"
+          ]
+        },
+        "Sources": {
+          "Exclude": [
+            ".*\\\\atlmfc\\\\.*",
+            ".*\\\\vctools\\\\.*",
+            ".*\\\\public\\\\sdk\\\\.*",
+            ".*\\\\microsoft sdks\\\\.*",
+            ".*\\\\vc\\\\include\\\\.*"
+          ]
+        },
+        "CompanyNames": {
+          "Exclude": [
+            ".*microsoft.*"
+          ]
+        },
+        "PublicKeyTokens": {
+          "Exclude": [
+            "^B77A5C561934E089$",
+            "^B03F5F7F11D50A3A$",
+            "^31BF3856AD364E35$",
+            "^89845DCD8080CC91$",
+            "^71E9BCE111E9429C$",
+            "^8F50407C4E9E73B6$",
+            "^E361AF139669C375$"
+          ]
+        },
+        "DumpStaticNativeDisassembly": false,
+        "FileLogPath": "C:\\logs\\",
+        "LogLevel": "All"
+      }
     }
   }
 }
