@@ -45,7 +45,7 @@ Static code coverage for ASP.NET Core Web App (Razor Pages) in IIS.
     </Configuration>
     ```
 
-6. Start code coverage collection in Admin mode Developer Powershell for VS Enterprise. It is also required to have `SeCreateGlobalPrivilege` privilage to correctly pass coverage data to collector.
+6. Start code coverage collection in Admin mode Developer Powershell for VS Enterprise. It is also required to have `SeCreateGlobalPrivilege` privilege to correctly pass coverage data to collector.
 
     ```console
     Microsoft.CodeCoverage.Console.exe collect -sv -id iisdoc -s D:\configs\aspnet.config

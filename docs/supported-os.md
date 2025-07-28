@@ -24,7 +24,7 @@ macOS                                 | 10.15+                | Arm64           
 
 Other operating systems are supported at best effort.
 
-## Linux libc compability (only dynamic instrumentation)
+## Linux libc compatibility (only dynamic instrumentation)
 
 - x64: [glibc](https://www.gnu.org/software/libc/) 2.27 (from ubuntu 18.04)
 - Alpine: [musl](https://musl.libc.org/) 1.2.2 (from Alpine 3.13)

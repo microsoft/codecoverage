@@ -1,6 +1,6 @@
 # Scenario Description
 
-Collect code coverage for ASP.NET Core integration tests and take snapshots after each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. After each test we take snapshot of code coverage using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation does not reset all coverage data. This is probably not real example but we just want to show you snapshot operation without reseting counters. Note that with each snapshot taken code coverage should be increasing.
+Collect code coverage for ASP.NET Core integration tests and take snapshots after each test. You can find here example how to collect coverage for server and tests if they are running in separate processes and server is started before tests execution. After each test we take snapshot of code coverage using `dotnet-coverage` tool (`snapshot` command). Each snapshot operation does not reset all coverage data. This is probably not real example but we just want to show you snapshot operation without resetting counters. Note that with each snapshot taken code coverage should be increasing.
 
 ## Collect code coverage using command line
 
