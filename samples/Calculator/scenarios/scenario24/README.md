@@ -18,7 +18,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 Executing tests is automatically creating `cobertura` report. Then `reportgenerator` can be used to generate final github summary markdown.
 
 ```yml
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:

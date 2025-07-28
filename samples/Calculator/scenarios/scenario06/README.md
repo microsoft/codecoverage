@@ -49,7 +49,7 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 ```yml
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:

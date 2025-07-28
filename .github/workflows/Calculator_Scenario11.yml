@@ -16,7 +16,7 @@ jobs:
       run:
         working-directory: ./samples/Calculator/tests/Calculator.Console.Tests
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
