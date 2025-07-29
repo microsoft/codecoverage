@@ -1,6 +1,6 @@
 # Scenario Description
 
-This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requres specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `False` means our system will not restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requires specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `False` means our system will not restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
 ## Configuration
 
