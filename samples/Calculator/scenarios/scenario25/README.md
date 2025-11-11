@@ -20,9 +20,9 @@ Executing tests is automatically creating `cobertura` report. Then `reportgenera
 
 ```yml
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
     - name: Install dotnet-coverage

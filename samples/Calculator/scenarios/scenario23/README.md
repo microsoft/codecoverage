@@ -1,6 +1,6 @@
 # Scenario Description
 
-This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requres specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `True` means our system will restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
+This example shows that code coverage by default is collecting code coverage also for all child processes. `Calculator.Console.Tests` run tests by spawning `Calculator.Console` as child process. Static instrumentation is used here, which requires specifying what files should be instrumented by `ModulePaths.IncludeDirectories` inside runsettings. Setting `EnableStaticManagedInstrumentationRestore` to `True` means our system will restore instrumented binaries after the run. Default format is binary (`.coverage` extension) which can be opened in Visual Studio Enterprise.
 
 ## Configuration
 
@@ -50,9 +50,9 @@ You can also use [run.ps1](run.ps1) to collect code coverage.
 
 ```yml
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
