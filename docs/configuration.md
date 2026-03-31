@@ -24,11 +24,11 @@ Code coverage configuration also supports the [Microsoft.Testing.Platform config
 ## Settings
 
 | Name | Values | Default | [MTP.CodeCoverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) Default | Description | Example (XML) | Example (JSON) | Available in version |
-|---|---|---|---|---|---|---|---|
-| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` |  |  | Code coverage log level | `<CoverageLogLevel>Dumps</CoverageLogLevel>` | `"CoverageLogLevel": "Dumps"` | 17.14 |
-| InstrumentationLogLevel  | `Errors`,`Dumps`,`Messages`,`All` |  |  | CLR Instrumentation Engine log level. More info [here](https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md). | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` | `"InstrumentationLogLevel": "Dumps"` | 17.14 |
-| ManagedVanguardLogLevel  | `Error`,`Info`,`Verbose`,`None` |  |  | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` | `"ManagedVanguardLogLevel": "Info"` | 17.14 |
-| CoverageFileLogPath  | File or directory path | | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` | `"CoverageFileLogPath": "D:\\examples\\logs\\coverage.log"` | 17.14 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| CoverageLogLevel | `Errors`,`Dumps`,`Messages`,`All` | | | Code coverage log level | `<CoverageLogLevel>Dumps</CoverageLogLevel>` | `"CoverageLogLevel": "Dumps"` | 17.14 |
+| InstrumentationLogLevel | `Errors`,`Dumps`,`Messages`,`All` | | | CLR Instrumentation Engine log level. More info [here](https://github.com/microsoft/CLRInstrumentationEngine/blob/develop/docs/logging.md). | `<InstrumentationLogLevel>Dumps</InstrumentationLogLevel>` | `"InstrumentationLogLevel": "Dumps"` | 17.14 |
+| ManagedVanguardLogLevel | `Error`,`Info`,`Verbose`,`None` | | | Managed instrumentation log level. Logging of managed side of code coverage. | `<ManagedVanguardLogLevel>Info</ManagedVanguardLogLevel>` | `"ManagedVanguardLogLevel": "Info"` | 17.14 |
+| CoverageFileLogPath | File or directory path | | | File path or directory path to place where code coverage and CLR IE logs should be stored. Directory should be specified with `\` at the end. | `<CoverageFileLogPath>D:\examples\logs\coverage.log</CoverageFileLogPath>` | `"CoverageFileLogPath": "D:\\examples\\logs\\coverage.log"` | 17.14 |
 | CoverageFileName | File path | | | File path to output code coverage report | `<CoverageFileName>D:\examples\report.coverage</CoverageFileName>` | `"CoverageFileName": "D:\\examples\\report.coverage"` | 17.14 |
 | Format | `coverage`, `cobertura`, `xml` | `coverage` | `coverage` | Output report format. | `<Format>coverage</Format>` | `"Format": "coverage"` | 17.14 |
 | VanguardInstallDir | Directory path | | | Path to directory where custom `CodeCoverage.exe` and `covrun*.dll` files exists | `<VanguardInstallDir>D:\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>` | `"VanguardInstallDir": "D:\\Microsoft.CodeCoverage\\CodeCoverage"` | 17.14 |
@@ -38,12 +38,13 @@ Code coverage configuration also supports the [Microsoft.Testing.Platform config
 | PerTestCodeCoverage | `True`, `False` | `False` | `False` | Indicates if coverage should be collected for each test separately | `<PerTestCodeCoverage>True</PerTestCodeCoverage>` | `"PerTestCodeCoverage": true` | 17.14 |
 | IncludeTestAssembly | `True`, `False` | `True` | `False` | Indicates if coverage should be collected for tests projects | `<IncludeTestAssembly>True</IncludeTestAssembly>` | `"IncludeTestAssembly": true` | 17.14 |
 | DeterministicReport | `True`, `False` | `False` | `False` | Requires `DeterministicSourcePaths` to be set to `True` during the build. When enabled, paths in the report will start with a deterministic fragment `/_/..` instead of full paths. More details can be found [here](https://github.com/dotnet/sourcelink/blob/main/docs/README.md#deterministicsourcepaths). | `<DeterministicReport>True</DeterministicReport>` | `"DeterministicReport": true` | 17.14 |
-| ExcludeAssembliesWithoutSources | `NotSpecified`, `MissingAny`, `MissingAll`, `None` | `NotSpecified` | `MissingAll` | Excludes assemblies from the coverage report if their source files are missing.  | `<ExcludeAssembliesWithoutSources>MissingAll</ExcludeAssembliesWithoutSources>` | `"ExcludeAssembliesWithoutSources": "MissingAll"` | 17.14 |
+| ExcludeAssembliesWithoutSources | `NotSpecified`, `MissingAny`, `MissingAll`, `None` | `NotSpecified` | `MissingAll` | Excludes assemblies from the coverage report if their source files are missing. | `<ExcludeAssembliesWithoutSources>MissingAll</ExcludeAssembliesWithoutSources>` | `"ExcludeAssembliesWithoutSources": "MissingAll"` | 17.14 |
+| DoesNotReturnAttribute | `SameAssembly`, `AllAssemblies`, `None` | `SameAssembly` | `SameAssembly` | Specifies the scope for matching functions with the DoesNotReturnAttribute to exclude from coverage. | `<DoesNotReturnAttribute>SameAssembly</DoesNotReturnAttribute>` | `"DoesNotReturnAttribute": "SameAssembly"` | 17.14 |  
 
 ## Settings under CodeCoverage tag
 
 | Name | Values | Default | [MTP.CodeCoverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) Default | Description | Example (XML) | Example (JSON) | Available in version |
-|---|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | CommunicationTimeout | Integer | 60000 | 60000 | Specifies communication time out in milliseconds | `<CommunicationTimeout>90000</CommunicationTimeout>` | `"CommunicationTimeout": 90000` | 17.14 |
 | PipeClientsCount | Integer | 254 | 254 | Specifies number of pipe connections started by coverage server. | `<PipeClientsCount>2540</PipeClientsCount>` | `"PipeClientsCount": 2540` | 17.14 |
 | CollectFromChildProcesses | `True`, `False` | `True` | `True` | When set to True, collects coverage information from child processes that are launched by test or production code. | `<CollectFromChildProcesses>True</CollectFromChildProcesses>` | `"CollectFromChildProcesses": true` | 17.14 |
