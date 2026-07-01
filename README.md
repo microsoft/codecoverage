@@ -2,6 +2,14 @@
 
 Microsoft code coverage functionality is closed source. This repository contains documentation and samples. You can also use it to report any issues related to `Microsoft.CodeCoverage` NuGet package, `dotnet-coverage` NuGet package or Visual Studio code coverage functionality.
 
+## Contents
+
+- [Get started](#get-started)
+- [Documentation](#documentation)
+- [Samples](#samples)
+- [Contributing](#contributing)
+- [Trademarks](#trademarks)
+
 ## Get started
 
 To collect code coverage for .NET test project you can simply execute:
@@ -13,6 +21,9 @@ dotnet test --collect "Code Coverage;Format=cobertura"
 ```
 
 You should see output:
+
+<details>
+<summary>Show expected output</summary>
 
 ```shell
 Determining projects to restore...
@@ -31,6 +42,8 @@ Attachments:
   D:\mstests\TestResults\caf685fa-04ce-4858-9feb-ae472f1a71e1\dd166e58-6e19-4741-931a-816d025fcb32.cobertura.xml
 ```
 
+</details>
+
 For any .NET application you can collect code coverage in this way:
 
 ```shell
@@ -42,19 +55,24 @@ dotnet-coverage collect "dotnet run"
 
 You should see output:
 
+<details>
+<summary>Show expected output</summary>
+
 ```shell
-dotnet-coverage v18.4.1.0 [win-x64 - .NET 8.0.23]
+dotnet-coverage v18.8.0 [win-x64 - .NET 8.0.23]
 
 SessionId: f2255bb7-259f-4c01-8360-bf7be4f8c5f8
 Hello, World!
 Code coverage results: output.coverage.
 ```
 
+</details>
+
 For existing projects to get latest features and best performance please keep up to date below references:
 
 ```xml
-<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
-<PackageReference Include="Microsoft.CodeCoverage" Version="18.0.1" />
+<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.7.0" />
+<PackageReference Include="Microsoft.CodeCoverage" Version="18.7.0" />
 ```
 
 If your solution doesn't contain any C++ code it is recommended to disable native code coverage by adding into configuration below flags:
@@ -70,9 +88,10 @@ Check other configuration options [here](docs/configuration.md).
 
 * Documentation for `dotnet-coverage` tool is available [here](https://aka.ms/dotnet-coverage).
 * Documentation for `Microsoft.CodeCoverage` is available [here](https://learn.microsoft.com/visualstudio/test/customizing-code-coverage-analysis)
+* [Static and dynamic instrumentation](docs/instrumentation.md)
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
-* [Performance data](/docs/performance/README.md)
+* [Performance data](docs/performance/README.md)
 
 ## Samples
 

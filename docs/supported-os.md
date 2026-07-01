@@ -1,6 +1,6 @@
 # Supported OS versions
 
-Below table illustrates the availability of our tooling on different operating systems and specifies whether dynamic or static instrumentation is enabled or disabled by default.
+Below table illustrates the availability of our tooling on different operating systems and specifies whether dynamic or static instrumentation is enabled or disabled by default. For an explanation of the two instrumentation modes, see [Static and dynamic instrumentation](instrumentation.md). These per-OS defaults can be overridden through your [configuration](configuration.md#settings-under-codecoverage-tag).
 
 OS                                    | Version               | Architectures     | Dynamic instrumentation |Static instrumentation
 --------------------------------------|-----------------------|-------------------|-------------------------|----------------------
@@ -34,3 +34,8 @@ Other operating systems are supported at best effort.
 On macOS and linux dynamic instrumentation requires [libxml2](https://github.com/GNOME/libxml2) package to be installed.
 
 On Alpine 3.18+ dynamic instrumentation requires [libintl](https://pkgs.alpinelinux.org/package/edge/main/x86/libintl) package to be installed.
+
+## See also
+
+- [Static and dynamic instrumentation](instrumentation.md) — how the two modes differ and when to use each.
+- [Configuration](configuration.md) — how to enable, disable, or tune instrumentation per project.

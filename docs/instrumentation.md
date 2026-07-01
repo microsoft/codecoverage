@@ -17,6 +17,11 @@ You can control dynamic and static instrumentation using below flags in your con
 </CodeCoverage>
 ```
 
+For the full list of instrumentation flags and their defaults, see
+[Configuration](configuration.md#settings-under-codecoverage-tag). For a per-OS breakdown of
+which instrumentation modes are supported and enabled by default, see
+[Supported OS versions](supported-os.md).
+
 As we mentioned above when static instrumentation is enabled libraries and corresponding pdb files are changed before loaded by process under code coverage. By default we are restoring those files after process is done. You can disable it by adding into your configuration:
 
 ```xml
@@ -43,3 +48,8 @@ When you use static instrumentation by default all libraries from test project o
 ```
 
 Above configuration will make sure all files from `D:\src\Lib1\bin\Debug` directory and subdirectories will be also instrumented. Also all files from directory `D:\src\Lib2\bin\Debug` will be instrumented.
+
+## See also
+
+- [Configuration](configuration.md) — all code coverage settings, including the instrumentation flags shown above.
+- [Supported OS versions](supported-os.md) — which instrumentation modes are available and enabled by default per OS.

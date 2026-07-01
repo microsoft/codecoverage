@@ -1,5 +1,16 @@
 # Code coverage performance results
 
+These historical benchmarks show how code coverage collection overhead has improved across
+`Microsoft.CodeCoverage` releases. Each row is a test project/configuration; the columns are:
+
+- **No code coverage** — baseline run time with coverage disabled.
+- **Code coverage 16.5 / 17.0 / 17.5 / 17.9** — run time with that package version, plus the
+  percentage overhead relative to the baseline (lower is better).
+
+The final **Ratio** table summarizes total collection time per version normalized to 16.5
+(`1.00`), showing the cumulative speed-up over time. For details on the instrumentation
+modes behind these numbers, see [Static and dynamic instrumentation](../instrumentation.md).
+
 Project name | Configuration | No code coverage | Code coverage 16.5 | Code coverage 17.0 | Code coverage 17.5 | Code coverage 17.9
 -------------|---------------------------|----------|----------|----------|----------|---------
 InteractiveHost UnitTests | net8.0 Debug | 129.82s | 361.82s (+178.70%) | 278.19s (+114.28%) | 266.49s (+105.27%) | 188.61s (+45.28%)
