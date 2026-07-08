@@ -162,6 +162,7 @@ use?](#which-configuration-file-should-i-use)):
           <CLRIEX64InstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\InstrumentationEngine\x64</CLRIEX64InstallDir>
           <VanguardInstallDir>D:\vscodecoverage\artifacts\test\Microsoft.CodeCoverage\CodeCoverage</VanguardInstallDir>
           <IncludeTestAssembly>True</IncludeTestAssembly>
+          <DeterministicReport>False</DeterministicReport>
 
           <CodeCoverage>
             <CommunicationTimeout>90000</CommunicationTimeout>
