@@ -35,6 +35,12 @@ On macOS and linux dynamic instrumentation requires [libxml2](https://github.com
 
 On Alpine 3.18+ dynamic instrumentation requires [libintl](https://pkgs.alpinelinux.org/package/edge/main/x86/libintl) package to be installed.
 
+On Azure Linux 3.0 dynamic instrumentation requires the [glibc-iconv](https://github.com/microsoft/azurelinux) package to be installed, which provides the gconv modules used to convert profiler configuration paths. Without it, dynamic instrumentation fails to initialize silently and produces an empty Cobertura report:
+
+```bash
+tdnf --repo=azurelinux-official-base install -y glibc-iconv
+```
+
 ## See also
 
 - [Static and dynamic instrumentation](instrumentation.md) — how the two modes differ and when to use each.
