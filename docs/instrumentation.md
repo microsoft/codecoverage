@@ -49,6 +49,46 @@ When you use static instrumentation by default all libraries from test project o
 
 Above configuration will make sure all files from `D:\src\Lib1\bin\Debug` directory and subdirectories will be also instrumented. Also all files from directory `D:\src\Lib2\bin\Debug` will be instrumented.
 
+## Verifiable instrumentation (probes)
+
+When code is instrumented, code coverage normally records that a basic block ran by writing
+directly into a shared-memory location from inside the instrumented method. On .NET Framework,
+methods that participate in [Code Access Security (CAS)](https://learn.microsoft.com/dotnet/framework/misc/code-access-security)
+verification — for example, methods marked with the `SecuritySafeCritical` or `SecurityCritical`
+attributes, or code that runs in a partial-trust / verifiable context — are not allowed to
+perform that kind of direct memory write. When such a method is instrumented in the normal way,
+the CLR can reject the modified IL as unverifiable and the test host throws a
+[`System.Security.VerificationException`](https://learn.microsoft.com/dotnet/api/system.security.verificationexception).
+
+To support these scenarios, code coverage can emit **verifiable probes**. Instead of writing
+directly into memory from the instrumented method, code coverage inserts a probe that calls out
+to a separate helper method, and that helper performs the write. The instrumented method itself
+stays verifiable, so it passes CAS verification and no `VerificationException` is thrown. This is
+controlled by the `UseVerifiableInstrumentation` setting:
+
+```xml
+<CodeCoverage>
+  <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+</CodeCoverage>
+```
+
+### When to enable it
+
+Enable verifiable instrumentation when **both** of the following are true:
+
+- Your tests target **.NET Framework** (verification does not apply to modern .NET), and
+- Coverage collection fails with a `System.Security.VerificationException`, or you are
+  instrumenting assemblies that contain `SecuritySafeCritical` / `SecurityCritical` code or run
+  in a partially trusted context.
+
+Verifiable probes add a small amount of runtime overhead because each recorded block goes through
+an extra helper call, so leave the setting at its default unless you hit one of the situations
+above. For the setting's default per file type, see the `UseVerifiableInstrumentation` row in
+[Configuration](configuration.md#settings-under-codecoverage-tag).
+
+> **_NOTE:_** If you are using .NET Framework and see `System.Security.VerificationException`
+> thrown by your tests while coverage is enabled, set `UseVerifiableInstrumentation` to `True`.
+
 ## See also
 
 - [Configuration](configuration.md) — all code coverage settings, including the instrumentation flags shown above.
