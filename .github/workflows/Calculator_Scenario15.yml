@@ -16,9 +16,9 @@ jobs:
       run:
         working-directory: ./samples/Calculator
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
@@ -39,7 +39,7 @@ jobs:
     - name: Stop server
       run: dotnet-coverage shutdown TagScenario15
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@5.2.0
+      uses: danielpalme/ReportGenerator-GitHub-Action@d3ebf1f760f7d8ab92cc44d9bcfee7ad73722a31 # 5.5.11
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
@@ -47,7 +47,7 @@ jobs:
     - name: Upload coverage into summary
       run: cat $GITHUB_WORKSPACE/coveragereport/SummaryGithub.md >> $GITHUB_STEP_SUMMARY
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
       with:
         name: code-coverage-report
         path: '${{ github.workspace }}/report.cobertura.xml'

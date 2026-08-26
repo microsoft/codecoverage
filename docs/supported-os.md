@@ -31,9 +31,17 @@ Other operating systems are supported at best effort.
 
 ## Dependencies (only dynamic instrumentation)
 
-On macOS and linux dynamic instrumentation requires [libxml2](https://github.com/GNOME/libxml2) package to be installed.
+When a required dependency is missing, dynamic instrumentation may fail to initialize silently and produce an empty coverage report.
+
+On macOS and Linux, dynamic instrumentation requires the [libxml2](https://github.com/GNOME/libxml2) package to be installed.
 
 On Alpine 3.18+ dynamic instrumentation requires [libintl](https://pkgs.alpinelinux.org/package/edge/main/x86/libintl) package to be installed.
+
+On Azure Linux 3.0 dynamic instrumentation requires the [glibc-iconv](https://github.com/microsoft/azurelinux) package to be installed, which provides the gconv modules used to convert profiler configuration paths:
+
+```bash
+tdnf --repo=azurelinux-official-base install -y glibc-iconv
+```
 
 ## See also
 
