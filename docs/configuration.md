@@ -127,7 +127,7 @@ means the setting has no default and is unset unless specified. See the
 | PipeClientsCount | Integer | 254 | 254 | Specifies number of pipe connections started by coverage server. | `<PipeClientsCount>2540</PipeClientsCount>` | `"PipeClientsCount": 2540` | 17.14 |
 | CollectFromChildProcesses | `True`, `False` | `True` | `True` | When set to True, collects coverage information from child processes that are launched by test or production code. | `<CollectFromChildProcesses>True</CollectFromChildProcesses>` | `"CollectFromChildProcesses": true` | 17.14 |
 | CollectAspDotNet | `True`, `False` | `False` | `False` | When set to True, enables code coverage collection for ASP.NET processes. | `<CollectAspDotNet>True</CollectAspDotNet>` | `"CollectAspDotNet": true` | — |
-| AllowLowIntegrityProcesses | `True`, `False` | `False` | `False` | When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. | `<AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>` | `"AllowLowIntegrityProcesses": true` | 17.14 |
+| AllowLowIntegrityProcesses | `True`, `False` | `False` | `False` | When set to True, collects coverage information from child processes that are launched with low-level ACLs. | `<AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>` | `"AllowLowIntegrityProcesses": true` | 17.14 |
 
 ### Merging with the built-in default lists
 
