@@ -91,6 +91,7 @@ Check other configuration options [here](docs/configuration.md).
 * [Static and dynamic instrumentation](docs/instrumentation.md)
 * [Supported OS versions](docs/supported-os.md)
 * [Configuration](docs/configuration.md)
+* [Release notes](docs/release-notes.md)
 * [Performance data](docs/performance/README.md)
 
 ## Samples
