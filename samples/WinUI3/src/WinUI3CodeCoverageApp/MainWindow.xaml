@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="CodeCoverage.WinUI3Sample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="WinUI 3 code coverage sample"
+    mc:Ignorable="d">
+
+    <Grid Padding="32">
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Spacing="16">
+            <TextBlock
+                HorizontalAlignment="Center"
+                Style="{StaticResource TitleTextBlockStyle}"
+                Text="Packaged WinUI 3 code coverage" />
+            <TextBlock
+                MaxWidth="520"
+                Text="Start this application with dotnet-coverage, run the sample code, and then close the window to finish collection."
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <Button
+                HorizontalAlignment="Center"
+                Click="RunSample_Click"
+                Content="Run covered code"
+                Style="{StaticResource AccentButtonStyle}" />
+            <TextBlock
+                x:Name="ResultText"
+                HorizontalAlignment="Center"
+                Text="The sample code has not run yet." />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -98,6 +98,7 @@ Check other configuration options [here](docs/configuration.md).
 
 * [Unit tests, E2E, console applications, merging, exclusions, static instrumentation](samples/Calculator/README.md)
 * [MSTest Runner, Native AOT](samples/Algorithms/README.md)
+* [WinUI 3 packaged applications](samples/WinUI3/README.md)
 * [Visual Studio](samples/VisualStudio/README.md)
 
 ## Contributing
