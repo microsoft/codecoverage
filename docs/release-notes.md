@@ -11,9 +11,17 @@ Versions are listed newest first.
   [packaged WinUI 3 sample](../samples/WinUI3/scenarios/scenario01/README.md).
 - Restored exclusion of compiler-generated branches used for method-group caching
   ([microsoft/codecoverage#188](https://github.com/microsoft/codecoverage/issues/188)).
+- Added profiler compatibility for Ubuntu 26.04
+  ([microsoft/codecoverage#224](https://github.com/microsoft/codecoverage/issues/224)).
 - Added code coverage summaries to standard output when running Microsoft Testing Platform
   test applications directly
   ([microsoft/codecoverage#233](https://github.com/microsoft/codecoverage/issues/233)).
+- Added support for merging coverage from multiple Microsoft Testing Platform test
+  applications into a single report
+  ([microsoft/codecoverage#234](https://github.com/microsoft/codecoverage/issues/234)).
+- Forwarded termination signals such as `SIGTERM` to child processes launched by
+  `dotnet-coverage collect`
+  ([microsoft/codecoverage#237](https://github.com/microsoft/codecoverage/issues/237)).
 - Prevented intermittent Linux test-host access violations caused by coverage buffer mappings
   being invalidated while instrumented code is running
   ([microsoft/codecoverage#238](https://github.com/microsoft/codecoverage/issues/238)).
@@ -22,17 +30,6 @@ Versions are listed newest first.
 - Handled abandoned reconciliation mutexes so passing test hosts no longer abort during
   shutdown
   ([microsoft/codecoverage#245](https://github.com/microsoft/codecoverage/issues/245)).
-
-## 18.11.0
-
-- Added profiler compatibility for Ubuntu 26.04
-  ([microsoft/codecoverage#224](https://github.com/microsoft/codecoverage/issues/224)).
-- Added support for merging coverage from multiple Microsoft Testing Platform test
-  applications into a single report
-  ([microsoft/codecoverage#234](https://github.com/microsoft/codecoverage/issues/234)).
-- Forwarded termination signals such as `SIGTERM` to child processes launched by
-  `dotnet-coverage collect`
-  ([microsoft/codecoverage#237](https://github.com/microsoft/codecoverage/issues/237)).
 
 ## 18.9
 
