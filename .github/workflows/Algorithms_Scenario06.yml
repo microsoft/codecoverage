@@ -26,7 +26,7 @@ jobs:
     - name: Run
       run: ./bin/Release/net8.0/linux-x64/publish/Algorithms.Core.NativeAot.Tests --coverage --coverage-output $GITHUB_WORKSPACE/report.cobertura.xml --coverage-output-format cobertura
     - name: ReportGenerator
-      uses: danielpalme/ReportGenerator-GitHub-Action@861674232075b2c6bd1405a04c4bb9b150653e81 # 5.5.12
+      uses: danielpalme/ReportGenerator-GitHub-Action@5f3701a41d14548c9b8e575a5c235230e515cbc0 # 5.6.0
       with:
         reports: '${{ github.workspace }}/report.cobertura.xml'
         targetdir: '${{ github.workspace }}/coveragereport'
